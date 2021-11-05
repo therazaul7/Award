@@ -1,0 +1,151 @@
+/*
+Template Name: Award
+Template URI: http://Award.htmlguru.net
+Author: HTMLguru
+Author URI: http://hopper.net
+Description: It\' s a HTML5 Award Template. Which is a unique feature and user competitive feature.
+Version: 1.0
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+# Layout
+    ## Header Part
+    ## banner Part
+    ## about Part
+    ## rhoncus Part
+    ## brand Part
+    ## team Part
+    ## blog Part
+    ## newsletter Part
+    ## Footer Part
+
+# Widgets
+	## Widgets
+	
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+html {
+  font-size: 100%; }
+
+body {
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.45em;
+  color: #17191F; 
+  background: #E5E5E5;
+  word-wrap: break-word;
+/*   overflow-x: hidden; */
+}
+
+
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## pagination
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Header Part
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# Color
+--------------------------------------------------------------*/
+.exdda-bg-color {
+  background-color: #272A33;
+
+}
+.exdda-bg-color:hover {
+  background-color: #FEB41C;
+  color: #17191F;
+}
+.exdda-bg-black {
+  background-color: #17191F;
+}
+.bg-yellow {
+  background-color: #FEB41C;
+}
+.exdda-border-yellow {
+  border-left-color: #FEB41C;
+}
+.exdda-color-yellow {
+  color: #FEB41C;
+}
+.exdda-text-color {
+  color: #646978;
+}
+
+.exdda-text-orange {
+  color: #FEB41C;
+}
+.exdda-color-memorize {
+  color: #9196A4;
+}
+/*--------------------------------------------------------------
+# border-Color
+--------------------------------------------------------------*/
+.exdda-border-b {
+  border-bottom: 1px solid #272A33;
+}
+.exdda-border-green {
+  border: 1px solid #6BC762;
+}
+
+.exdda-border-sky {
+  border: 1px solid #1ED0E9;
+}
+
+.exdda-border-red {
+  border: 1px solid #FE451C;
+}
+.exdda-border-yellow {
+  border: 1px solid #FEB41C;
+}
+
+
+
+
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+  background-color: #FEB41C;
+  color: white;
+  cursor: pointer;
+}
+
+
+.icon-blank:before {
+    transform: rotate(-135deg);
+    position: absolute;
+    top: 34px;
+    left: 30px;
+    font-size: 25px;
+}
+
+.icon-cancel {
+     position: absolute;
+     top: 50%;
+     left: -45px;
+     transform: translateY(-50%);
+}
+
+@media screen and (max-width: 768px) {
+  .exdda-image-width {
+    width: 50px;
+    height: 50px;
+  }
+}
