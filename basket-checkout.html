@@ -15,7 +15,7 @@
 
 	<!-- Titles
 	================================================== -->
-	<title>Overview</title>
+	<title>Basket/Checkout</title>
 
 	<!-- Favicons
 	================================================== -->
@@ -26,7 +26,7 @@
 
 	<!-- Custom Font
     ================================================== -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,700" rel="stylesheet"> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,700" rel="stylesheet"> 
 
 	<!-- CSS
     ================================================== -->
@@ -79,7 +79,7 @@
 		  	<h2 class="text-4xl lg:text-5xl font-bold mb-8">Basket</h2>
 		  	<table class="min-w-full">
 		  		<thead>
-	            	<tr class="border-b text-base md:text-xl lg:text-3xl font-bold capitalize">
+	            	<tr class="border-b text-xl lg:text-3xl font-bold capitalize">
 						<th class="text-left py-6">Product</th>
 						<th class="text-left py-6">price</th>
 						<th class="text-left py-6">quantity</th>
@@ -92,13 +92,13 @@
 			                <div class="flex">
 				                <div class="w-20 h-20 relative">
 				                	<i class="icon-cancel cursor-pointer"></i>
-				                    <img class="w-full h-full rounded-full"
+				                    <img class="exdda-image-width-two w-full h-full rounded-full"
 				                      src="assets/images/overview-image-01.png"
 				                      alt=""
 				                    />
 				                  </div>
-				                <div class="ml-3 mt-2">
-				                    <p class="text-3xl font-bold mb-2">Demo Case</p>
+				                <div class="md:ml-3 mt-2">
+				                    <p class="text-xl lg:text-3xl font-bold mb-2">Demo Case</p>
 				                    <p class="text-sm uppercase exdda-text-color">Price dkk 1.900.00</p>
 				                </div>
 			                </div>
@@ -119,13 +119,13 @@
         	                <div class="flex">
         		                <div class="w-20 h-20 relative">
         		                	<i class="icon-cancel cursor-pointer"></i>
-        		                    <img class="w-full h-full rounded-full"
+        		                    <img class="exdda-image-width-two w-full h-full rounded-full"
         		                      src="assets/images/overview-image-01.png"
         		                      alt=""
         		                    />
         		                  </div>
-        		                <div class="ml-3 mt-2">
-        		                    <p class="text-3xl font-bold mb-2">Demo Case</p>
+        		                <div class="md:ml-3 mt-2">
+        		                    <p class="text-xl lg:text-3xl font-bold mb-2">Demo Case</p>
         		                    <p class="text-sm uppercase exdda-text-color">Price dkk 1.900.00</p>
         		                </div>
         	                </div>
@@ -145,13 +145,13 @@
         	                <div class="flex">
         		                <div class="w-20 h-20 relative">
         		                	<i class="icon-cancel cursor-pointer"></i>
-        		                    <img class="w-full h-full rounded-full"
+        		                    <img class="exdda-image-width-two w-full h-full rounded-full"
         		                      src="assets/images/overview-image-01.png"
         		                      alt=""
         		                    />
         		                  </div>
-        		                <div class="ml-3 mt-2">
-        		                    <p class="text-3xl font-bold mb-2">Demo Case</p>
+        		                <div class="md:ml-3 mt-2">
+        		                    <p class="text-xl lg:text-3xl font-bold mb-2">Demo Case</p>
         		                    <p class="text-sm uppercase exdda-text-color">Price dkk 1.900.00</p>
         		                </div>
         	                </div>
@@ -169,24 +169,50 @@
 	          	</tbody>
         	</table>
         	<p class="text-right text-xl lg:text-3xl capitalize mt-12">total cart - <span class="exdda-text-orange">25.485.00 DKK</span></p>
-        	<h2 class="text-4xl lg:text-5xl font-bold mb-12">Checkout</h2>
-        	<form class="">
-        	  <div class="grid gap-6 lg:grid-cols-2">
-        	    <div class="w-full pt-8 px-10 py-6 md:mb-0 border rounded-xl">
-        	      <label class="capitalize block text-xl" for="grid-first-name">
-        	       <i class="icon-user-circle-o exdda-color-memorize text-xl"></i>
-        	        First Name
-        	      </label>
-        	      <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="grid-first-name" type="text" placeholder="Respondent’s fast and frist name">
+
+        	<div class="grid grid-cols-2 mt-8 mb-16">
+        	    <div>
+        	  	    <button class="capitalize mt-10 py-4 px-4 lg:px-8 rounded-lg text-white bg-black font-medium lg:text-xl">
+        	  	   		<i class="icon-arrows-cw"></i>
+        	  	   		Update basket
+        	  	    </button>
         	    </div>
-        	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border rounded-xl">
-        	     <label class="capitalize block text-xl" for="grid-first-name">
-        	      <i class="icon-mail exdda-color-memorize text-xl"></i>
-        	       Last name
-        	     </label>
-        	     <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="grid-first-name" type="text" placeholder="Respondent’s fast and last name">
-        	   </div>
-        	 </div>
+        	    <div class="text-right">
+        	  	   <button class="capitalize mt-10 py-4 px-4 lg:px-8 rounded-lg bg-yellow font-medium lg:text-xl">
+        	  	  		<i class="icon-ok"></i>
+        	  	  		Proceed to chekout
+        	  	   </button>
+        	    </div>
+        	</div>
+        	<h2 class="text-4xl lg:text-5xl font-bold mb-20">Checkout</h2>
+        	<div class="grid grid-cols-1 lg:grid-cols-3 gap-4 text-xl xl:text-xl">
+        	    <div>
+        	    	<span class="bg-yellow mr-4 px-6 py-4 rounded-lg">01</span><span class="relative bg-white pr-4">Details</span>
+        	    </div>
+        	    <div>
+        	    	<span class="exdda-bg-white-solid mr-4 px-6 py-4 rounded-lg">02</span><span class="relative bg-white pr-4">Address</span>
+        	    </div>
+        	    <div>
+        	    	<span class="exdda-bg-white-solid mr-4 px-6 py-4 rounded-lg">03</span><span class="relative ">Payment</span>
+        	    </div>
+        	</div>
+        	<form action="#" method="post">
+        	  	<div class="grid gap-6 lg:grid-cols-2 mt-20">
+	        	    <div class="w-full pt-8 px-10 py-6 md:mb-0 border rounded-xl">
+	        	      	<label class="capitalize block text-xl" for="grid-first-name">
+	        	        	<i class="icon-user-circle-o exdda-color-memorize text-xl"></i>
+	        	        	First Name
+	        	        </label>
+	        	      	<input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="grid-first-name" type="text" placeholder="Respondent’s fast and frist name">
+	            	</div>
+	        	   	<div class="w-full pt-8 px-10 py-6 md:mb-0 border rounded-xl">
+	        	     	<label class="capitalize block text-xl" for="grid-first-name">
+	        	      		<i class="icon-mail exdda-color-memorize text-xl"></i>
+	        	       		Last name
+	        	     	</label>
+	        	     <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="grid-first-name" type="text" placeholder="Respondent’s fast and last name">
+	        	   	</div>
+        	 	</div><!-- ./grid-cols-2 -->
 
         	   <div class="grid grid-cols-1 gap-6 mt-6">
 	        	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border rounded-xl">
@@ -203,12 +229,10 @@
 	        	     </label>
 	        	     <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="grid-first-name" type="text" placeholder="input for email address">
 	        	   </div>
-        	  	</div>
+        	  	</div><!-- ./grid-cols-1 -->
         	   <button class="capitalize mt-10 py-4 px-16 rounded-lg exdda-border-yellow font-medium text-xl">
         	     Next
         	   </button>
-
-        	   <h1>hellow world</h1>
         	</form>
     	</div><!--/.bg-white col-span-3  -->
 	</div><!-- /.grid grid-cols-4 -->

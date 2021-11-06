@@ -14,12 +14,6 @@ Version: 1.0
     ## Header Part
     ## banner Part
     ## about Part
-    ## rhoncus Part
-    ## brand Part
-    ## team Part
-    ## blog Part
-    ## newsletter Part
-    ## Footer Part
 
 # Widgets
 	## Widgets
@@ -42,26 +36,6 @@ body {
 /*   overflow-x: hidden; */
 }
 
-
-
-/*--------------------------------------------------------------
-## Menus
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-## pagination
---------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------
-# Layout
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Header Part
---------------------------------------------------------------*/
-
-
-
 /*--------------------------------------------------------------
 # Color
 --------------------------------------------------------------*/
@@ -79,7 +53,7 @@ body {
 .bg-yellow {
   background-color: #FEB41C;
 }
-.exdda-border-yellow {
+.exdda-border-left-yellow {
   border-left-color: #FEB41C;
 }
 .exdda-color-yellow {
@@ -94,6 +68,9 @@ body {
 }
 .exdda-color-memorize {
   color: #9196A4;
+}
+.exdda-bg-white-solid {
+  background-color: #F5F6FA;
 }
 /*--------------------------------------------------------------
 # border-Color
@@ -114,6 +91,15 @@ body {
 }
 .exdda-border-yellow {
   border: 1px solid #FEB41C;
+}
+.exdda-checkbox-border-color {
+    border: 1px solid #D1D5E0;
+    width: 20px;
+   height: 20px;
+   margin-right: 5px;
+   position: relative;
+   top: 3px;
+   border-radius: 10px;
 }
 
 
@@ -142,10 +128,84 @@ body {
      left: -45px;
      transform: translateY(-50%);
 }
-
+/* ==== Image ==== */
 @media screen and (max-width: 768px) {
   .exdda-image-width {
     width: 50px;
     height: 50px;
   }
+
+  .exdda-image-width-two {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 15px;
+    left: -10px;
+  }
 }
+
+
+/* ==== Before line ==== */
+@media screen and (max-width: 990px) {
+  .bg-white.pr-4{
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  .bg-white.pr-4:before{
+  content: "";
+  display:none!important;
+
+  }
+}
+
+.bg-white.pr-4:before{
+content: "";
+display:block;
+width: 90px;
+height:2px;
+background: #E6E9EF;
+position: absolute;
+right: -85px;
+top: 50%;
+
+}
+.exdda-line-color:before {
+    background: #FEB41C !important; 
+}
+.pagination-line:before{
+
+content: "";
+display:block;
+width: 164px;
+height:2px;
+background: #FEB41C;
+position: absolute;
+left: 0px;
+top: 68%;}
+/*--------------------------------------------------------------
+# Pagination
+--------------------------------------------------------------*/
+  .pagination li {
+    display: inline;
+
+  }
+  .pagination li a {
+   color: #242424;
+   display: inline-block;
+   transition: all .8s ease 0s;
+   margin: 0px 45px 0 0;
+   padding: 0;
+   text-align: center;
+   margin-top: 30px;
+   padding: 15px 25px;
+   font-size: 18px;
+}     
+.pagination li:last-child a{
+   margin: 0;
+}
+  .pagination li a:hover {
+    background-color: #FEB41C;
+  }
+  .pagination li a.active {
+    background-color: #FEB41C;
+  }
