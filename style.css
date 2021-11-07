@@ -35,7 +35,9 @@ body {
   word-wrap: break-word;
 /*   overflow-x: hidden; */
 }
-
+select {
+    background: none;
+}
 /*--------------------------------------------------------------
 # Color
 --------------------------------------------------------------*/
@@ -72,6 +74,14 @@ body {
 .exdda-bg-white-solid {
   background-color: #F5F6FA;
 }
+.exdda-color-gray {
+    color:#9196A4;
+}
+
+.exdda-bg-gray {
+    background-color:#F5F6FA;
+}
+
 /*--------------------------------------------------------------
 # border-Color
 --------------------------------------------------------------*/
@@ -117,7 +127,7 @@ body {
 .icon-blank:before {
     transform: rotate(-135deg);
     position: absolute;
-    top: 34px;
+    top: 42px;
     left: 30px;
     font-size: 25px;
 }
@@ -192,20 +202,29 @@ top: 68%;}
   .pagination li a {
    color: #242424;
    display: inline-block;
-   transition: all .8s ease 0s;
+   transition: all .4s ease 0s;
    margin: 0px 45px 0 0;
-   padding: 0;
    text-align: center;
    margin-top: 30px;
    padding: 15px 25px;
    font-size: 18px;
+
 }     
+ @media screen and (max-width: 990px) {
+    .pagination li a {
+     padding: 10px 20px;
+   }
+}
 .pagination li:last-child a{
    margin: 0;
+   background: none;
 }
   .pagination li a:hover {
     background-color: #FEB41C;
   }
   .pagination li a.active {
     background-color: #FEB41C;
+  }
+  input:checked {
+    color: red;
   }
