@@ -1,231 +1,345 @@
-/*
-Template Name: Award
-Template URI: http://Award.htmlguru.net
-Author: HTMLguru
-Author URI: http://hopper.net
-Description: It\' s a HTML5 Award Template. Which is a unique feature and user competitive feature.
-Version: 1.0
-*/
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-
-# Layout
-    ## Header Part
-    ## banner Part
-    ## about Part
-
-# Widgets
-	## Widgets
-	
+/* Template Name: Award Template URI: http://Award.htmlguru.net Author:
+ HTMLguru Author URI: http://hopper.net Description: It\' s a HTML5 Award Template.
+Which is a unique feature and user competitive feature. 
+Version: 1.0 */
+/*-------------------------------------------------------------- >>> 
+TABLE OF CONTENTS: ---------------------------------------------------------------- 
+# Layout 
+## Header Part 
+## banner Part 
+## about Part 
+# Widgets 
+## Widgets --------------------------------------------------------------*/
+/*-------------------------------------------------------------- 
+# Typography 
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Typography
+ html {
+     font-size: 100%;
+}
+ body {
+     font-family: "Poppins", serif;
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 1.45em;
+     color: #17191F;
+     background: #E5E5E5;
+     word-wrap: break-word;
+    /* overflow-x: hidden;
+     */
+}
+ select {
+     background: none;
+}
+/*-------------------------------------------------------------- 
+# Color 
 --------------------------------------------------------------*/
-html {
-  font-size: 100%; }
-
-body {
-  font-family: "Poppins", serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.45em;
-  color: #17191F; 
-  background: #E5E5E5;
-  word-wrap: break-word;
-/*   overflow-x: hidden; */
+ .exdda-bg-color {
+     background-color: #272A33;
 }
-select {
-    background: none;
+ .exdda-bg-color:hover {
+     background-color: #FEB41C;
+     color: #17191F;
 }
-/*--------------------------------------------------------------
-# Color
+ .exdda-bg-black {
+     background-color: #17191F;
+}
+ .bg-yellow {
+     background-color: #FEB41C;
+}
+ .exdda-border-left-yellow {
+     border-left-color: #FEB41C;
+}
+ .exdda-color-yellow {
+     color: #FEB41C;
+}
+ .exdda-text-color {
+     color: #646978;
+}
+ .exdda-text-orange {
+     color: #FEB41C;
+}
+ .exdda-color-memorize {
+     color: #9196A4;
+}
+ .exdda-bg-white-solid {
+     background-color: #F5F6FA;
+}
+ .exdda-color-gray {
+     color:#9196A4;
+}
+ .exdda-bg-gray {
+     background-color:#F5F6FA;
+}
+/*-------------------------------------------------------------- 
+# border-Color 
 --------------------------------------------------------------*/
-.exdda-bg-color {
-  background-color: #272A33;
-
+ .exdda-border-b {
+     border-bottom: 1px solid #272A33;
 }
-.exdda-bg-color:hover {
-  background-color: #FEB41C;
-  color: #17191F;
+ .exdda-border-green {
+     border: 1px solid #6BC762;
 }
-.exdda-bg-black {
-  background-color: #17191F;
+ .exdda-border-sky {
+     border: 1px solid #1ED0E9;
 }
-.bg-yellow {
-  background-color: #FEB41C;
+ .exdda-border-red {
+     border: 1px solid #FE451C;
 }
-.exdda-border-left-yellow {
-  border-left-color: #FEB41C;
+ .exdda-border-yellow {
+     border: 1px solid #FEB41C;
 }
-.exdda-color-yellow {
-  color: #FEB41C;
+ .exdda-checkbox-border-color {
+     border: 1px solid #D1D5E0;
+     width: 20px;
+     height: 20px;
+     margin-right: 5px;
+     position: relative;
+     top: 3px;
+     border-radius: 10px;
 }
-.exdda-text-color {
-  color: #646978;
-}
-
-.exdda-text-orange {
-  color: #FEB41C;
-}
-.exdda-color-memorize {
-  color: #9196A4;
-}
-.exdda-bg-white-solid {
-  background-color: #F5F6FA;
-}
-.exdda-color-gray {
-    color:#9196A4;
-}
-
-.exdda-bg-gray {
-    background-color:#F5F6FA;
-}
-
-/*--------------------------------------------------------------
-# border-Color
---------------------------------------------------------------*/
-.exdda-border-b {
-  border-bottom: 1px solid #272A33;
-}
-.exdda-border-green {
-  border: 1px solid #6BC762;
-}
-
-.exdda-border-sky {
-  border: 1px solid #1ED0E9;
-}
-
-.exdda-border-red {
-  border: 1px solid #FE451C;
-}
-.exdda-border-yellow {
-  border: 1px solid #FEB41C;
-}
-.exdda-checkbox-border-color {
-    border: 1px solid #D1D5E0;
-    width: 20px;
-   height: 20px;
-   margin-right: 5px;
-   position: relative;
-   top: 3px;
-   border-radius: 10px;
-}
-
-
-
-
-
 /* Style the active class, and buttons on mouse-over */
-.active, .btn:hover {
-  background-color: #FEB41C;
-  color: white;
-  cursor: pointer;
+ .active, .btn:hover {
+     background-color: #FEB41C;
+     color: white;
+     cursor: pointer;
 }
-
-
-.icon-blank:before {
-    transform: rotate(-135deg);
-    position: absolute;
-    top: 42px;
-    left: 30px;
-    font-size: 25px;
+ .icon-blank:before {
+     transform: rotate(-135deg);
+     position: absolute;
+     top: 42px;
+     left: 30px;
+     font-size: 25px;
 }
-
-.icon-cancel {
+ @media screen and (max-width: 768px) {
+     .icon-blank:before {
+         top: 39px;
+    }
+}
+.demo-icon-cansel .icon-cancel {
      position: absolute;
      top: 50%;
      left: -45px;
      transform: translateY(-50%);
 }
-/* ==== Image ==== */
-@media screen and (max-width: 768px) {
-  .exdda-image-width {
-    width: 50px;
-    height: 50px;
-  }
-
-  .exdda-image-width-two {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    top: 15px;
-    left: -10px;
-  }
-}
-
-
-/* ==== Before line ==== */
-@media screen and (max-width: 990px) {
-  .bg-white.pr-4{
-    display: inline-block;
-    margin-bottom: 30px;
-  }
-  .bg-white.pr-4:before{
-  content: "";
-  display:none!important;
-
-  }
-}
-
-.bg-white.pr-4:before{
-content: "";
-display:block;
-width: 90px;
-height:2px;
-background: #E6E9EF;
-position: absolute;
-right: -85px;
-top: 50%;
-
-}
-.exdda-line-color:before {
-    background: #FEB41C !important; 
-}
-.pagination-line:before{
-
-content: "";
-display:block;
-width: 164px;
-height:2px;
-background: #FEB41C;
-position: absolute;
-left: 0px;
-top: 68%;}
-/*--------------------------------------------------------------
-# Pagination
+/*-------------------------------------------------------------- 
+# image 
 --------------------------------------------------------------*/
-  .pagination li {
-    display: inline;
-
-  }
-  .pagination li a {
-   color: #242424;
-   display: inline-block;
-   transition: all .4s ease 0s;
-   margin: 0px 45px 0 0;
-   text-align: center;
-   margin-top: 30px;
-   padding: 15px 25px;
-   font-size: 18px;
-
-}     
+ @media screen and (max-width: 992px) {
+     .exdda-image-width {
+         width: 60px;
+         height: 60px;
+    }
+     .exdda-image-width-two {
+         width: 50px;
+         height: 50px;
+         position: relative;
+         top: 15px;
+         left: -10px;
+    }
+}
+ @media screen and (max-width: 568px) {
+     .exdda-image-width {
+         width: 60px;
+         height: 450px;
+    }
+}
+/*-------------------------------------------------------------- 
+# Border line 
+--------------------------------------------------------------*/
  @media screen and (max-width: 990px) {
-    .pagination li a {
-     padding: 10px 20px;
+ 
+}
+
+/*-------------------------------------------------------------- 
+# Pagination 
+--------------------------------------------------------------*/
+ .pagination li {
+     display: inline;
+     position: relative;
+     z-index: 2;
+}
+ .pagination li a {
+     color: #242424;
+     display: inline-block;
+     transition: all .4s ease 0s;
+     margin: 0px 45px 0 0;
+     text-align: center;
+     margin-top: 30px;
+     padding: 15px 25px;
+     font-size: 18px;
+}
+ @media screen and (max-width: 990px) {
+     .pagination li a {
+         padding: 10px 20px;
+    }
+}
+ .pagination li:last-child a{
+     margin: 0;
+     background: #fff;
+     padding: 15px 40px;
+}
+ @media screen and (max-width: 500px) {
+    .pagination li:last-child a{
+        margin-top: 30px;
+    }
+}
+ .pagination li a:hover {
+     background-color: #FEB41C;
+}
+ .pagination li a.active {
+     background-color: #FEB41C;
+}
+.exdda-pagination-line-five:after,
+.exdda-pagination-line-four:after,
+.exdda-pagination-line-three:after,
+.exdda-pagination-line-two:after,
+.exdda-pagination-line-one:after {
+  background: linear-gradient(to right, #FEB41C 20%,#F5F6FA 20%);
+  position: absolute;
+  content: '';
+  height: 2px;
+  right: 0;
+  left: 0;
+  top: 67%;
+  z-index: 1;
+}
+.exdda-pagination-line-one:after {
+  background: linear-gradient(to right, #FEB41C 20%,#F5F6FA 20%);
+}
+.exdda-pagination-line-two:after {
+  background: linear-gradient(to right, #FEB41C 30%,#F5F6FA 30%);
+}
+.exdda-pagination-line-three:after {
+  background: linear-gradient(to right, #FEB41C 50%,#F5F6FA 50%);
+}
+.exdda-pagination-line-four:after {
+  background: linear-gradient(to right, #FEB41C 60%,#F5F6FA 60%);
+}
+.exdda-pagination-line-five:after {
+  background: linear-gradient(to right, #FEB41C 80%,#F5F6FA 80%);
+}
+.exdda-pagination-line-five li a {
+    padding: 15px 23px !important;
+}
+ @media screen and (max-width: 990px) {
+   .exdda-pagination-line-five:after,
+   .exdda-pagination-line-four:after,
+   .exdda-pagination-line-three:after,
+   .exdda-pagination-line-two:after,
+   .exdda-pagination-line-one:after {
+    display: none;
    }
 }
-.pagination li:last-child a{
-   margin: 0;
-   background: none;
-   padding: 15px 40px;
+
+
+/* ==== Checkout Line====  */
+.exdda-checkout-line-three:before,
+.exdda-checkout-line-two:before,
+.exdda-checkout-line-one:before {
+  background:#F5F6FA;
+  position: absolute;
+  content: '';
+  height: 2px;
+  right: 0;
+  left: 0;
+  top: 50%;
+  z-index: 1;
 }
-  .pagination li a:hover {
-    background-color: #FEB41C;
-  }
-  .pagination li a.active {
-    background-color: #FEB41C;
-  }
-  input:checked {
-    color: red;
-  }
+
+.exdda-checkout-line-two:before {
+  background: linear-gradient(to right, #FEB41C 40%,#F5F6FA 40%);
+}
+.exdda-checkout-line-three:before {
+  background: linear-gradient(to right, #FEB41C 70%,#F5F6FA 70%);
+
+}
+.exdda-checkout-line-one > div,
+.exdda-checkout-line-two > div, 
+.exdda-checkout-line-three > div {
+  position: relative;
+  z-index: 11;
+}
+ @media screen and (max-width: 990px) {
+    .exdda-checkout-line-three:before,
+    .exdda-checkout-line-two:before,
+    .exdda-checkout-line-one:before {
+      display: none;
+    }
+    .exdda-checkout-line-one > div,
+    .exdda-checkout-line-two > div, 
+    .exdda-checkout-line-three > div {
+      margin-bottom: 30px;
+    }
+}
+/*-------------------------------------------------------------- 
+# left sidebar 
+--------------------------------------------------------------*/
+ @media screen and (max-width: 990px) {
+     .exdda-bg-black.left-sidebar {
+        position: absolute;
+        width: 300px;
+        top: 0;
+        bottom: 0;
+        left: -320px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .left-sidebar .icon-cancel {
+        position: absolute;
+        top: 25px;
+        left: 290px;
+        transform: 0;
+        font-size: 30px;
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+  font-family:sans-serif;
+}
+
+#sidebar {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:222px;
+  height:100%;
+  background:#151719;
+  transition:all 300ms linear;
+}
+#sidebar.active {
+  left:-200px;
+}
+#sidebar .toggle-btn {
+  position:absolute;
+  left:220px;
+  top:10px;
+}
+#sidebar .toggle-btn span {
+  display:block;
+  width:30px;
+  height:5px;
+  background:#151719;
+  margin:5px 0px;
+  cursor:pointer;
+}
+#sidebar div.list div.item {
+  padding:15px 10px;
+  border-bottom:1px solid #444;
+  color:#fcfcfc;
+  text-transform:uppercase;
+  font-size:12px;
+}
+
+#sidebar div.list div.item a{
+  color:#fcfcfc;
+  text-decoration: none;
+}
