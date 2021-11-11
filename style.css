@@ -2,14 +2,17 @@
  HTMLguru Author URI: http://hopper.net Description: It\' s a HTML5 Award Template.
 Which is a unique feature and user competitive feature. 
 Version: 1.0 */
-/*-------------------------------------------------------------- >>> 
-TABLE OF CONTENTS: ---------------------------------------------------------------- 
-# Layout 
-## Header Part 
-## banner Part 
-## about Part 
-# Widgets 
-## Widgets --------------------------------------------------------------*/
+
+/*-------------------------------------------------------------- 
+TABLE OF CONTENTS
+
+# color 
+# border-Color 
+# image 
+# Pagination 
+--------------------------------------------------------------*/
+
+
 /*-------------------------------------------------------------- 
 # Typography 
 --------------------------------------------------------------*/
@@ -140,14 +143,8 @@ TABLE OF CONTENTS: -------------------------------------------------------------
  @media screen and (max-width: 568px) {
      .exdda-image-width {
          width: 60px;
-         height: 450px;
+         height: 40px;
     }
-}
-/*-------------------------------------------------------------- 
-# Border line 
---------------------------------------------------------------*/
- @media screen and (max-width: 990px) {
- 
 }
 
 /*-------------------------------------------------------------- 
@@ -274,72 +271,56 @@ TABLE OF CONTENTS: -------------------------------------------------------------
 /*-------------------------------------------------------------- 
 # left sidebar 
 --------------------------------------------------------------*/
- @media screen and (max-width: 990px) {
-     .exdda-bg-black.left-sidebar {
-        position: absolute;
-        width: 300px;
-        top: 0;
-        bottom: 0;
-        left: -320px;
-    }
+ #sidebar ul li {
+    cursor: pointer;
 }
 @media screen and (max-width: 990px) {
-    .left-sidebar .icon-cancel {
-        position: absolute;
-        top: 25px;
-        left: 290px;
-        transform: 0;
-        font-size: 30px;
-        padding: 15px;
+    #sidebar {
+      position:absolute;
+      top:0px;
+      left:-300px;
+      width:265px;
+      background:#151719;
+      transition:all 300ms linear;
+    }
+    #sidebar ul li {
+      font-size: 16px;
+    }
+    #sidebar.active {
+      left:0px;
+    }
+    #sidebar .toggle-btn {
+      position:absolute;
+      left: 320px;
+      top:10px;
+    }
+    .left-sidebar.active .toggle-btn {
+        left:285px !important; 
+    }
+    #sidebar .toggle-btn span {
+      display:block;
+      width:30px;
+      height:5px;
+      background:#151719;
+      margin:5px 0px;
+      cursor:pointer;
+    }
+    #sidebar div.list div.item {
+      padding:15px 10px;
+      border-bottom:1px solid #444;
+      color:#fcfcfc;
+      text-transform:uppercase;
+      font-size:12px;
+    }
+
+    #sidebar div.list div.item a{
+      color:#fcfcfc;
+      text-decoration: none;
     }
 }
+ 
 
 
 
 
 
-
-* {
-  margin:0px;
-  padding:0px;
-  box-sizing:border-box;
-  font-family:sans-serif;
-}
-
-#sidebar {
-  position:absolute;
-  top:0px;
-  left:0px;
-  width:222px;
-  height:100%;
-  background:#151719;
-  transition:all 300ms linear;
-}
-#sidebar.active {
-  left:-200px;
-}
-#sidebar .toggle-btn {
-  position:absolute;
-  left:220px;
-  top:10px;
-}
-#sidebar .toggle-btn span {
-  display:block;
-  width:30px;
-  height:5px;
-  background:#151719;
-  margin:5px 0px;
-  cursor:pointer;
-}
-#sidebar div.list div.item {
-  padding:15px 10px;
-  border-bottom:1px solid #444;
-  color:#fcfcfc;
-  text-transform:uppercase;
-  font-size:12px;
-}
-
-#sidebar div.list div.item a{
-  color:#fcfcfc;
-  text-decoration: none;
-}

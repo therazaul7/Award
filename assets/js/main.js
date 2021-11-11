@@ -1,6 +1,6 @@
 
   // Add active class to the current button (highlight it)
-  var header = document.getElementById("myDIV");
+var header = document.getElementById("myDIV");
   var btns = header.getElementsByClassName("exdda-bg-color");
   for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
@@ -13,3 +13,5 @@
  function toggleSidebar(ref){
    document.getElementById("sidebar").classList.toggle('active');
  }
+
+
