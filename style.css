@@ -20,7 +20,7 @@ TABLE OF CONTENTS
      font-size: 100%;
 }
  body {
-     font-family: "Poppins", serif;
+    font-family: 'Poppins', serif;
      font-size: 16px;
      font-weight: 500;
      line-height: 1.45em;
@@ -30,9 +30,132 @@ TABLE OF CONTENTS
     /* overflow-x: hidden;
      */
 }
+
  select {
      background: none;
 }
+.exdda-bg-black {
+    background-color: rgb(23, 25, 31);
+}
+/*-------------------------------------------------------------- 
+# image 
+--------------------------------------------------------------*/
+ @media screen and (max-width: 992px) {
+     .exdda-image-width {
+         width: 60px;
+         height: 60px;
+    }
+     .exdda-image-width-two {
+         width: 50px;
+         height: 50px;
+         position: relative;
+         top: 15px;
+         left: -10px;
+    }
+}
+ @media screen and (max-width: 568px) {
+     .exdda-image-width {
+         width: 60px;
+         height: 40px;
+    }
+}
+
+
+
+
+/* ==== Checkout Line====  */
+.exdda-checkout-line-three:before,
+.exdda-checkout-line-two:before,
+.exdda-checkout-line-one:before {
+  background:#F5F6FA;
+  position: absolute;
+  content: '';
+  height: 2px;
+  right: 0;
+  left: 0;
+  top: 50%;
+  z-index: 1;
+}
+
+.exdda-checkout-line-two:before {
+  background: linear-gradient(to right, #FEB41C 40%,#F5F6FA 40%);
+}
+.exdda-checkout-line-three:before {
+  background: linear-gradient(to right, #FEB41C 70%,#F5F6FA 70%);
+
+}
+.exdda-checkout-line-one > div,
+.exdda-checkout-line-two > div, 
+.exdda-checkout-line-three > div {
+  position: relative;
+  z-index: 11;
+}
+ @media screen and (max-width: 990px) {
+    .exdda-checkout-line-three:before,
+    .exdda-checkout-line-two:before,
+    .exdda-checkout-line-one:before {
+      display: none;
+    }
+    .exdda-checkout-line-one > div,
+    .exdda-checkout-line-two > div, 
+    .exdda-checkout-line-three > div {
+      margin-bottom: 30px;
+    }
+}
+/*-------------------------------------------------------------- 
+# left sidebar 
+--------------------------------------------------------------*/
+.left-sidebar ul li.menu-item {
+    cursor: pointer;
+}
+@media screen and (max-width: 990px) {
+    #sidebar {
+      position:absolute;
+      top:0px;
+      left:-300px;
+      width:265px;
+      background:#151719;
+      transition:all 300ms linear;
+    }
+    #sidebar ul li {
+      font-size: 16px;
+    }
+    #sidebar.active {
+      left:0px;
+    }
+    #sidebar .toggle-btn {
+      position:absolute;
+      left: 320px;
+      top:10px;
+    }
+    .left-sidebar.active .toggle-btn {
+        left:285px !important; 
+    }
+    #sidebar .toggle-btn span {
+      display:block;
+      width:30px;
+      height:5px;
+      background:#151719;
+      margin:5px 0px;
+      cursor:pointer;
+    }
+    #sidebar div.list div.item {
+      padding:15px 10px;
+      border-bottom:1px solid #444;
+      color:#fcfcfc;
+      text-transform:uppercase;
+      font-size:12px;
+    }
+
+    #sidebar div.list div.item a{
+      color:#fcfcfc;
+      text-decoration: none;
+    }
+}
+ 
+
+
+
 /*-------------------------------------------------------------- 
 # Color 
 --------------------------------------------------------------*/
@@ -95,7 +218,7 @@ TABLE OF CONTENTS
      border: 1px solid #D1D5E0;
      width: 20px;
      height: 20px;
-     margin-right: 5px;
+     margin-right: 10px;
      position: relative;
      top: 3px;
      border-radius: 10px;
@@ -123,29 +246,7 @@ TABLE OF CONTENTS
      top: 50%;
      left: -45px;
      transform: translateY(-50%);
-}
-/*-------------------------------------------------------------- 
-# image 
---------------------------------------------------------------*/
- @media screen and (max-width: 992px) {
-     .exdda-image-width {
-         width: 60px;
-         height: 60px;
-    }
-     .exdda-image-width-two {
-         width: 50px;
-         height: 50px;
-         position: relative;
-         top: 15px;
-         left: -10px;
-    }
-}
- @media screen and (max-width: 568px) {
-     .exdda-image-width {
-         width: 60px;
-         height: 40px;
-    }
-}
+} 
 
 /*-------------------------------------------------------------- 
 # Pagination 
@@ -228,99 +329,7 @@ TABLE OF CONTENTS
    }
 }
 
-
-/* ==== Checkout Line====  */
-.exdda-checkout-line-three:before,
-.exdda-checkout-line-two:before,
-.exdda-checkout-line-one:before {
-  background:#F5F6FA;
-  position: absolute;
-  content: '';
-  height: 2px;
-  right: 0;
-  left: 0;
-  top: 50%;
-  z-index: 1;
-}
-
-.exdda-checkout-line-two:before {
-  background: linear-gradient(to right, #FEB41C 40%,#F5F6FA 40%);
-}
-.exdda-checkout-line-three:before {
-  background: linear-gradient(to right, #FEB41C 70%,#F5F6FA 70%);
-
-}
-.exdda-checkout-line-one > div,
-.exdda-checkout-line-two > div, 
-.exdda-checkout-line-three > div {
-  position: relative;
-  z-index: 11;
-}
- @media screen and (max-width: 990px) {
-    .exdda-checkout-line-three:before,
-    .exdda-checkout-line-two:before,
-    .exdda-checkout-line-one:before {
-      display: none;
-    }
-    .exdda-checkout-line-one > div,
-    .exdda-checkout-line-two > div, 
-    .exdda-checkout-line-three > div {
-      margin-bottom: 30px;
-    }
-}
-/*-------------------------------------------------------------- 
-# left sidebar 
---------------------------------------------------------------*/
- #sidebar ul li {
-    cursor: pointer;
-}
-@media screen and (max-width: 990px) {
-    #sidebar {
-      position:absolute;
-      top:0px;
-      left:-300px;
-      width:265px;
-      background:#151719;
-      transition:all 300ms linear;
-    }
-    #sidebar ul li {
-      font-size: 16px;
-    }
-    #sidebar.active {
-      left:0px;
-    }
-    #sidebar .toggle-btn {
-      position:absolute;
-      left: 320px;
-      top:10px;
-    }
-    .left-sidebar.active .toggle-btn {
-        left:285px !important; 
-    }
-    #sidebar .toggle-btn span {
-      display:block;
-      width:30px;
-      height:5px;
-      background:#151719;
-      margin:5px 0px;
-      cursor:pointer;
-    }
-    #sidebar div.list div.item {
-      padding:15px 10px;
-      border-bottom:1px solid #444;
-      color:#fcfcfc;
-      text-transform:uppercase;
-      font-size:12px;
-    }
-
-    #sidebar div.list div.item a{
-      color:#fcfcfc;
-      text-decoration: none;
-    }
-}
- 
-
-
-
-
-
+   input[type=checkbox] {
+     color: #ccc;
+     font-style: italic;
+   }

@@ -1,0 +1,35 @@
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+    &:focus {
+        outline: none;
+    }
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    font-size: 0.8em;
+    padding-left: 3px;
+    display: block;
+}
+
+// Placeholder Color
+::-webkit-input-placeholder {
+   /*  color: $color__white; */
+} 
+
+:-moz-placeholder {
+   /*  color: $color__white; */
+}
+
+:-ms-input-placeholder {
+   /*  color: $color__white; */ 
+}
+
+ 
