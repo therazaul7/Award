@@ -11,14 +11,9 @@ input[type="search"] {
     }
 }
 
-textarea {
-    display: block;
-    width: 100%;
-    font-size: 0.8em;
-    padding-left: 3px;
-    display: block;
+select {
+     background: none;
 }
-
 // Placeholder Color
 
 ::placeholder {

@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+Image
+--------------------------------------------------------------*/
+@import "image";
+
+/*--------------------------------------------------------------
+ Checkout Line
+--------------------------------------------------------------*/
+.exdda-checkout-line-three:before,
+.exdda-checkout-line-two:before,
+.exdda-checkout-line-one:before {
+  position: absolute;
+  content: '';
+  height: 2px;
+  right: 0;
+  left: 0;
+  top: 50%;
+  z-index: 1;
+}
+
+.exdda-checkout-line-two:before {
+  background: linear-gradient(to right, #FEB41C 40%,#F5F6FA 40%);
+}
+.exdda-checkout-line-three:before {
+  background: linear-gradient(to right, #FEB41C 70%,#F5F6FA 70%);
+
+}
+.exdda-checkout-line-one > div,
+.exdda-checkout-line-two > div, 
+.exdda-checkout-line-three > div {
+  position: relative;
+  z-index: 11;
+}
+ @media screen and (max-width: 990px) {
+    .exdda-checkout-line-three:before,
+    .exdda-checkout-line-two:before,
+    .exdda-checkout-line-one:before {
+      display: none;
+    }
+    .exdda-checkout-line-one > div,
+    .exdda-checkout-line-two > div, 
+    .exdda-checkout-line-three > div {
+      margin-bottom: 30px;
+    }
+}
+

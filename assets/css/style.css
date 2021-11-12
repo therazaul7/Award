@@ -58,8 +58,7 @@ body {
   color: #17191F;
   background: #E5E5E5;
   word-wrap: break-word;
-  /* overflow-x: hidden;
-   */ }
+  overflow-x: hidden; }
 
 /*--------------------------------------------------------------
 # Headings
@@ -99,12 +98,8 @@ input[type="password"]:focus,
 input[type="search"]:focus {
   outline: none; }
 
-textarea {
-  display: block;
-  width: 100%;
-  font-size: 0.8em;
-  padding-left: 3px;
-  display: block; }
+select {
+  background: none; }
 
 ::placeholder {
   color: #9196A4; }
@@ -138,9 +133,129 @@ a {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+/*-------------------------------------------------------------- 
+# left sidebar 
+--------------------------------------------------------------*/
+.left-sidebar ul li.menu-item {
+  cursor: pointer; }
+
+@media screen and (max-width: 990px) {
+  #sidebar {
+    position: absolute;
+    top: 0px;
+    left: -300px;
+    width: 265px;
+    background: #151719;
+    transition: all 300ms linear; }
+
+  #sidebar ul li {
+    font-size: 16px; }
+
+  #sidebar.active {
+    left: 0px; }
+
+  #sidebar .toggle-btn {
+    position: absolute;
+    left: 320px;
+    top: 10px; }
+
+  .left-sidebar.active .toggle-btn {
+    left: 285px !important; }
+
+  #sidebar .toggle-btn span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #151719;
+    margin: 5px 0px;
+    cursor: pointer; }
+
+  #sidebar div.list div.item {
+    padding: 15px 10px;
+    border-bottom: 1px solid #444;
+    color: #fcfcfc;
+    text-transform: uppercase;
+    font-size: 12px; }
+
+  #sidebar div.list div.item a {
+    color: #fcfcfc;
+    text-decoration: none; } }
 /*--------------------------------------------------------------
 ## pagination
 --------------------------------------------------------------*/
+/*-------------------------------------------------------------- 
+# Pagination 
+--------------------------------------------------------------*/
+.pagination li {
+  display: inline;
+  position: relative;
+  z-index: 2; }
+
+.pagination li a {
+  display: inline-block;
+  transition: all .4s ease 0s;
+  margin: 0px 45px 0 0;
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px 25px;
+  font-size: 18px; }
+
+@media screen and (max-width: 990px) {
+  .pagination li a {
+    padding: 10px 20px; } }
+.pagination li:last-child a {
+  margin: 0;
+  background: #fff;
+  padding: 15px 40px; }
+
+@media screen and (max-width: 500px) {
+  .pagination li:last-child a {
+    margin-top: 30px; } }
+.pagination li a:hover {
+  background-color: #FEB41C; }
+
+.pagination li a.active {
+  background-color: #FEB41C; }
+
+.exdda-pagination-line-five:after,
+.exdda-pagination-line-four:after,
+.exdda-pagination-line-three:after,
+.exdda-pagination-line-two:after,
+.exdda-pagination-line-one:after {
+  background: linear-gradient(to right, #FEB41C 20%, #F5F6FA 20%);
+  position: absolute;
+  content: '';
+  height: 2px;
+  right: 0;
+  left: 0;
+  top: 67%;
+  z-index: 1; }
+
+.exdda-pagination-line-one:after {
+  background: linear-gradient(to right, #FEB41C 20%, #F5F6FA 20%); }
+
+.exdda-pagination-line-two:after {
+  background: linear-gradient(to right, #FEB41C 30%, #F5F6FA 30%); }
+
+.exdda-pagination-line-three:after {
+  background: linear-gradient(to right, #FEB41C 50%, #F5F6FA 50%); }
+
+.exdda-pagination-line-four:after {
+  background: linear-gradient(to right, #FEB41C 60%, #F5F6FA 60%); }
+
+.exdda-pagination-line-five:after {
+  background: linear-gradient(to right, #FEB41C 80%, #F5F6FA 80%); }
+
+.exdda-pagination-line-five li a {
+  padding: 15px 23px !important; }
+
+@media screen and (max-width: 990px) {
+  .exdda-pagination-line-five:after,
+  .exdda-pagination-line-four:after,
+  .exdda-pagination-line-three:after,
+  .exdda-pagination-line-two:after,
+  .exdda-pagination-line-one:after {
+    display: none; } }
 /*--------------------------------------------------------------
 # Color
 --------------------------------------------------------------*/
@@ -199,9 +314,9 @@ a {
 .exdda-border-red {
   border: 1px solid #FE451C; }
 
-.exdda-border-b {
-  border-bottom: 1px solid #272A33; }
-
+/*  .exdda-border-b {
+     border-bottom: 1px solid #272A33;
+} */
 .exdda-checkbox-border-color {
   border: 1px solid #D1D5E0;
   width: 20px;
@@ -214,7 +329,6 @@ a {
 /* Style the active class, and buttons on mouse-over */
 .active, .btn:hover {
   background-color: #FEB41C;
-  color: white;
   cursor: pointer; }
 
 .icon-blank:before {
@@ -232,3 +346,64 @@ a {
   top: 50%;
   left: -45px;
   transform: translateY(-50%); }
+
+/*--------------------------------------------------------------
+# Color
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+Image
+--------------------------------------------------------------*/
+/*-------------------------------------------------------------- 
+# image 
+--------------------------------------------------------------*/
+@media screen and (max-width: 992px) {
+  .exdda-image-width {
+    width: 60px;
+    height: 60px; }
+
+  .exdda-image-width-two {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 15px;
+    left: -10px; } }
+@media screen and (max-width: 568px) {
+  .exdda-image-width {
+    width: 60px;
+    height: 40px; } }
+/*--------------------------------------------------------------
+ Checkout Line
+--------------------------------------------------------------*/
+.exdda-checkout-line-three:before,
+.exdda-checkout-line-two:before,
+.exdda-checkout-line-one:before {
+  position: absolute;
+  content: '';
+  height: 2px;
+  right: 0;
+  left: 0;
+  top: 50%;
+  z-index: 1; }
+
+.exdda-checkout-line-two:before {
+  background: linear-gradient(to right, #FEB41C 40%, #F5F6FA 40%); }
+
+.exdda-checkout-line-three:before {
+  background: linear-gradient(to right, #FEB41C 70%, #F5F6FA 70%); }
+
+.exdda-checkout-line-one > div,
+.exdda-checkout-line-two > div,
+.exdda-checkout-line-three > div {
+  position: relative;
+  z-index: 11; }
+
+@media screen and (max-width: 990px) {
+  .exdda-checkout-line-three:before,
+  .exdda-checkout-line-two:before,
+  .exdda-checkout-line-one:before {
+    display: none; }
+
+  .exdda-checkout-line-one > div,
+  .exdda-checkout-line-two > div,
+  .exdda-checkout-line-three > div {
+    margin-bottom: 30px; } }

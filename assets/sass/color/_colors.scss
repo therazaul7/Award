@@ -12,7 +12,7 @@
      color: $color_orange;
 }
  .exda-color-memorized {
-     color: #9196A4;
+     color: $color_memorized;
 }
 
 
@@ -57,9 +57,9 @@
  .exdda-border-red {
      border: 1px solid $border_color_red;
 }
- .exdda-border-b {
+/*  .exdda-border-b {
      border-bottom: 1px solid #272A33;
-}
+} */
 
 
  .exdda-checkbox-border-color {
@@ -74,7 +74,7 @@
 /* Style the active class, and buttons on mouse-over */
  .active, .btn:hover {
      background-color: #FEB41C;
-     color: white;
+     //color: white;
      cursor: pointer;
 }
  .icon-blank:before {

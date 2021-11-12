@@ -1,0 +1,81 @@
+/*-------------------------------------------------------------- 
+# Pagination 
+--------------------------------------------------------------*/
+ .pagination li {
+     display: inline;
+     position: relative;
+     z-index: 2;
+}
+ .pagination li a {
+     display: inline-block;
+     transition: all .4s ease 0s;
+     margin: 0px 45px 0 0;
+     text-align: center;
+     margin-top: 30px;
+     padding: 15px 25px;
+     font-size: 18px;
+}
+ @media screen and (max-width: 990px) {
+     .pagination li a {
+         padding: 10px 20px;
+    }
+}
+ .pagination li:last-child a{
+     margin: 0;
+     background:  $color_white;
+     padding: 15px 40px;
+}
+ @media screen and (max-width: 500px) {
+    .pagination li:last-child a{
+        margin-top: 30px;
+    }
+}
+ .pagination li a:hover {
+     background-color: $color_orange;
+}
+ .pagination li a.active {
+     background-color: $color_orange;
+}
+.exdda-pagination-line-five:after,
+.exdda-pagination-line-four:after,
+.exdda-pagination-line-three:after,
+.exdda-pagination-line-two:after,
+.exdda-pagination-line-one:after {
+  background: linear-gradient(to right, $border_color_yellow 20%,$bg_white_solid 20%);
+  position: absolute;
+  content: '';
+  height: 2px;
+  right: 0;
+  left: 0;
+  top: 67%;
+  z-index: 1;
+}
+.exdda-pagination-line-one:after {
+  background: linear-gradient(to right, $border_color_yellow 20%,$bg_white_solid 20%);
+}
+.exdda-pagination-line-two:after {
+  background: linear-gradient(to right, $border_color_yellow 30%,$bg_white_solid 30%);
+}
+.exdda-pagination-line-three:after {
+  background: linear-gradient(to right, $border_color_yellow 50%,$bg_white_solid 50%);
+}
+.exdda-pagination-line-four:after {
+  background: linear-gradient(to right, $border_color_yellow 60%,$bg_white_solid 60%);
+}
+.exdda-pagination-line-five:after {
+  background: linear-gradient(to right, $border_color_yellow 80%,$bg_white_solid 80%);
+}
+.exdda-pagination-line-five li a {
+    padding: 15px 23px !important;
+}
+ @media screen and (max-width: 990px) {
+   .exdda-pagination-line-five:after,
+   .exdda-pagination-line-four:after,
+   .exdda-pagination-line-three:after,
+   .exdda-pagination-line-two:after,
+   .exdda-pagination-line-one:after {
+    display: none;
+   }
+}
+
+  
