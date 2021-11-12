@@ -44,37 +44,32 @@ Version: 1.0
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+/*-------------------------------------------------------------- 
+# Typography 
+--------------------------------------------------------------*/
+html {
+  font-size: 100%; }
+
+body {
+  font-family: 'Poppins', serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.45em;
+  color: #17191F;
+  background: #E5E5E5;
+  word-wrap: break-word;
+  /* overflow-x: hidden;
+   */ }
+
 /*--------------------------------------------------------------
 # Headings
 --------------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  /* line-height: $font__line-height-heading;
-  color: $color__heading;
-  -webkit-font-smoothing: antialiased; */
-  font-weight: 400; }
+  color: #17191F; }
 
 h1, h2, h3, h4 {
-  font-weight: inherit;
-  font-size: 100px !important; }
-
-h2 {
-  font-size: 100px; }
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a {
-  color: inherit;
-  text-decoration: none; }
-
-h1 a:hover,
-h2 a:hover,
-h3 a:hover,
-h4 a:hover {
-  color: inherit;
-  text-decoration: none; }
+  font-weight: inherit; }
 
 /*--------------------------------------------------------------
 # Copy
@@ -82,14 +77,14 @@ h4 a:hover {
 ::-moz-selection {
   display: inline-block;
   text-shadow: none;
-  /* color: $color__white;
-  background: $color__heading; */ }
+  color: #fff;
+  background: #17191F; }
 
 ::selection {
   display: inline-block;
   text-shadow: none;
-  /* color: $color__white; 
-  background: $color__heading; */ }
+  color: #fff;
+  background: #17191F; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -111,17 +106,20 @@ textarea {
   padding-left: 3px;
   display: block; }
 
+::placeholder {
+  color: #9196A4; }
+
 ::-webkit-input-placeholder {
-  /*  color: $color__white; */ }
+  color: #9196A4; }
 
 :-moz-placeholder {
-  /*  color: $color__white; */ }
+  color: #9196A4; }
 
 :-ms-input-placeholder {
-  /*  color: $color__white; */ }
+  color: #9196A4; }
 
 /*--------------------------------------------------------------
-# navigation
+# Navigation
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 ## Links
@@ -143,5 +141,94 @@ a {
 /*--------------------------------------------------------------
 ## pagination
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Color
+--------------------------------------------------------------*/
+/*-------------------------------------------------------------- 
+# Color 
+--------------------------------------------------------------*/
+.exdda-border-left-yellow {
+  border-left-color: #FEB41C; }
 
-/*# sourceMappingURL=style.css.map */
+.exdda-text-color {
+  color: #646978; }
+
+.exdda-text-orange {
+  color: #FEB41C; }
+
+.exda-color-memorized {
+  color: #9196A4; }
+
+/*-------------------------------------------------------------- 
+# Background Color 
+--------------------------------------------------------------*/
+.bg-yellow {
+  background-color: #FEB41C; }
+
+.exdda-bg-gray {
+  background-color: #21b360; }
+
+.exdda-bg-color {
+  background-color: #272A33; }
+
+.exdda-bg-color:hover {
+  background-color: #FEB41C;
+  color: #17191F; }
+
+.exdda-bg-white-solid {
+  background-color: #F5F6FA; }
+
+.exdda-bg-black {
+  background-color: #17191F; }
+
+/*-------------------------------------------------------------- 
+# border-Color 
+--------------------------------------------------------------*/
+.border-color-one {
+  border-color: #D1D5E0; }
+
+.exdda-border-yellow {
+  border: 1px solid #FEB41C; }
+
+.exdda-border-green {
+  border: 1px solid #6BC762; }
+
+.exdda-border-sky {
+  border: 1px solid #1ED0E9; }
+
+.exdda-border-red {
+  border: 1px solid #FE451C; }
+
+.exdda-border-b {
+  border-bottom: 1px solid #272A33; }
+
+.exdda-checkbox-border-color {
+  border: 1px solid #D1D5E0;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  position: relative;
+  top: 3px;
+  border-radius: 10px; }
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+  background-color: #FEB41C;
+  color: white;
+  cursor: pointer; }
+
+.icon-blank:before {
+  transform: rotate(-135deg);
+  position: absolute;
+  top: 42px;
+  left: 30px;
+  font-size: 25px; }
+
+@media screen and (max-width: 768px) {
+  .icon-blank:before {
+    top: 39px; } }
+.demo-icon-cansel .icon-cancel {
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  transform: translateY(-50%); }

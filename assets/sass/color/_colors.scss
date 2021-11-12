@@ -1,0 +1,97 @@
+
+/*-------------------------------------------------------------- 
+# Color 
+--------------------------------------------------------------*/
+ .exdda-border-left-yellow {
+     border-left-color: #FEB41C;
+}
+ .exdda-text-color {
+     color: #646978;
+}
+ .exdda-text-orange {
+     color: $color_orange;
+}
+ .exda-color-memorized {
+     color: #9196A4;
+}
+
+
+/*-------------------------------------------------------------- 
+# Background Color 
+--------------------------------------------------------------*/
+.bg-yellow {
+    background-color: $bg_color_yellow;
+}
+ .exdda-bg-gray {
+     background-color:$bg_color_gray;
+}
+ .exdda-bg-color {
+     background-color: $bg_light_gray;
+}
+ .exdda-bg-color:hover {
+     background-color: #FEB41C;
+     color: #17191F;
+}
+.exdda-bg-white-solid {
+     background-color: $bg_white_solid;
+}
+ .exdda-bg-black {
+     background-color: $bg_black;
+}
+
+/*-------------------------------------------------------------- 
+# border-Color 
+--------------------------------------------------------------*/
+.border-color-one{
+    border-color: $border_color_one;
+}
+ .exdda-border-yellow {
+     border: 1px solid $border_color_yellow;
+}
+ .exdda-border-green {
+     border: 1px solid $border_color_green;
+}
+ .exdda-border-sky {
+     border: 1px solid $border_color_sky;
+}
+ .exdda-border-red {
+     border: 1px solid $border_color_red;
+}
+ .exdda-border-b {
+     border-bottom: 1px solid #272A33;
+}
+
+
+ .exdda-checkbox-border-color {
+     border: 1px solid #D1D5E0;
+     width: 20px;
+     height: 20px;
+     margin-right: 10px;
+     position: relative;
+     top: 3px;
+     border-radius: 10px;
+}
+/* Style the active class, and buttons on mouse-over */
+ .active, .btn:hover {
+     background-color: #FEB41C;
+     color: white;
+     cursor: pointer;
+}
+ .icon-blank:before {
+     transform: rotate(-135deg);
+     position: absolute;
+     top: 42px;
+     left: 30px;
+     font-size: 25px;
+}
+ @media screen and (max-width: 768px) {
+     .icon-blank:before {
+         top: 39px;
+    }
+}
+.demo-icon-cansel .icon-cancel {
+     position: absolute;
+     top: 50%;
+     left: -45px;
+     transform: translateY(-50%);
+} 

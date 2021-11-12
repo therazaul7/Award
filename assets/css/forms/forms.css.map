@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA;;gEAEgE;AAM5D;;;;0BAAQ;EACJ,OAAO,EAAE,IAAI;;AAIrB,QAAS;EACL,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,KAAK;EAChB,YAAY,EAAE,GAAG;EACjB,OAAO,EAAE,KAAK;;AAIlB,2BAA4B;EACzB,4BAA4B;;AAG/B,iBAAkB;EACf,4BAA4B;;AAG/B,sBAAuB;EACpB,4BAA4B",
-"sources": ["../../sass/forms/fields.scss"],
-"names": [],
-"file": "forms.css"
-}

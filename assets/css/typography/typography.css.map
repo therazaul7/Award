@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACA;;gEAEgE;ACHhE,sBAAuB;EACtB,KAAK,EAAE,IAAI;EACX;;yCAEuC;EACvC,WAAW,EAAE,GAAG;;AAGjB,cAAe;EACZ,WAAW,EAAE,OAAO;EACpB,SAAS,EAAE,gBAAgB;;AAO9B,EAAG;EACF,SAAS,EAAE,KAAK;;AAKjB;;;;IAIK;EACD,KAAK,EAAE,OAAO;EACd,eAAe,EAAE,IAAI;;AAEzB;;;UAGW;EACP,KAAK,EAAE,OAAO;EACd,eAAe,EAAE,IAAI;;AD9BzB;;gEAEgE;AERhE,gBAAiB;EACf,OAAO,EAAE,YAAY;EACrB,WAAW,EAAE,IAAI;EACjB;iCAC+B;;AAEjC,WAAY;EACV,OAAO,EAAE,YAAY;EACrB,WAAW,EAAE,IAAI;EACjB;iCAC+B",
-"sources": ["../../sass/typography/typography.scss","../../sass/typography/headings.scss","../../sass/typography/copy.scss"],
-"names": [],
-"file": "typography.css"
-}

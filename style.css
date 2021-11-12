@@ -13,23 +13,7 @@ TABLE OF CONTENTS
 --------------------------------------------------------------*/
 
 
-/*-------------------------------------------------------------- 
-# Typography 
---------------------------------------------------------------*/
- html {
-     font-size: 100%;
-}
- body {
-    font-family: 'Poppins', serif;
-     font-size: 16px;
-     font-weight: 500;
-     line-height: 1.45em;
-     color: #17191F;
-     background: #E5E5E5;
-     word-wrap: break-word;
-    /* overflow-x: hidden;
-     */
-}
+
 
  select {
      background: none;
@@ -156,97 +140,6 @@ TABLE OF CONTENTS
 
 
 
-/*-------------------------------------------------------------- 
-# Color 
---------------------------------------------------------------*/
- .exdda-bg-color {
-     background-color: #272A33;
-}
- .exdda-bg-color:hover {
-     background-color: #FEB41C;
-     color: #17191F;
-}
- .exdda-bg-black {
-     background-color: #17191F;
-}
- .bg-yellow {
-     background-color: #FEB41C;
-}
- .exdda-border-left-yellow {
-     border-left-color: #FEB41C;
-}
- .exdda-color-yellow {
-     color: #FEB41C;
-}
- .exdda-text-color {
-     color: #646978;
-}
- .exdda-text-orange {
-     color: #FEB41C;
-}
- .exdda-color-memorize {
-     color: #9196A4;
-}
- .exdda-bg-white-solid {
-     background-color: #F5F6FA;
-}
- .exdda-color-gray {
-     color:#9196A4;
-}
- .exdda-bg-gray {
-     background-color:#F5F6FA;
-}
-/*-------------------------------------------------------------- 
-# border-Color 
---------------------------------------------------------------*/
- .exdda-border-b {
-     border-bottom: 1px solid #272A33;
-}
- .exdda-border-green {
-     border: 1px solid #6BC762;
-}
- .exdda-border-sky {
-     border: 1px solid #1ED0E9;
-}
- .exdda-border-red {
-     border: 1px solid #FE451C;
-}
- .exdda-border-yellow {
-     border: 1px solid #FEB41C;
-}
- .exdda-checkbox-border-color {
-     border: 1px solid #D1D5E0;
-     width: 20px;
-     height: 20px;
-     margin-right: 10px;
-     position: relative;
-     top: 3px;
-     border-radius: 10px;
-}
-/* Style the active class, and buttons on mouse-over */
- .active, .btn:hover {
-     background-color: #FEB41C;
-     color: white;
-     cursor: pointer;
-}
- .icon-blank:before {
-     transform: rotate(-135deg);
-     position: absolute;
-     top: 42px;
-     left: 30px;
-     font-size: 25px;
-}
- @media screen and (max-width: 768px) {
-     .icon-blank:before {
-         top: 39px;
-    }
-}
-.demo-icon-cansel .icon-cancel {
-     position: absolute;
-     top: 50%;
-     left: -45px;
-     transform: translateY(-50%);
-} 
 
 /*-------------------------------------------------------------- 
 # Pagination 

@@ -1,12 +1,12 @@
 ::-moz-selection {
   display: inline-block;
   text-shadow: none;
-  /* color: $color__white;
-  background: $color__heading; */
+  color: $color_white;
+  background: $color_heading; 
 }
 ::selection {
   display: inline-block;
   text-shadow: none;
-  /* color: $color__white; 
-  background: $color__heading; */
+  color: $color_white; 
+  background: $color_heading; 
 }

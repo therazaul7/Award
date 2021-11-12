@@ -1,17 +1,23 @@
 // Initial color
-$color__black: #000000;			   // Black
-$color__white: #fff;			   // White
-$color__background-main: #f7f7f7;  // Post area background
+$color_white: #fff;			   // White
+$color_orange: #FEB41C;			   // White
+$color_memorized: #9196A4;	
 //Text color
-$color__text-main: #7A7A7A; 		// body text main color
-$color__heading: #121212;           // Heading color
+$color_text_main: #17191F; 		// body text main color
+$color_heading: #17191F;           // Heading color
 
 //border color
-$color__border-one: #ebebeb; 		// Widget. Feature background Stock, Read more border 
-$color__border-two: #d0d0d0; 		// Widget. Feature background Stock, Read more border 
+$border_color_one: #D1D5E0; 		// Widget. Feature background Stock, Read more border 
+$border_color_yellow: #FEB41C; 		// Widget. Feature background Stock, Read more border 
+$border_color_green: #6BC762; 		// Widget. Feature background Stock, Read more border 
+$border_color_sky: #1ED0E9; 		// Widget. Feature background Stock, Read more border 
+$border_color_red: #FE451C; 		// Widget. Feature background Stock, Read more border 
 
-//Theme and other color
-$color__theme-main: #21b360;  		// Theme and hover color
-$footer__bg: #F7F7F7;		        // For Header And Footer And Menu Background
-//link color
-$color__fallow: #CF9C67;			// More link color
+//Theme bg color
+$bg_light_gray: #272A33;  		// Theme menu color
+$bg_color_gray: #21b360;  		// Theme gray color
+$bg_color_yellow: #FEB41C;		// Theme yellow color        
+$bg_white_solid: #F5F6FA;		// Theme white solid color        
+$bg_black: #17191F;		        // Theme block color        
+//Placeholder color
+$color_memorized: #9196A4;			// More link color

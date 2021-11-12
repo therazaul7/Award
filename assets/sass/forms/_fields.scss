@@ -20,16 +20,21 @@ textarea {
 }
 
 // Placeholder Color
+
+::placeholder {
+   color: $color_memorized; 
+} 
+
 ::-webkit-input-placeholder {
-   /*  color: $color__white; */
+   color: $color_memorized; 
 } 
 
 :-moz-placeholder {
-   /*  color: $color__white; */
+   color: $color_memorized; 
 }
 
 :-ms-input-placeholder {
-   /*  color: $color__white; */ 
+   color: $color_memorized; 
 }
 
  
