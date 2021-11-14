@@ -1,17 +1,36 @@
 
-  // Add active class to the current button (highlight it)
-var header = document.getElementById("myDIV");
-  var btns = header.getElementsByClassName("exdda-bg-color");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-    });
-  }
+/*==== Mobile menu =====*/
+function toggleSideMenu(){
+  document.getElementById('side-menu').classList.toggle('active');
+}
+/*===== Tab ====*/
 
- function toggleSidebar(ref){
-   document.getElementById("sidebar").classList.toggle('active');
- }
+$(document).ready(function () {
+    
+    $('#nav').children('li').first().children('a').addClass('active')
+        .next().addClass('is-open').show();
+        
+    $('#nav').on('click', 'li > a', function() {
+        
+      if (!$(this).hasClass('active')) {
+
+        $('#nav .is-open').removeClass('is-open').hide();
+        $(this).next().toggleClass('is-open').toggle();
+          
+        $('#nav').find('.active').removeClass('active');
+        $(this).addClass('active');
+      } else {
+        $('#nav .is-open').removeClass('is-open').hide();
+        $(this).removeClass('active');
+      }
+   });
+});
+
+
+
+
+
+
+
 
 

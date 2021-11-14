@@ -38,57 +38,64 @@
 </head>
 <body>
 	<div class="container mx-auto">
+
 		<div class="grid lg:grid-cols-4">
 		  <!-- Sidebar start -->
-		  <div class="exdda-bg-black left-sidebar clear-both relative" id="sidebar">
+		  	<div class="exdda-bg-black left-sidebar clear-both relative" id="sidebar"> 
+		  	  	<div id="side-menu">
+		  	       <div class="toggle-btn" onclick="toggleSideMenu()">
+		  	         <i class="icon-menu"></i>
+		  	       </div>
+		  	       	  <div class="site-logo flex justify-center py-12 border-b exdda-border-b">
+		  	       	  	 <a href="#">
+		  	       	  	 	<img class="w-24 md:w-32" src="assets/images/site-logo.png" alt="">
+		  	       	  	 </a>
+		  	       	  </div>
+		  	       	  <div class="sidebar-nav flex justify-center mt-16 lg:mt-24">
+		  	       	  	<ul id="myDIV" class="text-lg">
+		  	       	  		<li class="active menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+		  	       	  			<a href="#">
+		  	       	  				<i class="icon-th-large"></i>
+		  	       	  				Overview
+		  	       	  			</a>
+		  	       	  		</li>
+		  	       	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+		  	       	  			<a href="#">
+		  	       	  				<i class="icon-codepen"></i>
+		  	       	  				Administration
+		  	       	  			</a>
+		  	       	  		</li>
+		  	       	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+		  	       	  			<a href="#">
+		  	       	  				<i class="icon-user"></i>
+		  	       	  				Profile
+		  	       	  			</a>
+		  	       	  		</li>
+		  	       	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+		  	       	  			<a href="#">
+		  	       	  				<i class="icon-doc-text"></i>
+		  	       	  				Invoices
+		  	       	  			</a>
+		  	       	  		</li>
+		  	       	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+		  	       	  			<a href="#">
+		  	       	  				<i class="icon-plus-circled"></i>
+		  	       	  				Create new case
+		  	       	  			</a>
+		  	       	  		</li>
+		  	       	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+		  	       	  			<a href="#">
+		  	       	  				<i class="icon-shopping-basket"></i>
+		  	       	  				Basket
+		  	       	  			</a>
+		  	       	  		</li>
+		  	       	  	</ul>
+		  	       	</div><!-- ./Sidebar end -->
+		  	    </div><!-- ./exdda-bg-black -->
+		  	</div><!-- ./exdda-bg-black -->
+			  
 
-		  	  <div class="toggle-btn" onclick="toggleSidebar(this)">
-		  	    <span></span>
-		  	    <span></span>
-		  	    <span></span>
-		  	  </div>  
-			  <div class="site-logo flex justify-center py-12 border-b border-color-one">
-			  	 <a href="#">
-			  	 	<img class="w-24 md:w-32" src="assets/images/site-logo.png" alt="">
-			  	 </a>
-			  </div>
-			  <div class="sidebar-nav flex justify-center mt-16 lg:mt-24">
-			  	<ul id="myDIV" class="text-lg">
-			  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
-			  			<a href="#">
-			  				<i class="icon-th-large"></i>
-			  				Overview
-			  			</a>
-			  		</li>
-			  		<li class="menu-item p-3 lg:p-5 active delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
-			  			<a href="#">
-			  				<i class="icon-user"></i>
-			  				Profile
-			  			</a>
-			  		</li>
-			  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
-			  			<a href="#">
-			  				<i class="icon-doc-text"></i>
-			  				Invoices
-			  			</a>
-			  		</li>
-			  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
-			  			<a href="#">
-			  				<i class="icon-plus-circled"></i>
-			  				Create new case
-			  			</a>
-			  		</li>
-			  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
-			  			<a href="#">
-			  				<i class="icon-shopping-basket"></i>
-			  				Basket
-			  			</a>
-			  		</li>
-			  	</ul>
-			  </div><!-- ./Sidebar end -->
-			</div><!-- ./exdda-bg-black -->
-
-		  	<div class="bg-white col-span-3 py-12 px-4 md:pt-14 md:pb-10 lg:px-20 lg:py-24">
+		  	<div class="bg-white col-span-3 py-12 px-4 pt-16 md:pb-10 lg:px-20 lg:py-24">
 			  	<div class="grid grid-cols-2 md:mb-6">
 			  	  	<div class="text-xl lg:text-2xl">
 						<i class="mr-2 icon-calendar exdda-text-orange"></i>May 19, 2022</div>
@@ -279,8 +286,6 @@
 	</div><!-- /.grid grid-cols-4 -->
 </div><!-- /.container ene -->
 
-
-
 <!-- All The JS Files
 ================================================== --> 
 <script src="assets/js/jquery-1.11.2.min.js"></script>
@@ -288,3 +293,5 @@
 	
 </body>
 </html>
+
+

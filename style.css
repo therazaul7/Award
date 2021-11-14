@@ -1,8 +1,63 @@
 
 
+/*--------Accordion-------*/
+
+.acc-kontainer .acc-body {
+  width: 98%;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  height: 0;
+  color: rgba(0, 0, 0, 0);;
+  background-color: rgba(255, 255, 255, 0.2);
+  line-height: 28px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.acc-kontainer label {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: block;
+  border: 1px solid $border_color_one;
+  width: 100%;
+  color: #000;
+  font-weight: 400;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.acc-kontainer input{
+ display: none;
+}
 
 
+.acc-kontainer input:checked+label {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.acc-kontainer input:checked~.acc-body {
+  height: auto;
+  color: #000;
+  font-size: 16px;
+  padding: 20px;
+  transition: 0.5s;
+}
 
 
-
-
+.grid.grid-cols-9 > div p {
+	color: #000;
+}
+.grid.grid-cols-9 > div {
+	height: 150px;
+	padding-top: 30px; 
+}
+.exdda-v-center {
+   display: table;
+   text-align: center;
+   padding-top: 0 !important;
+}
+.exdda-v-center span {
+   display: table-cell;
+   vertical-align: middle;
+} 

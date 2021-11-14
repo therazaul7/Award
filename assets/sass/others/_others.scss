@@ -1,14 +1,11 @@
-/*--------------------------------------------------------------
-Image
---------------------------------------------------------------*/
 @import "image";
-
 /*--------------------------------------------------------------
  Checkout Line
 --------------------------------------------------------------*/
 .exdda-checkout-line-three:before,
 .exdda-checkout-line-two:before,
 .exdda-checkout-line-one:before {
+  background: $bg_white_solid;
   position: absolute;
   content: '';
   height: 2px;
@@ -19,10 +16,10 @@ Image
 }
 
 .exdda-checkout-line-two:before {
-  background: linear-gradient(to right, #FEB41C 40%,#F5F6FA 40%);
+  background: linear-gradient(to right, $border_color_yellow 40%,$bg_white_solid 40%);
 }
 .exdda-checkout-line-three:before {
-  background: linear-gradient(to right, #FEB41C 70%,#F5F6FA 70%);
+  background: linear-gradient(to right, $border_color_yellow 70%,$bg_white_solid 70%);
 
 }
 .exdda-checkout-line-one > div,
@@ -44,3 +41,44 @@ Image
     }
 }
 
+/* ==== tab ==== */
+
+ #nav li {
+   list-style: none; 
+ }
+ #nav li a {
+     background: $bg_white_solid;
+     display: block;
+     padding: 25px 60px;
+     text-align: center;
+     font-size: 20px;
+     text-transform: capitalize;
+ }
+ #nav li a:hover, #nav li a.active {
+     background: $color_orange;
+ }
+
+
+
+ #nav section {
+   display: none; /* I NEED TO FIX THIS */
+   float: left;
+     background: $bg_white_solid;
+     overflow: hidden; 
+
+ }
+
+ .no-js #nav section {
+   display: block; /* I NEED TO FIX THIS */
+ }
+ #nav li ul li a {
+     padding: 10px 25px;
+     border-bottom: 1px dotted #ccc;
+ }
+
+ @media only screen and (min-width: 30em) { 
+     #nav { position: relative; border: none; }
+     #nav li { display: inline; }
+     #nav li a {display: inline-block; }  
+     
+ }

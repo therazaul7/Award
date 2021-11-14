@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Specific Meta
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Award is a modern presentation HTML5 template.">
+	<meta name="keywords" content="HTML5, Template, Design, Development, Blog" />
+	<meta name="author" content="Award">
+
+	<!-- Titles
+	================================================== -->
+	<title>Overview</title>
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="assets/images/title-icon/apple-touch-icon.png"> 
+	<link rel="apple-touch-icon" href="assets/images/title-icon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/title-icon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/title-icon/apple-touch-icon-114x114.png">
+
+	<!-- Custom Font
+    ================================================== -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700," rel="stylesheet"> 
+	<!-- CSS
+    ================================================== -->
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="assets/css/fontello.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<div class="container mx-auto">
+
+		<div class="grid lg:grid-cols-4">
+		  <!-- Sidebar start -->
+		  	<div class="exdda-bg-black left-sidebar clear-both relative" id="sidebar"> 
+		  	  	<div id="side-menu">
+		  	       <div class="toggle-btn" onclick="toggleSideMenu()">
+		  	         <i class="icon-menu"></i>
+		  	       </div>
+		  	       	  <div class="site-logo flex justify-center py-12 border-b exdda-border-b">
+		  	       	  	 <a href="#">
+		  	       	  	 	<img class="w-24 md:w-32" src="assets/images/site-logo.png" alt="">
+		  	       	  	 </a>
+		  	       	  </div>
+		  	       	  <div class="sidebar-nav flex justify-center mt-16 lg:mt-24">
+		  	       	  	<ul id="myDIV" class="text-lg">
+		  	       	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+		  	       	  			<a href="#">
+		  	       	  				<i class="icon-th-large"></i>
+		  	       	  				Overview
+		  	       	  			</a>
+		  	       	  		</li>
+		  	       	  		<li class="active menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+		  	       	  			<a href="#">
+		  	       	  				<i class="icon-codepen"></i>
+		  	       	  				Administration
+		  	       	  			</a>
+		  	       	  		</li>
+		  	       	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+		  	       	  			<a href="#">
+		  	       	  				<i class="icon-user"></i>
+		  	       	  				Profile
+		  	       	  			</a>
+		  	       	  		</li>
+		  	       	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+		  	       	  			<a href="#">
+		  	       	  				<i class="icon-doc-text"></i>
+		  	       	  				Invoices
+		  	       	  			</a>
+		  	       	  		</li>
+		  	       	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+		  	       	  			<a href="#">
+		  	       	  				<i class="icon-plus-circled"></i>
+		  	       	  				Create new case
+		  	       	  			</a>
+		  	       	  		</li>
+		  	       	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+		  	       	  			<a href="#">
+		  	       	  				<i class="icon-shopping-basket"></i>
+		  	       	  				Basket
+		  	       	  			</a>
+		  	       	  		</li>
+		  	       	  	</ul>
+		  	       	</div><!-- ./Sidebar end -->
+		  	    </div><!-- ./exdda-bg-black -->
+		  	</div><!-- ./exdda-bg-black -->
+
+		  	<div class="bg-white col-span-3 py-12 px-4 pt-16 md:pb-10 lg:px-16 lg:py-24">
+			  	<div class="grid grid-cols-2 md:mb-6">
+			  	  	<div class="text-xl lg:text-2xl">
+						<i class="mr-2 icon-calendar exdda-text-orange"></i>May 19, 2022</div>
+						<div class="flex justify-end">
+						<a href=""><img class="w-20 rounded-full -top-5 relative" src="assets/images/avatar.png" alt=""></a>
+			  	  	</div>
+			  	</div><!-- ./grid-cols-2 -->
+		  	<h2 class="text-4xl lg:text-5xl font-bold mb-16">Administration</h2>
+		  	<div class="grid grid-cols-3 gap-4">
+				<div class="content exdda-bg-white-solid rounded-3xl">
+					<div class="exdda-bg-black rounded-3xl group-header-content px-16 py-10 text-white lg:text-3xl font-extrabold rou">
+						Group 1
+					</div>
+					<div class="group-footer-content px-2 py-11 text-center">
+						<a class="cursor-pointer uppercase border font-medium mr-1 text-base rounded-full py-1 lg:py-2 px-4 exdda-border-green" href="#">Projects</a>
+						<a class="cursor-pointer uppercase border font-medium text-base rounded-full py-1 lg:py-2 px-4 exdda-border-sky" href="#">Statistics</a>
+					</div>
+				</div><!-- ./content -->
+				<div class="content exdda-bg-white-solid rounded-3xl">
+					<div class="exdda-bg-black rounded-3xl group-header-content px-16 py-10 text-white lg:text-3xl font-extrabold rou">
+						Group 2
+					</div>
+					<div class="group-footer-content px-2 py-11 text-center">
+						<a class="cursor-pointer uppercase border font-medium mr-1 text-base rounded-full py-1 lg:py-2 px-4 exdda-border-green" href="#">Projects</a>
+						<a class="cursor-pointer uppercase border font-medium text-base rounded-full py-1 lg:py-2 px-4 exdda-border-sky" href="#">Statistics</a>
+					</div>
+				</div><!-- ./content -->
+				<div class="content exdda-bg-white-solid rounded-3xl">
+					<div class="exdda-bg-black rounded-3xl group-header-content px-16 py-10 text-white lg:text-3xl font-extrabold rou">
+						Group 3
+					</div>
+					<div class="group-footer-content px-2 py-11 text-center">
+						<a class="cursor-pointer uppercase border font-medium mr-1 text-base rounded-full py-1 lg:py-2 px-4 exdda-border-green" href="#">Projects</a>
+						<a class="cursor-pointer uppercase border font-medium text-base rounded-full py-1 lg:py-2 px-4 exdda-border-sky" href="#">Statistics</a>
+					</div>
+				</div><!-- ./content -->
+				<div class="content exdda-bg-white-solid rounded-3xl">
+					<div class="exdda-bg-black rounded-3xl group-header-content px-16 py-10 text-white lg:text-3xl font-extrabold rou">
+						Group 4
+					</div>
+					<div class="group-footer-content px-2 py-11 text-center">
+						<a class="cursor-pointer uppercase border font-medium mr-1 text-base rounded-full py-1 lg:py-2 px-4 exdda-border-green" href="#">Projects</a>
+						<a class="cursor-pointer uppercase border font-medium text-base rounded-full py-1 lg:py-2 px-4 exdda-border-sky" href="#">Statistics</a>
+					</div>
+				</div><!-- ./content -->
+				<div class="content exdda-bg-white-solid rounded-3xl">
+					<div class="exdda-bg-black rounded-3xl group-header-content px-16 py-10 text-white lg:text-3xl font-extrabold rou">
+						Group 4
+					</div>
+					<div class="group-footer-content px-2 py-11 text-center">
+						<a class="cursor-pointer uppercase border font-medium mr-1 text-base rounded-full py-1 lg:py-2 px-4 exdda-border-green" href="#">Projects</a>
+						<a class="cursor-pointer uppercase border font-medium text-base rounded-full py-1 lg:py-2 px-4 exdda-border-sky" href="#">Statistics</a>
+					</div>
+				</div><!-- ./content -->
+				<div class="content exdda-bg-white-solid rounded-3xl">
+					<div class="exdda-bg-black rounded-3xl group-header-content px-16 py-10 text-white lg:text-3xl font-extrabold rou">
+						Group 6
+					</div>
+					<div class="group-footer-content px-2 py-11 text-center">
+						<a class="cursor-pointer uppercase border font-medium mr-1 text-base rounded-full py-1 lg:py-2 px-4 exdda-border-green" href="#">Projects</a>
+						<a class="cursor-pointer uppercase border font-medium text-base rounded-full py-1 lg:py-2 px-4 exdda-border-sky" href="#">Statistics</a>
+					</div>
+				</div><!-- ./content -->
+				<div class="content exdda-bg-white-solid rounded-3xl">
+					<div class="exdda-bg-black rounded-3xl group-header-content px-16 py-10 text-white lg:text-3xl font-extrabold rou">
+						Group 7
+					</div>
+					<div class="group-footer-content px-2 py-11 text-center">
+						<a class="cursor-pointer uppercase border font-medium mr-1 text-base rounded-full py-1 lg:py-2 px-4 exdda-border-green" href="#">Projects</a>
+						<a class="cursor-pointer uppercase border font-medium text-base rounded-full py-1 lg:py-2 px-4 exdda-border-sky" href="#">Statistics</a>
+					</div>
+				</div><!-- ./content -->
+				<div class="content exdda-bg-white-solid rounded-3xl">
+					<div class="exdda-bg-black rounded-3xl group-header-content px-16 py-10 text-white lg:text-3xl font-extrabold rou">
+						Group 8
+					</div>
+					<div class="group-footer-content px-2 py-11 text-center">
+						<a class="cursor-pointer uppercase border font-medium mr-1 text-base rounded-full py-1 lg:py-2 px-4 exdda-border-green" href="#">Projects</a>
+						<a class="cursor-pointer uppercase border font-medium text-base rounded-full py-1 lg:py-2 px-4 exdda-border-sky" href="#">Statistics</a>
+					</div>
+				</div><!-- ./content -->
+				<div class="content exdda-bg-white-solid rounded-3xl">
+					<div class="exdda-bg-black rounded-3xl group-header-content px-16 py-10 text-white lg:text-3xl font-extrabold rou">
+						Group 9
+					</div>
+					<div class="group-footer-content px-2 py-11 text-center">
+						<a class="cursor-pointer uppercase border font-medium mr-1 text-base rounded-full py-1 lg:py-2 px-4 exdda-border-green" href="#">Projects</a>
+						<a class="cursor-pointer uppercase border font-medium text-base rounded-full py-1 lg:py-2 px-4 exdda-border-sky" href="#">Statistics</a>
+					</div>
+				</div><!-- ./content -->
+		  	</div><!-- ./grid-col-3 -->
+    	</div><!--/.bg-white col-span-3  -->
+	</div><!-- /.grid grid-cols-4 -->
+</div><!-- /.container ene -->
+
+
+
+<!-- All The JS Files
+================================================== --> 
+<script src="assets/js/jquery-1.11.2.min.js"></script>
+<script src="assets/js/main.js"></script>
+	
+</body>
+</html>
+
+

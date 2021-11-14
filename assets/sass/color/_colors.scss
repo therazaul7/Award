@@ -57,13 +57,13 @@
  .exdda-border-red {
      border: 1px solid $border_color_red;
 }
-/*  .exdda-border-b {
+.exdda-border-b {
      border-bottom: 1px solid #272A33;
-} */
+} 
 
 
  .exdda-checkbox-border-color {
-     border: 1px solid #D1D5E0;
+     border: 1px solid $border_color_one;
      width: 20px;
      height: 20px;
      margin-right: 10px;
@@ -72,9 +72,8 @@
      border-radius: 10px;
 }
 /* Style the active class, and buttons on mouse-over */
- .active, .btn:hover {
-     background-color: #FEB41C;
-     //color: white;
+.menu-item.active, .btn:hover {
+     background-color: $color_orange;
      cursor: pointer;
 }
  .icon-blank:before {

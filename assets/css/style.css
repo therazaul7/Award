@@ -113,6 +113,9 @@ select {
 :-ms-input-placeholder {
   color: #9196A4; }
 
+form label i {
+  color: #9196A4; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -140,24 +143,12 @@ a {
   cursor: pointer; }
 
 @media screen and (max-width: 990px) {
-  #sidebar {
-    position: absolute;
-    top: 0px;
-    left: -300px;
-    width: 265px;
-    background: #151719;
-    transition: all 300ms linear; }
-
   #sidebar ul li {
-    font-size: 16px; }
+    font-size: 16px;
+    width: 220px; }
 
   #sidebar.active {
     left: 0px; }
-
-  #sidebar .toggle-btn {
-    position: absolute;
-    left: 320px;
-    top: 10px; }
 
   .left-sidebar.active .toggle-btn {
     left: 285px !important; }
@@ -179,7 +170,36 @@ a {
 
   #sidebar div.list div.item a {
     color: #fcfcfc;
-    text-decoration: none; } }
+    text-decoration: none; }
+
+  #side-menu {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #17191F;
+    left: -300px;
+    transition: ease-in-out 500ms;
+    top: 0; }
+
+  #side-menu.active {
+    left: 0px;
+    z-index: 1; }
+
+  #side-menu ul li:hover i {
+    transform: scale(1.1); }
+
+  .toggle-btn {
+    cursor: pointer;
+    font-size: 30px;
+    color: gray;
+    position: absolute;
+    left: 315px;
+    top: 20px;
+    transition: ease-in-out 250ms; }
+
+  .toggle-btn:hover {
+    transform: scale(1.2);
+    text-shadow: 5px 5px 5px gray; } }
 /*--------------------------------------------------------------
 ## pagination
 --------------------------------------------------------------*/
@@ -314,9 +334,9 @@ a {
 .exdda-border-red {
   border: 1px solid #FE451C; }
 
-/*  .exdda-border-b {
-     border-bottom: 1px solid #272A33;
-} */
+.exdda-border-b {
+  border-bottom: 1px solid #272A33; }
+
 .exdda-checkbox-border-color {
   border: 1px solid #D1D5E0;
   width: 20px;
@@ -327,7 +347,7 @@ a {
   border-radius: 10px; }
 
 /* Style the active class, and buttons on mouse-over */
-.active, .btn:hover {
+.menu-item.active, .btn:hover {
   background-color: #FEB41C;
   cursor: pointer; }
 
@@ -349,9 +369,6 @@ a {
 
 /*--------------------------------------------------------------
 # Color
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-Image
 --------------------------------------------------------------*/
 /*-------------------------------------------------------------- 
 # image 
@@ -377,6 +394,7 @@ Image
 .exdda-checkout-line-three:before,
 .exdda-checkout-line-two:before,
 .exdda-checkout-line-one:before {
+  background: #F5F6FA;
   position: absolute;
   content: '';
   height: 2px;
@@ -407,3 +425,43 @@ Image
   .exdda-checkout-line-two > div,
   .exdda-checkout-line-three > div {
     margin-bottom: 30px; } }
+/* ==== tab ==== */
+#nav li {
+  list-style: none; }
+
+#nav li a {
+  background: #F5F6FA;
+  display: block;
+  padding: 25px 60px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: capitalize; }
+
+#nav li a:hover, #nav li a.active {
+  background: #FEB41C; }
+
+#nav section {
+  display: none;
+  /* I NEED TO FIX THIS */
+  float: left;
+  background: #F5F6FA;
+  overflow: hidden; }
+
+.no-js #nav section {
+  display: block;
+  /* I NEED TO FIX THIS */ }
+
+#nav li ul li a {
+  padding: 10px 25px;
+  border-bottom: 1px dotted #ccc; }
+
+@media only screen and (min-width: 30em) {
+  #nav {
+    position: relative;
+    border: none; }
+
+  #nav li {
+    display: inline; }
+
+  #nav li a {
+    display: inline-block; } }
