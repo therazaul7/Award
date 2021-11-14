@@ -1,52 +1,46 @@
 
-
 /*--------Accordion-------*/
-
 .acc-kontainer .acc-body {
-  width: 98%;
-  width: calc(100% - 20px);
-  margin: 0 auto;
-  height: 0;
-  color: rgba(0, 0, 0, 0);;
-  background-color: rgba(255, 255, 255, 0.2);
-  line-height: 28px;
-  padding: 0 20px;
-  box-sizing: border-box;
-  transition: 0.5s;
+    height: 0;
+    background-color: #F5F6FA;
+    line-height: 28px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    z-index: 99;
+    position: relative;
 }
 
 .acc-kontainer label {
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.1);
-  display: block;
-  border: 1px solid $border_color_one;
-  width: 100%;
-  color: #000;
-  font-weight: 400;
-  box-sizing: border-box;
-  z-index: 100;
+   background-color: #F5F6FA !important;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+   display: block;
+   width: 100%;
+   font-weight: 400;
+   box-sizing: border-box;
+   z-index: 100;
+   position: relative;
 }
-
-.acc-kontainer input{
+.acc-kontainer input {
  display: none;
 }
-
-
 .acc-kontainer input:checked+label {
   background-color: rgba(255, 255, 255, 0.15);
 }
+
 
 .acc-kontainer input:checked~.acc-body {
   height: auto;
   color: #000;
   font-size: 16px;
-  padding: 20px;
+  padding: 70px 20px;
   transition: 0.5s;
 }
 
-
 .grid.grid-cols-9 > div p {
-	color: #000;
+	color: #17191F;
+	font-size: 14px;
 }
 .grid.grid-cols-9 > div {
 	height: 150px;
@@ -61,3 +55,22 @@
    display: table-cell;
    vertical-align: middle;
 } 
+
+.image-content img {
+	position: relative;
+}
+
+.image-content i {
+     position: relative;
+     top: -30px;
+     right: -45px;
+     padding: 3px;
+     border-radius: 50%;
+     border: 3px solid white;
+     font-size: 13px;
+     color: white;
+} 
+
+.text-xs {
+	font-size: 11px !important;
+}

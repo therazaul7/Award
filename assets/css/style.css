@@ -57,8 +57,7 @@ body {
   line-height: 1.45em;
   color: #17191F;
   background: #E5E5E5;
-  word-wrap: break-word;
-  overflow-x: hidden; }
+  word-wrap: break-word; }
 
 /*--------------------------------------------------------------
 # Headings
@@ -300,6 +299,12 @@ a {
 .bg-yellow {
   background-color: #FEB41C; }
 
+.bg-red {
+  background-color: red; }
+
+.bg-green {
+  background-color: #6BC762; }
+
 .exdda-bg-gray {
   background-color: #21b360; }
 
@@ -426,9 +431,6 @@ a {
   .exdda-checkout-line-three > div {
     margin-bottom: 30px; } }
 /* ==== tab ==== */
-#nav li {
-  list-style: none; }
-
 #nav li a {
   background: #F5F6FA;
   display: block;
@@ -439,6 +441,9 @@ a {
 
 #nav li a:hover, #nav li a.active {
   background: #FEB41C; }
+
+#nav li:last-child {
+  margin-left: -5px; }
 
 #nav section {
   display: none;

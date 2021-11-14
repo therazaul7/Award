@@ -43,9 +43,6 @@
 
 /* ==== tab ==== */
 
- #nav li {
-   list-style: none; 
- }
  #nav li a {
      background: $bg_white_solid;
      display: block;
@@ -57,7 +54,9 @@
  #nav li a:hover, #nav li a.active {
      background: $color_orange;
  }
-
+ #nav li:last-child {
+      margin-left: -5px;
+ }  
 
 
  #nav section {
