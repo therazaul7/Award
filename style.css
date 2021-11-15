@@ -14,9 +14,7 @@
 .acc-kontainer label {
   cursor: pointer;
    background-color: #F5F6FA !important;
-   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
    display: block;
-   width: 100%;
    font-weight: 400;
    box-sizing: border-box;
    z-index: 100;

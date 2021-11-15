@@ -37,115 +37,125 @@
 
 </head>
 <body>
-
-	<div class="container mx-auto">
-		<div class="grid lg:grid-cols-4">
-		  <!-- Sidebar start -->
-		  <div class="exdda-bg-black">
-			  <div class="site-logo flex justify-center py-12 exdda-border-b">
-			  		<a href="#">
-			  			<img class="w-40 md:w-32" src="assets/images/site-logo.png" alt="">
-			  		</a>
-			  </div>
-			  <div class="sidebar-nav flex justify-center mt-24">
-				  <ul id="myDIV" class="text-lg">
-				  	<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
-				  		<a href="#">
-				  			<i class="icon-th-large"></i>
-				  			Overview
-				  		</a>
-				  	</li>
-				  	<li class="menu-item p-3 lg:p-5 active delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
-				  		<a href="#">
-				  			<i class="icon-user"></i>
-				  			Profile
-				  		</a>
-				  	</li>
-				  	<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
-				  		<a href="#">
-				  			<i class="icon-doc-text"></i>
-				  			Invoices
-				  		</a>
-				  	</li>
-				  	<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
-				  		<a href="#">
-				  			<i class="icon-plus-circled"></i>
-				  			Create new case
-				  		</a>
-				  	</li>
-				  	<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
-				  		<a href="#">
-				  			<i class="icon-shopping-basket"></i>
-				  			Basket
-				  		</a>
-				  	</li>
-				  </ul>
-			  </div><!-- ./Sidebar end -->
-			</div><!-- ./exdda-bg-black -->
-		  	<div class="bg-white col-span-3 p-10 lg:px-20 lg:py-24">
-			  	<div class="grid grid-cols-2 mb-6">
-			  	  <div class="text-xl lg:text-2xl">
-			  	  	<i class="mr-2 icon-calendar exdda-text-orange"></i>
-			  	  	May 19, 2022
-			  	  </div>
-			  	  <div class="flex justify-end">
-			  	  	<a href="">
-			  	  		<img class="w-20 rounded-full -top-5 relative" src="assets/images/avatar.png" alt="">
-			  	  	</a>
-			  	  </div>
-			  	</div>
-		  	<h2 class="text-4xl lg:text-5xl font-bold mb-12">Edit Profile</h2>
-		  	<form action="#" method="post">
-		  	  <div class="grid gap-6 lg:grid-cols-2">
-		  	    <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
-		  	      <label class="capitalize block text-xl" for="grid-first-name">
-		  	       <i class="icon-user-circle-o exdda-color-memorize text-xl"></i>
-		  	        First Name
-		  	      </label>
-		  	      <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="grid-first-name" type="text" placeholder="Respondent’s fast and last name">
-		  	    </div>
-		  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
-		  	     <label class="capitalize block text-xl" for="grid-first-name">
-		  	      <i class="icon-mail exdda-color-memorize text-xl"></i>
-		  	       Email Address
-		  	     </label>
-		  	     <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="grid-first-name" type="text" placeholder="Input for email address">
-		  	   </div>
-		  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
-		  	     <label class="capitalize block text-xl" for="grid-first-name">
-		  	      <i class="icon-briefcase exdda-color-memorize text-xl"></i>
-		  	       Company or Bureau
-		  	     </label>
-		  	     <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="grid-first-name" type="text" placeholder="Irespondent’s fast and last name">
-		  	   </div>
-		  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
-		  	     <label class="capitalize block text-xl" for="grid-first-name">
-		  	      <i class="icon-linkedin exdda-color-memorize text-xl"></i>
-		  	       Linkedin URL
-		  	     </label>
-		  	     <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="grid-first-name" type="text" placeholder="input for linkedin URL">
-		  	   </div>
-		  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
-		  	     <label class="capitalize block text-xl" for="grid-first-name">
-		  	      <i class="icon-lock-alt exdda-color-memorize text-xl"></i>
-		  	       Enter password
-		  	     </label>
-		  	     <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="grid-first-name" type="text" placeholder="Set a strong password">
-		  	   </div>
-		  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
-		  	     <label class="capitalize block text-xl" for="grid-first-name">
-		  	      <i class="icon-lock-alt exdda-color-memorize text-xl"></i>
-		  	       Enter Repeat Password
-		  	     </label>
-		  	     <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="grid-first-name" type="text" placeholder="set a strong password">
-		  	   </div>
+<div class="container mx-auto">
+	<div class="grid lg:grid-cols-4">
+	    <!-- Sidebar start -->
+	    <div class="exdda-bg-black left-sidebar clear-both relative" id="sidebar"> 
+	      	<div id="side-menu">
+	           <div class="toggle-btn" onclick="toggleSideMenu()">
+	             <i class="icon-menu"></i>
+	           </div>
+	           	  <div class="site-logo flex justify-center py-12 border-b exdda-border-b">
+	           	  	 <a href="#">
+	           	  	 	<img class="w-24 md:w-32" src="assets/images/site-logo.png" alt="">
+	           	  	 </a>
+	           	  </div>
+	           	  <div class="sidebar-nav flex justify-center mt-16 lg:mt-24">
+	           	  	<ul id="myDIV" class="text-lg">
+	           	  		<li class="active menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+	           	  			<a href="index.html">
+	           	  				<i class="icon-th-large"></i>
+	           	  				Overview
+	           	  			</a>
+	           	  		</li>
+	           	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+	           	  			<a href="administration.html">
+	           	  				<i class="icon-codepen"></i>
+	           	  				Administration
+	           	  			</a>
+	           	  		</li>
+	           	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+	           	  			<a href="edit-profile.html">
+	           	  				<i class="icon-user"></i>
+	           	  				Profile
+	           	  			</a>
+	           	  		</li>
+	           	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+	           	  			<a href="invoice.html">
+	           	  				<i class="icon-doc-text"></i>
+	           	  				Invoices
+	           	  			</a>
+	           	  		</li>
+	           	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+	           	  			<a href="new-case.html">
+	           	  				<i class="icon-plus-circled"></i>
+	           	  				Create new case
+	           	  			</a>
+	           	  		</li>
+	           	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+	           	  			<a href="basket-checkout.html">
+	           	  				<i class="icon-shopping-basket"></i>
+	           	  				Basket
+	           	  			</a>
+	           	  		</li>
+	           	  	</ul>
+	           	</div><!-- ./Sidebar end -->
+	        </div><!-- ./exdda-bg-black -->
+	    </div><!-- ./exdda-bg-black -->
+	  	<div class="bg-white col-span-3 py-12 px-4 pt-16 md:pb-10 lg:px-20 lg:py-24">
+		  	<div class="grid grid-cols-2 mb-6">
+		  	  <div class="text-xl lg:text-2xl">
+		  	  	<i class="mr-2 icon-calendar exdda-text-orange"></i>
+		  	  	May 19, 2022
 		  	  </div>
-		  	   <button class="capitalize mt-10 py-4 px-10 rounded-lg bg-yellow font-medium text-xl">
-		  	     update account
-		  	   </button>
+		  	  <div class="flex justify-end">
+		  	  	<a href="">
+		  	  		<img class="w-20 rounded-full -top-5 relative" src="assets/images/avatar.png" alt="">
+		  	  	</a>
+		  	  </div>
+		  	</div>
+	  	<h2 class="text-4xl lg:text-5xl font-bold mb-12">Edit Profile</h2>
+	  	<form action="#" method="post">
+	  	  <div class="grid gap-6 lg:grid-cols-2">
+	  	    <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
+	  	      <label class="capitalize block text-xl" for="grid-first-name">
+	  	       <i class="icon-user-circle-o exdda-color-memorize text-xl"></i>
+	  	        First Name
+	  	      </label>
+	  	      <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="grid-first-name" type="text" placeholder="Respondent’s fast and last name">
+	  	    </div>
+	  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
+	  	     <label class="capitalize block text-xl" for="grid-first-name">
+	  	      <i class="icon-mail exdda-color-memorize text-xl"></i>
+	  	       Email Address
+	  	     </label>
+	  	     <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="grid-first-name" type="text" placeholder="Input for email address">
+	  	   </div>
+	  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
+	  	     <label class="capitalize block text-xl" for="grid-first-name">
+	  	      <i class="icon-briefcase exdda-color-memorize text-xl"></i>
+	  	       Company or Bureau
+	  	     </label>
+	  	     <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="grid-first-name" type="text" placeholder="Irespondent’s fast and last name">
+	  	   </div>
+	  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
+	  	     <label class="capitalize block text-xl" for="grid-first-name">
+	  	      <i class="icon-linkedin exdda-color-memorize text-xl"></i>
+	  	       Linkedin URL
+	  	     </label>
+	  	     <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="grid-first-name" type="text" placeholder="input for linkedin URL">
+	  	   </div>
+	  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
+	  	     <label class="capitalize block text-xl" for="grid-first-name">
+	  	      <i class="icon-lock-alt exdda-color-memorize text-xl"></i>
+	  	       Enter password
+	  	     </label>
+	  	     <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="grid-first-name" type="text" placeholder="Set a strong password">
+	  	   </div>
+	  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
+	  	     <label class="capitalize block text-xl" for="grid-first-name">
+	  	      <i class="icon-lock-alt exdda-color-memorize text-xl"></i>
+	  	       Enter Repeat Password
+	  	     </label>
+	  	     <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="grid-first-name" type="text" placeholder="set a strong password">
+	  	   </div>
+	  	  </div>
+	  	   <button class="capitalize mt-10 py-4 px-10 rounded-lg bg-yellow font-medium text-xl">
+	  	     update account
+	  	   </button>
 
-		  	</form>
-    	</div><!--/.bg-white col-span-3  -->
+	  	</form>
+	</div><!--/.bg-white col-span-3  -->
 	</div><!-- /.grid grid-cols-4 -->
 </div><!-- /.container ene -->
 

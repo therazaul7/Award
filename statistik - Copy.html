@@ -37,662 +37,657 @@
 
 </head>
 <body>
-	<div class="container mx-auto">
-
-		<div class="grid lg:grid-cols-4">
-		  <!-- Sidebar start -->
-		  	<div class="exdda-bg-black left-sidebar clear-both relative" id="sidebar"> 
-		  	  	<div id="side-menu">
-		  	       <div class="toggle-btn" onclick="toggleSideMenu()">
-		  	         <i class="icon-menu"></i>
-		  	       </div>
-		  	       	  <div class="site-logo flex justify-center py-12 border-b exdda-border-b">
-		  	       	  	 <a href="#">
-		  	       	  	 	<img class="w-24 md:w-32" src="assets/images/site-logo.png" alt="">
-		  	       	  	 </a>
-		  	       	  </div>
-		  	       	  <div class="sidebar-nav flex justify-center mt-16 lg:mt-24">
-		  	       	  	<ul id="myDIV" class="text-lg">
-		  	       	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
-		  	       	  			<a href="#">
-		  	       	  				<i class="icon-th-large"></i>
-		  	       	  				Overview
-		  	       	  			</a>
-		  	       	  		</li>
-		  	       	  		<li class="active menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
-		  	       	  			<a href="#">
-		  	       	  				<i class="icon-codepen"></i>
-		  	       	  				Administration
-		  	       	  			</a>
-		  	       	  		</li>
-		  	       	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
-		  	       	  			<a href="#">
-		  	       	  				<i class="icon-user"></i>
-		  	       	  				Profile
-		  	       	  			</a>
-		  	       	  		</li>
-		  	       	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
-		  	       	  			<a href="#">
-		  	       	  				<i class="icon-doc-text"></i>
-		  	       	  				Invoices
-		  	       	  			</a>
-		  	       	  		</li>
-		  	       	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
-		  	       	  			<a href="#">
-		  	       	  				<i class="icon-plus-circled"></i>
-		  	       	  				Create new case
-		  	       	  			</a>
-		  	       	  		</li>
-		  	       	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
-		  	       	  			<a href="#">
-		  	       	  				<i class="icon-shopping-basket"></i>
-		  	       	  				Basket
-		  	       	  			</a>
-		  	       	  		</li>
-		  	       	  	</ul>
-		  	       	</div><!-- ./Sidebar end -->
-		  	    </div><!-- ./exdda-bg-black -->
-		  	</div><!-- ./exdda-bg-black -->
+<div class="container mx-auto">
+	<div class="grid lg:grid-cols-4">
+	    <!-- Sidebar start -->
+	    <div class="exdda-bg-black left-sidebar clear-both relative" id="sidebar"> 
+	      	<div id="side-menu">
+	           <div class="toggle-btn" onclick="toggleSideMenu()">
+	             <i class="icon-menu"></i>
+	           </div>
+	           	  <div class="site-logo flex justify-center py-12 border-b exdda-border-b">
+	           	  	 <a href="#">
+	           	  	 	<img class="w-24 md:w-32" src="assets/images/site-logo.png" alt="">
+	           	  	 </a>
+	           	  </div>
+	           	  <div class="sidebar-nav flex justify-center mt-16 lg:mt-24">
+	           	  	<ul id="myDIV" class="text-lg">
+	           	  		<li class="active menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+	           	  			<a href="#">
+	           	  				<i class="icon-th-large"></i>
+	           	  				Overview
+	           	  			</a>
+	           	  		</li>
+	           	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+	           	  			<a href="#">
+	           	  				<i class="icon-codepen"></i>
+	           	  				Administration
+	           	  			</a>
+	           	  		</li>
+	           	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+	           	  			<a href="#">
+	           	  				<i class="icon-user"></i>
+	           	  				Profile
+	           	  			</a>
+	           	  		</li>
+	           	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+	           	  			<a href="#">
+	           	  				<i class="icon-doc-text"></i>
+	           	  				Invoices
+	           	  			</a>
+	           	  		</li>
+	           	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+	           	  			<a href="#">
+	           	  				<i class="icon-plus-circled"></i>
+	           	  				Create new case
+	           	  			</a>
+	           	  		</li>
+	           	  		<li class="menu-item p-3 lg:p-5 delay-100 duration 500 text-white exdda-bg-color w-50 lg:w-60 mb-7 rounded-md">
+	           	  			<a href="#">
+	           	  				<i class="icon-shopping-basket"></i>
+	           	  				Basket
+	           	  			</a>
+	           	  		</li>
+	           	  	</ul>
+	           	</div><!-- ./Sidebar end -->
+	        </div><!-- ./exdda-bg-black -->
+	    </div><!-- ./exdda-bg-black -->
 			  
-
-		  	<div class="bg-white col-span-3 py-12 px-4 pt-16 md:pb-10 lg:px-10 lg:py-24">
-			  	<div class="grid grid-cols-2 md:mb-6">
-			  	  	<div class="text-xl lg:text-2xl">
-						<i class="mr-2 icon-calendar exdda-text-orange"></i>May 19, 2022</div>
-						<div class="flex justify-end">
-						<a href=""><img class="w-20 rounded-full -top-5 relative" src="assets/images/avatar.png" alt=""></a>
-			  	  	</div>
-			  	</div><!-- ./grid-cols-2 -->
-		  	<h2 class="text-4xl lg:text-5xl font-bold mb-16">Statistik for afstemning</h2>
-		
-		  	<ul id="nav" class="mb-16">
-		  	  <li><a class="rounded-l-lg" href="#">analytics and ai</a>
-		  	    <section class="mt-16 rounded-3xl">
-		  	     <div class="acc-kontainer">          
-		  	        <div class="tab-list">
-		  	          <input type="radio" name="acc" id="acc1" checked>
-		  	          <label for="acc1">
-		  	          <div class="border border-color-one rounded-3xl">
-		  	             <div class="grid grid-cols-9 gap-4">
-		  	               <div class="text-center bg-black text-white text-base exdda-v-center rounded-tl-3xl">
-		  	               		<span>07.5</span>
-		  	               </div>
-		  	               <div class="col-span-3">
-		  	               		<p class="font-bold">The optician finds the right strength4</p>
-		  	               		<p class="font-medium">Mediacom Group Specsavers Northern Europe</p>
-		  	           		</div>
-		  	               <div class="text-center lg:text-2xl exdda-text-orange bg-white font-medium">
-		  	               		21
-		  	               		<p class="text-base mt-2">out of 11 have voted</p>
-		  	               </div>
-		  	               <div class="text-center lg:text-2xl exdda-text-orange font-medium">
-		  	               		07.13
-		  	               		<p class="text-base mt-2">Strategy</p>
-		  	               </div>
-		  	               <div class="text-center lg:text-2xl exdda-text-orange bg-white font-medium">
-		  	               		07.37
-		  	               		<p class="text-base mt-2">Solution</p>
-		  	               </div>
-		  	               <div class="text-center lg:text-2xl exdda-text-orange font-medium">
-		  	               		07.85
-		  	               		<p class="text-base mt-2">Results</p>
-		  	               </div>
-		  	               <div class="text-center bg-yellow text-white exdda-v-center rounded-tr-3xl">
-		  	               		<span><i class="icon-angle-double-up"></i></span>
-		  	               	</div>
-		  	             </div><!-- ./grid-col-9 -->
-		  	          </div>
-		  	          </label>
-		  	          <div class="acc-body">
-		  	            <div class="grid grid-cols-3 gap-4">
-		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
-        		                <div class="flex">
-        			                <div class="w-16 lg:w-20 h-20">
-        			                    <img class="exdda-image-width w-20 h-16 rounded-full"
-        			                      src="assets/images/overview-image-01.png"
-        			                      alt=""
-        			                    />
-        			                    <i class="icon-ok bg-green"></i>
-        			                  </div>
-        			                <div class="md:ml-3">
-        			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
-        			                    <div class="grid grid-cols-3">
-        			                    	<div class="text-center">
-	        			                    	<span class="text-xs">Strategib<br>10</span>
-        			                    	</div>
-        			                    	<div class="text-center">
-	        			                    	<span class="text-xs">Solution<br>10</span>
-        			                    	</div>
-        			                    	<div class="text-center">
-	        			                    	<span class="text-xs">Resultat<br>10</span>
-        			                    	</div>
-        			                    </div> 
-        			                </div>
-		  	            		</div><!-- ./flex -->
-		  	            	</div><!-- ./image-content -->
-		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
-        		                <div class="flex">
-        			                <div class="w-16 lg:w-20 h-20">
-        			                    <img class="exdda-image-width w-20 h-16 rounded-full"
-        			                      src="assets/images/overview-image-01.png"
-        			                      alt=""
-        			                    />
-        			                    <i class="icon-ok bg-green"></i>
-        			                  </div>
-        			                <div class="md:ml-3">
-        			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
-        			                    <div class="grid grid-cols-3">
-        			                    	<div class="text-center">
-	        			                    	<span class="text-xs">Strategib<br>10</span>
-        			                    	</div>
-        			                    	<div class="text-center">
-	        			                    	<span class="text-xs">Solution<br>10</span>
-        			                    	</div>
-        			                    	<div class="text-center">
-	        			                    	<span class="text-xs">Resultat<br>10</span>
-        			                    	</div>
-        			                    </div> 
-        			                </div>
-		  	            		</div><!-- ./flex -->
-		  	            	</div><!-- ./image-content -->
-		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
-        		                <div class="flex">
-        			                <div class="w-16 lg:w-20 h-20">
-        			                    <img class="exdda-image-width w-20 h-16 rounded-full"
-        			                      src="assets/images/overview-image-01.png"
-        			                      alt=""
-        			                    />
-        			                    <i class="icon-cancel bg-red"></i>
-        			                  </div>
-        			                <div class="md:ml-3">
-        			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
-        			                    <div class="grid grid-cols-3">
-        			                    	<div class="text-center">
-	        			                    	<span class="text-xs">Strategib<br>10</span>
-        			                    	</div>
-        			                    	<div class="text-center">
-	        			                    	<span class="text-xs">Solution<br>10</span>
-        			                    	</div>
-        			                    	<div class="text-center">
-	        			                    	<span class="text-xs">Resultat<br>10</span>
-        			                    	</div>
-        			                    </div> 
-        			                </div>
-		  	            		</div><!-- ./flex -->
-		  	            	</div><!-- ./image-content -->
-		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
-        		                <div class="flex">
-        			                <div class="w-16 lg:w-20 h-20">
-        			                    <img class="exdda-image-width w-20 h-16 rounded-full"
-        			                      src="assets/images/overview-image-01.png"
-        			                      alt=""
-        			                    />
-        			                    <i class="icon-ok bg-green"></i>
-        			                  </div>
-        			                <div class="md:ml-3">
-        			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
-        			                    <div class="grid grid-cols-3">
-        			                    	<div class="text-center">
-	        			                    	<span class="text-xs">Strategib<br>10</span>
-        			                    	</div>
-        			                    	<div class="text-center">
-	        			                    	<span class="text-xs">Solution<br>10</span>
-        			                    	</div>
-        			                    	<div class="text-center">
-	        			                    	<span class="text-xs">Resultat<br>10</span>
-        			                    	</div>
-        			                    </div> 
-        			                </div>
-		  	            		</div><!-- ./flex -->
-		  	            	</div><!-- ./image-content -->
-		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
-        		                <div class="flex">
-        			                <div class="w-16 lg:w-20 h-20">
-        			                    <img class="exdda-image-width w-20 h-16 rounded-full"
-        			                      src="assets/images/overview-image-01.png"
-        			                      alt=""
-        			                    />
-        			                    <i class="icon-ok bg-green"></i>
-        			                  </div>
-        			                <div class="md:ml-3">
-        			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
-        			                    <div class="grid grid-cols-3">
-        			                    	<div class="text-center">
-	        			                    	<span class="text-xs">Strategib<br>10</span>
-        			                    	</div>
-        			                    	<div class="text-center">
-	        			                    	<span class="text-xs">Solution<br>10</span>
-        			                    	</div>
-        			                    	<div class="text-center">
-	        			                    	<span class="text-xs">Resultat<br>10</span>
-        			                    	</div>
-        			                    </div> 
-        			                </div>
-		  	            		</div><!-- ./flex -->
-		  	            	</div><!-- ./image-content -->
-		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
-        		                <div class="flex">
-        			                <div class="w-16 lg:w-20 h-20">
-        			                    <img class="exdda-image-width w-20 h-16 rounded-full"
-        			                      src="assets/images/overview-image-01.png"
-        			                      alt=""
-        			                    />
-        			                    <i class="icon-cancel bg-red"></i>
-        			                  </div>
-        			                <div class="md:ml-3">
-        			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
-        			                    <div class="grid grid-cols-3">
-        			                    	<div class="text-center">
-	        			                    	<span class="text-xs">Strategib<br>10</span>
-        			                    	</div>
-        			                    	<div class="text-center">
-	        			                    	<span class="text-xs">Solution<br>10</span>
-        			                    	</div>
-        			                    	<div class="text-center">
-	        			                    	<span class="text-xs">Resultat<br>10</span>
-        			                    	</div>
-        			                    </div> 
-        			                </div>
-		  	            		</div><!-- ./flex -->
-		  	            	</div><!-- ./image-content -->
-		  	            </div><!-- ./grid-cols-3 -->
-		  	          </div><!-- ./acc-body -->
-		  	         </div><!-- ./tab list -->
-		  	        <div class="tab-list">
-		  	           <input type="radio" name="acc" id="acc2">
-		  	           <label for="acc2">
-       		  	          <div class="border border-color-one rounded-3xl">
-       		  	             <div class="grid grid-cols-9 gap-4">
-       		  	               <div class="text-center bg-black text-white text-base exdda-v-center rounded-tl-3xl">
-       		  	               		<span>07.5</span>
-       		  	               </div>
-       		  	               <div class="col-span-3">
-       		  	               		<p class="font-bold">The optician finds the right strength4</p>
-       		  	               		<p class="font-medium">Mediacom Group Specsavers Northern Europe</p>
-       		  	           		</div>
-       		  	               <div class="text-center lg:text-2xl exdda-text-orange bg-white font-medium">
-       		  	               		21
-       		  	               		<p class="text-base mt-2">out of 11 have voted</p>
-       		  	               </div>
-       		  	               <div class="text-center lg:text-2xl exdda-text-orange font-medium">
-       		  	               		07.13
-       		  	               		<p class="text-base mt-2">Strategy</p>
-       		  	               </div>
-       		  	               <div class="text-center lg:text-2xl exdda-text-orange bg-white font-medium">
-       		  	               		07.37
-       		  	               		<p class="text-base mt-2">Solution</p>
-       		  	               </div>
-       		  	               <div class="text-center lg:text-2xl exdda-text-orange font-medium">
-       		  	               		07.85
-       		  	               		<p class="text-base mt-2">Results</p>
-       		  	               </div>
-       		  	               <div class="text-center bg-yellow text-white exdda-v-center rounded-tr-3xl">
-       		  	               		<span><i class="icon-angle-double-up"></i></span>
-       		  	               	</div>
-       		  	             </div><!-- ./grid-col-9 -->
-       		  	          </div>
-       		  	          </label>
-       		  	          <div class="acc-body">
-       		  	            <div class="grid grid-cols-3 gap-4">
-       		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
-               		                <div class="flex">
-               			                <div class="w-16 lg:w-20 h-20">
-               			                    <img class="exdda-image-width w-20 h-16 rounded-full"
-               			                      src="assets/images/overview-image-01.png"
-               			                      alt=""
-               			                    />
-               			                    <i class="icon-cancel bg-red"></i>
-               			                  </div>
-               			                <div class="md:ml-3">
-               			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
-               			                    <div class="grid grid-cols-3">
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Strategib<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Solution<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Resultat<br>10</span>
-               			                    	</div>
-               			                    </div> 
-               			                </div>
-       		  	            		</div><!-- ./flex -->
-       		  	            	</div><!-- ./image-content -->
-       		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
-               		                <div class="flex">
-               			                <div class="w-16 lg:w-20 h-20">
-               			                    <img class="exdda-image-width w-20 h-16 rounded-full"
-               			                      src="assets/images/overview-image-01.png"
-               			                      alt=""
-               			                    />
-               			                    <i class="icon-cancel bg-red"></i>
-               			                  </div>
-               			                <div class="md:ml-3">
-               			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
-               			                    <div class="grid grid-cols-3">
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Strategib<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Solution<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Resultat<br>10</span>
-               			                    	</div>
-               			                    </div> 
-               			                </div>
-       		  	            		</div><!-- ./flex -->
-       		  	            	</div><!-- ./image-content -->
-       		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
-               		                <div class="flex">
-               			                <div class="w-16 lg:w-20 h-20">
-               			                    <img class="exdda-image-width w-20 h-16 rounded-full"
-               			                      src="assets/images/overview-image-01.png"
-               			                      alt=""
-               			                    />
-               			                    <i class="icon-ok bg-green"></i>
-               			                  </div>
-               			                <div class="md:ml-3">
-               			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
-               			                    <div class="grid grid-cols-3">
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Strategib<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Solution<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Resultat<br>10</span>
-               			                    	</div>
-               			                    </div> 
-               			                </div>
-       		  	            		</div><!-- ./flex -->
-       		  	            	</div><!-- ./image-content -->
-       		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
-               		                <div class="flex">
-               			                <div class="w-16 lg:w-20 h-20">
-               			                    <img class="exdda-image-width w-20 h-16 rounded-full"
-               			                      src="assets/images/overview-image-01.png"
-               			                      alt=""
-               			                    />
-               			                    <i class="icon-cancel bg-red"></i>
-               			                  </div>
-               			                <div class="md:ml-3">
-               			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
-               			                    <div class="grid grid-cols-3">
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Strategib<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Solution<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Resultat<br>10</span>
-               			                    	</div>
-               			                    </div> 
-               			                </div>
-       		  	            		</div><!-- ./flex -->
-       		  	            	</div><!-- ./image-content -->
-       		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
-               		                <div class="flex">
-               			                <div class="w-16 lg:w-20 h-20">
-               			                    <img class="exdda-image-width w-20 h-16 rounded-full"
-               			                      src="assets/images/overview-image-01.png"
-               			                      alt=""
-               			                    />
-               			                    <i class="icon-cancel bg-red"></i>
-               			                  </div>
-               			                <div class="md:ml-3">
-               			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
-               			                    <div class="grid grid-cols-3">
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Strategib<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Solution<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Resultat<br>10</span>
-               			                    	</div>
-               			                    </div> 
-               			                </div>
-       		  	            		</div><!-- ./flex -->
-       		  	            	</div><!-- ./image-content -->
-       		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
-               		                <div class="flex">
-               			                <div class="w-16 lg:w-20 h-20">
-               			                    <img class="exdda-image-width w-20 h-16 rounded-full"
-               			                      src="assets/images/overview-image-01.png"
-               			                      alt=""
-               			                    />
-               			                    <i class="icon-ok bg-green"></i>
-               			                  </div>
-               			                <div class="md:ml-3">
-               			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
-               			                    <div class="grid grid-cols-3">
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Strategib<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Solution<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Resultat<br>10</span>
-               			                    	</div>
-               			                    </div> 
-               			                </div>
-       		  	            		</div><!-- ./flex -->
-       		  	            	</div><!-- ./image-content -->
-       		  	            </div><!-- ./grid-cols-3 -->
-       		  	          </div><!-- ./acc-body -->
-		  	         </div>
-		  	        <div class="tab-list">
-		  	           <input type="radio" name="acc" id="acc3">
-		  	           <label for="acc3">
-		  	           <div class="border border-color-one rounded-3xl">
-		  	              <div class="grid grid-cols-9 gap-4">
-		  	                <div class="text-center bg-black text-white text-base exdda-v-center rounded-tl-3xl">
-		  	                		<span>07.5</span>
-		  	                </div>
-		  	                <div class="col-span-3">
-		  	                		<p class="font-bold">The optician finds the right strength4</p>
-		  	                		<p class="font-medium">Mediacom Group Specsavers Northern Europe</p>
-		  	            		</div>
-		  	                <div class="text-center lg:text-2xl exdda-text-orange bg-white font-medium">
-		  	                		21
-		  	                		<p class="text-base mt-2">out of 11 have voted</p>
-		  	                </div>
-		  	                <div class="text-center lg:text-2xl exdda-text-orange font-medium">
-		  	                		07.13
-		  	                		<p class="text-base mt-2">Strategy</p>
-		  	                </div>
-		  	                <div class="text-center lg:text-2xl exdda-text-orange bg-white font-medium">
-		  	                		07.37
-		  	                		<p class="text-base mt-2">Solution</p>
-		  	                </div>
-		  	                <div class="text-center lg:text-2xl exdda-text-orange font-medium">
-		  	                		07.85
-		  	                		<p class="text-base mt-2">Results</p>
-		  	                </div>
-		  	                <div class="text-center bg-yellow text-white exdda-v-center rounded-tr-3xl">
-		  	                		<span><i class="icon-angle-double-up"></i></span>
-		  	                	</div>
-		  	              </div><!-- ./grid-col-9 -->
-		  	           </div>
-		  	           </label>
-       		  	          <div class="acc-body">
-       		  	            <div class="grid grid-cols-3 gap-4">
-       		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
-               		                <div class="flex">
-               			                <div class="w-16 lg:w-20 h-20">
-               			                    <img class="exdda-image-width w-20 h-16 rounded-full"
-               			                      src="assets/images/overview-image-01.png"
-               			                      alt=""
-               			                    />
-               			                    <i class="icon-cancel bg-red"></i>
-               			                  </div>
-               			                <div class="md:ml-3">
-               			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
-               			                    <div class="grid grid-cols-3">
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Strategib<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Solution<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Resultat<br>10</span>
-               			                    	</div>
-               			                    </div> 
-               			                </div>
-       		  	            		</div><!-- ./flex -->
-       		  	            	</div><!-- ./image-content -->
-       		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
-               		                <div class="flex">
-               			                <div class="w-16 lg:w-20 h-20">
-               			                    <img class="exdda-image-width w-20 h-16 rounded-full"
-               			                      src="assets/images/overview-image-01.png"
-               			                      alt=""
-               			                    />
-               			                    <i class="icon-cancel bg-green"></i>
-               			                  </div>
-               			                <div class="md:ml-3">
-               			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
-               			                    <div class="grid grid-cols-3">
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Strategib<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Solution<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Resultat<br>10</span>
-               			                    	</div>
-               			                    </div> 
-               			                </div>
-       		  	            		</div><!-- ./flex -->
-       		  	            	</div><!-- ./image-content -->
-       		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
-               		                <div class="flex">
-               			                <div class="w-16 lg:w-20 h-20">
-               			                    <img class="exdda-image-width w-20 h-16 rounded-full"
-               			                      src="assets/images/overview-image-01.png"
-               			                      alt=""
-               			                    />
-               			                    <i class="icon-ok bg-green"></i>
-               			                  </div>
-               			                <div class="md:ml-3">
-               			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
-               			                    <div class="grid grid-cols-3">
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Strategib<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Solution<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Resultat<br>10</span>
-               			                    	</div>
-               			                    </div> 
-               			                </div>
-       		  	            		</div><!-- ./flex -->
-       		  	            	</div><!-- ./image-content -->
-       		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
-               		                <div class="flex">
-               			                <div class="w-16 lg:w-20 h-20">
-               			                    <img class="exdda-image-width w-20 h-16 rounded-full"
-               			                      src="assets/images/overview-image-01.png"
-               			                      alt=""
-               			                    />
-               			                    <i class="icon-ok bg-green"></i>
-               			                  </div>
-               			                <div class="md:ml-3">
-               			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
-               			                    <div class="grid grid-cols-3">
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Strategib<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Solution<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Resultat<br>10</span>
-               			                    	</div>
-               			                    </div> 
-               			                </div>
-       		  	            		</div><!-- ./flex -->
-       		  	            	</div><!-- ./image-content -->
-       		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
-               		                <div class="flex">
-               			                <div class="w-16 lg:w-20 h-20">
-               			                    <img class="exdda-image-width w-20 h-16 rounded-full"
-               			                      src="assets/images/overview-image-01.png"
-               			                      alt=""
-               			                    />
-               			                    <i class="icon-ok bg-green"></i>
-               			                  </div>
-               			                <div class="md:ml-3">
-               			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
-               			                    <div class="grid grid-cols-3">
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Strategib<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Solution<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Resultat<br>10</span>
-               			                    	</div>
-               			                    </div> 
-               			                </div>
-       		  	            		</div><!-- ./flex -->
-       		  	            	</div><!-- ./image-content -->
-       		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
-               		                <div class="flex">
-               			                <div class="w-16 lg:w-20 h-20">
-               			                    <img class="exdda-image-width w-20 h-16 rounded-full"
-               			                      src="assets/images/overview-image-01.png"
-               			                      alt=""
-               			                    />
-               			                    <i class="icon-cancel bg-red"></i>
-               			                  </div>
-               			                <div class="md:ml-3">
-               			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
-               			                    <div class="grid grid-cols-3">
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Strategib<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Solution<br>10</span>
-               			                    	</div>
-               			                    	<div class="text-center">
-       	        			                    	<span class="text-xs">Resultat<br>10</span>
-               			                    	</div>
-               			                    </div> 
-               			                </div>
-       		  	            		</div><!-- ./flex -->
-       		  	            	</div><!-- ./image-content -->
-       		  	            </div><!-- ./grid-cols-3 -->
-       		  	          </div><!-- ./acc-body -->
-		  	          </div>
-		  	     </div>
-		  	    </section>
-		  	  </li>
-		  	  <!-- tab 2 start -->
-		  	  <li><a class="rounded-r-lg" href="#">marketing automation</a>
-		  	    <section>
-		  	      <p>Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum lacus quis metus condimentum ac accumsan orci vulputate. Aenean fringilla massa vitae metus facilisis congue. Morbi placerat eros ac sapien semper pulvinar. Vestibulum facilisis, ligula a molestie venenatis, metus justo ullamcorper ipsum, congue aliquet dolor tortor eu neque. Sed imperdiet, nibh ut vestibulum tempor, nibh dui volutpat lacus, vel gravida magna justo sit amet quam. Quisque tincidunt ligula at nisl imperdiet sagittis. Morbi rutrum tempor arcu, non ultrices sem semper a. Aliquam quis sem mi.</p>
-		  	     </section>
-		  	  </li>
-		  	 
-		  	</ul>
+	  	<div class="bg-white col-span-3 py-12 px-4 pt-16 md:pb-10 lg:px-20 lg:py-24">
+		  	<div class="grid grid-cols-2 md:mb-6">
+		  	  	<div class="text-xl lg:text-2xl">
+					<i class="mr-2 icon-calendar exdda-text-orange"></i>May 19, 2022</div>
+					<div class="flex justify-end">
+					<a href=""><img class="w-20 rounded-full -top-5 relative" src="assets/images/avatar.png" alt=""></a>
+		  	  	</div>
+		  	</div><!-- ./grid-cols-2 -->
+	  	<h2 class="text-4xl lg:text-5xl font-bold mb-16">Statistik for afstemning</h2>
+	
+	  	<ul id="nav" class="mb-16">
+	  	  <li><a class="rounded-l-lg" href="#">analytics and ai</a>
+	  	    <section class="mt-16 rounded-3xl">
+	  	     <div class="acc-kontainer">          
+	  	        <div class="tab-list">
+	  	          <input type="radio" name="acc" id="acc1" checked>
+	  	          <label for="acc1">
+	  	          <div class="border border-color-one rounded-3xl">
+	  	             <div class="grid grid-cols-9 gap-4">
+	  	               <div class="text-center bg-black text-white text-base exdda-v-center rounded-tl-3xl">
+	  	               		<span>07.5</span>
+	  	               </div>
+	  	               <div class="col-span-3">
+	  	               		<p class="font-bold">The optician finds the right strength4</p>
+	  	               		<p class="font-medium">Mediacom Group Specsavers Northern Europe</p>
+	  	           		</div>
+	  	               <div class="text-center lg:text-2xl exdda-text-orange bg-white font-medium">
+	  	               		21
+	  	               		<p class="text-base mt-2">out of 11 have voted</p>
+	  	               </div>
+	  	               <div class="text-center lg:text-2xl exdda-text-orange font-medium">
+	  	               		07.13
+	  	               		<p class="text-base mt-2">Strategy</p>
+	  	               </div>
+	  	               <div class="text-center lg:text-2xl exdda-text-orange bg-white font-medium">
+	  	               		07.37
+	  	               		<p class="text-base mt-2">Solution</p>
+	  	               </div>
+	  	               <div class="text-center lg:text-2xl exdda-text-orange font-medium">
+	  	               		07.85
+	  	               		<p class="text-base mt-2">Results</p>
+	  	               </div>
+	  	               <div class="text-center bg-yellow text-white exdda-v-center rounded-tr-3xl">
+	  	               		<span><i class="icon-angle-double-down"></i></span>
+	  	               	</div>
+	  	             </div><!-- ./grid-col-9 -->
+	  	          </div>
+	  	          </label>
+	  	          <div class="acc-body">
+	  	            <div class="grid grid-cols-3 gap-4">
+	  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
+    		                <div class="flex">
+    			                <div class="w-16 lg:w-20 h-20">
+    			                    <img class="exdda-image-width w-20 h-16 rounded-full"
+    			                      src="assets/images/overview-image-01.png"
+    			                      alt=""
+    			                    />
+    			                    <i class="icon-ok bg-green"></i>
+    			                  </div>
+    			                <div class="md:ml-3">
+    			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
+    			                    <div class="grid grid-cols-3">
+    			                    	<div class="text-center">
+        			                    	<span class="text-xs">Strategib<br>10</span>
+    			                    	</div>
+    			                    	<div class="text-center">
+        			                    	<span class="text-xs">Solution<br>10</span>
+    			                    	</div>
+    			                    	<div class="text-center">
+        			                    	<span class="text-xs">Resultat<br>10</span>
+    			                    	</div>
+    			                    </div> 
+    			                </div>
+	  	            		</div><!-- ./flex -->
+	  	            	</div><!-- ./image-content -->
+	  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
+    		                <div class="flex">
+    			                <div class="w-16 lg:w-20 h-20">
+    			                    <img class="exdda-image-width w-20 h-16 rounded-full"
+    			                      src="assets/images/overview-image-01.png"
+    			                      alt=""
+    			                    />
+    			                    <i class="icon-ok bg-green"></i>
+    			                  </div>
+    			                <div class="md:ml-3">
+    			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
+    			                    <div class="grid grid-cols-3">
+    			                    	<div class="text-center">
+        			                    	<span class="text-xs">Strategib<br>10</span>
+    			                    	</div>
+    			                    	<div class="text-center">
+        			                    	<span class="text-xs">Solution<br>10</span>
+    			                    	</div>
+    			                    	<div class="text-center">
+        			                    	<span class="text-xs">Resultat<br>10</span>
+    			                    	</div>
+    			                    </div> 
+    			                </div>
+	  	            		</div><!-- ./flex -->
+	  	            	</div><!-- ./image-content -->
+	  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
+    		                <div class="flex">
+    			                <div class="w-16 lg:w-20 h-20">
+    			                    <img class="exdda-image-width w-20 h-16 rounded-full"
+    			                      src="assets/images/overview-image-01.png"
+    			                      alt=""
+    			                    />
+    			                    <i class="icon-cancel bg-red"></i>
+    			                  </div>
+    			                <div class="md:ml-3">
+    			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
+    			                    <div class="grid grid-cols-3">
+    			                    	<div class="text-center">
+        			                    	<span class="text-xs">Strategib<br>10</span>
+    			                    	</div>
+    			                    	<div class="text-center">
+        			                    	<span class="text-xs">Solution<br>10</span>
+    			                    	</div>
+    			                    	<div class="text-center">
+        			                    	<span class="text-xs">Resultat<br>10</span>
+    			                    	</div>
+    			                    </div> 
+    			                </div>
+	  	            		</div><!-- ./flex -->
+	  	            	</div><!-- ./image-content -->
+	  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
+    		                <div class="flex">
+    			                <div class="w-16 lg:w-20 h-20">
+    			                    <img class="exdda-image-width w-20 h-16 rounded-full"
+    			                      src="assets/images/overview-image-01.png"
+    			                      alt=""
+    			                    />
+    			                    <i class="icon-ok bg-green"></i>
+    			                  </div>
+    			                <div class="md:ml-3">
+    			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
+    			                    <div class="grid grid-cols-3">
+    			                    	<div class="text-center">
+        			                    	<span class="text-xs">Strategib<br>10</span>
+    			                    	</div>
+    			                    	<div class="text-center">
+        			                    	<span class="text-xs">Solution<br>10</span>
+    			                    	</div>
+    			                    	<div class="text-center">
+        			                    	<span class="text-xs">Resultat<br>10</span>
+    			                    	</div>
+    			                    </div> 
+    			                </div>
+	  	            		</div><!-- ./flex -->
+	  	            	</div><!-- ./image-content -->
+	  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
+    		                <div class="flex">
+    			                <div class="w-16 lg:w-20 h-20">
+    			                    <img class="exdda-image-width w-20 h-16 rounded-full"
+    			                      src="assets/images/overview-image-01.png"
+    			                      alt=""
+    			                    />
+    			                    <i class="icon-ok bg-green"></i>
+    			                  </div>
+    			                <div class="md:ml-3">
+    			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
+    			                    <div class="grid grid-cols-3">
+    			                    	<div class="text-center">
+        			                    	<span class="text-xs">Strategib<br>10</span>
+    			                    	</div>
+    			                    	<div class="text-center">
+        			                    	<span class="text-xs">Solution<br>10</span>
+    			                    	</div>
+    			                    	<div class="text-center">
+        			                    	<span class="text-xs">Resultat<br>10</span>
+    			                    	</div>
+    			                    </div> 
+    			                </div>
+	  	            		</div><!-- ./flex -->
+	  	            	</div><!-- ./image-content -->
+	  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
+    		                <div class="flex">
+    			                <div class="w-16 lg:w-20 h-20">
+    			                    <img class="exdda-image-width w-20 h-16 rounded-full"
+    			                      src="assets/images/overview-image-01.png"
+    			                      alt=""
+    			                    />
+    			                    <i class="icon-cancel bg-red"></i>
+    			                  </div>
+    			                <div class="md:ml-3">
+    			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
+    			                    <div class="grid grid-cols-3">
+    			                    	<div class="text-center">
+        			                    	<span class="text-xs">Strategib<br>10</span>
+    			                    	</div>
+    			                    	<div class="text-center">
+        			                    	<span class="text-xs">Solution<br>10</span>
+    			                    	</div>
+    			                    	<div class="text-center">
+        			                    	<span class="text-xs">Resultat<br>10</span>
+    			                    	</div>
+    			                    </div> 
+    			                </div>
+	  	            		</div><!-- ./flex -->
+	  	            	</div><!-- ./image-content -->
+	  	            </div><!-- ./grid-cols-3 -->
+	  	          </div><!-- ./acc-body -->
+	  	         </div><!-- ./tab list -->
+	  	        <div class="tab-list">
+	  	           <input type="radio" name="acc" id="acc2">
+	  	           <label for="acc2">
+   		  	          <div class="border border-color-one rounded-3xl">
+   		  	             <div class="grid grid-cols-9 gap-4">
+   		  	               <div class="text-center bg-black text-white text-base exdda-v-center rounded-tl-3xl">
+   		  	               		<span>07.5</span>
+   		  	               </div>
+   		  	               <div class="col-span-3">
+   		  	               		<p class="font-bold">The optician finds the right strength4</p>
+   		  	               		<p class="font-medium">Mediacom Group Specsavers Northern Europe</p>
+   		  	           		</div>
+   		  	               <div class="text-center lg:text-2xl exdda-text-orange bg-white font-medium">
+   		  	               		21
+   		  	               		<p class="text-base mt-2">out of 11 have voted</p>
+   		  	               </div>
+   		  	               <div class="text-center lg:text-2xl exdda-text-orange font-medium">
+   		  	               		07.13
+   		  	               		<p class="text-base mt-2">Strategy</p>
+   		  	               </div>
+   		  	               <div class="text-center lg:text-2xl exdda-text-orange bg-white font-medium">
+   		  	               		07.37
+   		  	               		<p class="text-base mt-2">Solution</p>
+   		  	               </div>
+   		  	               <div class="text-center lg:text-2xl exdda-text-orange font-medium">
+   		  	               		07.85
+   		  	               		<p class="text-base mt-2">Results</p>
+   		  	               </div>
+   		  	               <div class="text-center bg-yellow text-white exdda-v-center rounded-tr-3xl">
+   		  	               		<span><i class="icon-angle-double-down"></i></span>
+   		  	               	</div>
+   		  	             </div><!-- ./grid-col-9 -->
+   		  	          </div>
+   		  	          </label>
+   		  	          <div class="acc-body">
+   		  	            <div class="grid grid-cols-3 gap-4">
+   		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
+           		                <div class="flex">
+           			                <div class="w-16 lg:w-20 h-20">
+           			                    <img class="exdda-image-width w-20 h-16 rounded-full"
+           			                      src="assets/images/overview-image-01.png"
+           			                      alt=""
+           			                    />
+           			                    <i class="icon-cancel bg-red"></i>
+           			                  </div>
+           			                <div class="md:ml-3">
+           			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
+           			                    <div class="grid grid-cols-3">
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Strategib<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Solution<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Resultat<br>10</span>
+           			                    	</div>
+           			                    </div> 
+           			                </div>
+   		  	            		</div><!-- ./flex -->
+   		  	            	</div><!-- ./image-content -->
+   		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
+           		                <div class="flex">
+           			                <div class="w-16 lg:w-20 h-20">
+           			                    <img class="exdda-image-width w-20 h-16 rounded-full"
+           			                      src="assets/images/overview-image-01.png"
+           			                      alt=""
+           			                    />
+           			                    <i class="icon-cancel bg-red"></i>
+           			                  </div>
+           			                <div class="md:ml-3">
+           			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
+           			                    <div class="grid grid-cols-3">
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Strategib<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Solution<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Resultat<br>10</span>
+           			                    	</div>
+           			                    </div> 
+           			                </div>
+   		  	            		</div><!-- ./flex -->
+   		  	            	</div><!-- ./image-content -->
+   		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
+           		                <div class="flex">
+           			                <div class="w-16 lg:w-20 h-20">
+           			                    <img class="exdda-image-width w-20 h-16 rounded-full"
+           			                      src="assets/images/overview-image-01.png"
+           			                      alt=""
+           			                    />
+           			                    <i class="icon-ok bg-green"></i>
+           			                  </div>
+           			                <div class="md:ml-3">
+           			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
+           			                    <div class="grid grid-cols-3">
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Strategib<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Solution<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Resultat<br>10</span>
+           			                    	</div>
+           			                    </div> 
+           			                </div>
+   		  	            		</div><!-- ./flex -->
+   		  	            	</div><!-- ./image-content -->
+   		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
+           		                <div class="flex">
+           			                <div class="w-16 lg:w-20 h-20">
+           			                    <img class="exdda-image-width w-20 h-16 rounded-full"
+           			                      src="assets/images/overview-image-01.png"
+           			                      alt=""
+           			                    />
+           			                    <i class="icon-cancel bg-red"></i>
+           			                  </div>
+           			                <div class="md:ml-3">
+           			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
+           			                    <div class="grid grid-cols-3">
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Strategib<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Solution<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Resultat<br>10</span>
+           			                    	</div>
+           			                    </div> 
+           			                </div>
+   		  	            		</div><!-- ./flex -->
+   		  	            	</div><!-- ./image-content -->
+   		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
+           		                <div class="flex">
+           			                <div class="w-16 lg:w-20 h-20">
+           			                    <img class="exdda-image-width w-20 h-16 rounded-full"
+           			                      src="assets/images/overview-image-01.png"
+           			                      alt=""
+           			                    />
+           			                    <i class="icon-cancel bg-red"></i>
+           			                  </div>
+           			                <div class="md:ml-3">
+           			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
+           			                    <div class="grid grid-cols-3">
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Strategib<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Solution<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Resultat<br>10</span>
+           			                    	</div>
+           			                    </div> 
+           			                </div>
+   		  	            		</div><!-- ./flex -->
+   		  	            	</div><!-- ./image-content -->
+   		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
+           		                <div class="flex">
+           			                <div class="w-16 lg:w-20 h-20">
+           			                    <img class="exdda-image-width w-20 h-16 rounded-full"
+           			                      src="assets/images/overview-image-01.png"
+           			                      alt=""
+           			                    />
+           			                    <i class="icon-ok bg-green"></i>
+           			                  </div>
+           			                <div class="md:ml-3">
+           			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
+           			                    <div class="grid grid-cols-3">
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Strategib<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Solution<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Resultat<br>10</span>
+           			                    	</div>
+           			                    </div> 
+           			                </div>
+   		  	            		</div><!-- ./flex -->
+   		  	            	</div><!-- ./image-content -->
+   		  	            </div><!-- ./grid-cols-3 -->
+   		  	          </div><!-- ./acc-body -->
+	  	         </div>
+	  	        <div class="tab-list">
+	  	           <input type="radio" name="acc" id="acc3">
+	  	           <label for="acc3">
+	  	           <div class="border border-color-one rounded-3xl">
+	  	              <div class="grid grid-cols-9 gap-4">
+	  	                <div class="text-center bg-black text-white text-base exdda-v-center rounded-tl-3xl">
+	  	                		<span>07.5</span>
+	  	                </div>
+	  	                <div class="col-span-3">
+	  	                		<p class="font-bold">The optician finds the right strength4</p>
+	  	                		<p class="font-medium">Mediacom Group Specsavers Northern Europe</p>
+	  	            		</div>
+	  	                <div class="text-center lg:text-2xl exdda-text-orange bg-white font-medium">
+	  	                		21
+	  	                		<p class="text-base mt-2">out of 11 have voted</p>
+	  	                </div>
+	  	                <div class="text-center lg:text-2xl exdda-text-orange font-medium">
+	  	                		07.13
+	  	                		<p class="text-base mt-2">Strategy</p>
+	  	                </div>
+	  	                <div class="text-center lg:text-2xl exdda-text-orange bg-white font-medium">
+	  	                		07.37
+	  	                		<p class="text-base mt-2">Solution</p>
+	  	                </div>
+	  	                <div class="text-center lg:text-2xl exdda-text-orange font-medium">
+	  	                		07.85
+	  	                		<p class="text-base mt-2">Results</p>
+	  	                </div>
+	  	                <div class="text-center bg-yellow text-white exdda-v-center rounded-tr-3xl">
+	  	                		<span><i class="icon-angle-double-down"></i></span>
+	  	                	</div>
+	  	              </div><!-- ./grid-col-9 -->
+	  	           </div>
+	  	           </label>
+   		  	          <div class="acc-body">
+   		  	            <div class="grid grid-cols-3 gap-4">
+   		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
+           		                <div class="flex">
+           			                <div class="w-16 lg:w-20 h-20">
+           			                    <img class="exdda-image-width w-20 h-16 rounded-full"
+           			                      src="assets/images/overview-image-01.png"
+           			                      alt=""
+           			                    />
+           			                    <i class="icon-cancel bg-red"></i>
+           			                  </div>
+           			                <div class="md:ml-3">
+           			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
+           			                    <div class="grid grid-cols-3">
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Strategib<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Solution<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Resultat<br>10</span>
+           			                    	</div>
+           			                    </div> 
+           			                </div>
+   		  	            		</div><!-- ./flex -->
+   		  	            	</div><!-- ./image-content -->
+   		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
+           		                <div class="flex">
+           			                <div class="w-16 lg:w-20 h-20">
+           			                    <img class="exdda-image-width w-20 h-16 rounded-full"
+           			                      src="assets/images/overview-image-01.png"
+           			                      alt=""
+           			                    />
+           			                    <i class="icon-cancel bg-green"></i>
+           			                  </div>
+           			                <div class="md:ml-3">
+           			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
+           			                    <div class="grid grid-cols-3">
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Strategib<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Solution<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Resultat<br>10</span>
+           			                    	</div>
+           			                    </div> 
+           			                </div>
+   		  	            		</div><!-- ./flex -->
+   		  	            	</div><!-- ./image-content -->
+   		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
+           		                <div class="flex">
+           			                <div class="w-16 lg:w-20 h-20">
+           			                    <img class="exdda-image-width w-20 h-16 rounded-full"
+           			                      src="assets/images/overview-image-01.png"
+           			                      alt=""
+           			                    />
+           			                    <i class="icon-ok bg-green"></i>
+           			                  </div>
+           			                <div class="md:ml-3">
+           			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
+           			                    <div class="grid grid-cols-3">
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Strategib<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Solution<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Resultat<br>10</span>
+           			                    	</div>
+           			                    </div> 
+           			                </div>
+   		  	            		</div><!-- ./flex -->
+   		  	            	</div><!-- ./image-content -->
+   		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
+           		                <div class="flex">
+           			                <div class="w-16 lg:w-20 h-20">
+           			                    <img class="exdda-image-width w-20 h-16 rounded-full"
+           			                      src="assets/images/overview-image-01.png"
+           			                      alt=""
+           			                    />
+           			                    <i class="icon-ok bg-green"></i>
+           			                  </div>
+           			                <div class="md:ml-3">
+           			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
+           			                    <div class="grid grid-cols-3">
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Strategib<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Solution<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Resultat<br>10</span>
+           			                    	</div>
+           			                    </div> 
+           			                </div>
+   		  	            		</div><!-- ./flex -->
+   		  	            	</div><!-- ./image-content -->
+   		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
+           		                <div class="flex">
+           			                <div class="w-16 lg:w-20 h-20">
+           			                    <img class="exdda-image-width w-20 h-16 rounded-full"
+           			                      src="assets/images/overview-image-01.png"
+           			                      alt=""
+           			                    />
+           			                    <i class="icon-ok bg-green"></i>
+           			                  </div>
+           			                <div class="md:ml-3">
+           			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
+           			                    <div class="grid grid-cols-3">
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Strategib<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Solution<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Resultat<br>10</span>
+           			                    	</div>
+           			                    </div> 
+           			                </div>
+   		  	            		</div><!-- ./flex -->
+   		  	            	</div><!-- ./image-content -->
+   		  	            	<div class="image-content bg-white px-4 py-6 rounded-3xl">
+           		                <div class="flex">
+           			                <div class="w-16 lg:w-20 h-20">
+           			                    <img class="exdda-image-width w-20 h-16 rounded-full"
+           			                      src="assets/images/overview-image-01.png"
+           			                      alt=""
+           			                    />
+           			                    <i class="icon-cancel bg-red"></i>
+           			                  </div>
+           			                <div class="md:ml-3">
+           			                    <p class="font-bold">Peter Therkildsen Schlegel</p>
+           			                    <div class="grid grid-cols-3">
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Strategib<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Solution<br>10</span>
+           			                    	</div>
+           			                    	<div class="text-center">
+   	        			                    	<span class="text-xs">Resultat<br>10</span>
+           			                    	</div>
+           			                    </div> 
+           			                </div>
+   		  	            		</div><!-- ./flex -->
+   		  	            	</div><!-- ./image-content -->
+   		  	            </div><!-- ./grid-cols-3 -->
+   		  	          </div><!-- ./acc-body -->
+	  	          </div>
+	  	     </div>
+	  	    </section>
+	  	  </li>
+	  	  <!-- tab 2 start -->
+	  	  <li><a class="rounded-r-lg" href="#">marketing automation</a>
+	  	    <section>
+	  	      <p>Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum lacus quis metus condimentum ac accumsan orci vulputate. Aenean fringilla massa vitae metus facilisis congue. Morbi placerat eros ac sapien semper pulvinar. Vestibulum facilisis, ligula a molestie venenatis, metus justo ullamcorper ipsum, congue aliquet dolor tortor eu neque. Sed imperdiet, nibh ut vestibulum tempor, nibh dui volutpat lacus, vel gravida magna justo sit amet quam. Quisque tincidunt ligula at nisl imperdiet sagittis. Morbi rutrum tempor arcu, non ultrices sem semper a. Aliquam quis sem mi.</p>
+	  	     </section>
+	  	  </li>
+	  	 
+	  	</ul>
 
     	</div><!--/.bg-white col-span-3  -->
 	</div><!-- /.grid grid-cols-4 -->
-
-	
-
 </div><!-- /.container ene -->
 
 

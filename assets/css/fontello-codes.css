@@ -17,7 +17,7 @@
 .icon-menu:before { content: '\f008'; } /* '' */
 .icon-blank:before { content: '\f0c8'; } /* '' */
 .icon-doc-text:before { content: '\f0f6'; } /* '' */
-.icon-angle-double-up:before { content: '\f102'; } /* '' */
+.icon-angle-double-down:before { content: '\f103'; } /* '' */
 .icon-shopping-basket:before { content: '\f291'; } /* '' */
 .icon-user-circle-o:before { content: '\f2be'; } /* '' */
 .icon-codepen:before { content: '\f32c'; } /* '' */
