@@ -3,6 +3,10 @@
   --------------------------------------------------------------*/
   .left-sidebar ul li.menu-item {
       cursor: pointer;
+      transition-delay: 0.1s;
+  }
+  .left-sidebar ul li a {
+      display: block;
   }
   @media screen and (max-width: 990px) {
       #sidebar ul li {
@@ -11,6 +15,9 @@
       }
       #sidebar.active {
         left:0px;
+      }
+      .left-sidebar {
+          z-index: 110; 
       }
       .left-sidebar.active .toggle-btn {
           left:285px !important; 

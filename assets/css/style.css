@@ -139,7 +139,11 @@ a {
 # left sidebar 
 --------------------------------------------------------------*/
 .left-sidebar ul li.menu-item {
-  cursor: pointer; }
+  cursor: pointer;
+  transition-delay: 0.1s; }
+
+.left-sidebar ul li a {
+  display: block; }
 
 @media screen and (max-width: 990px) {
   #sidebar ul li {
@@ -148,6 +152,9 @@ a {
 
   #sidebar.active {
     left: 0px; }
+
+  .left-sidebar {
+    z-index: 110; }
 
   .left-sidebar.active .toggle-btn {
     left: 285px !important; }
@@ -393,6 +400,9 @@ a {
   .exdda-image-width {
     width: 60px;
     height: 40px; } }
+.acc-body .image-content p {
+  font-size: 15px; }
+
 /*--------------------------------------------------------------
  Checkout Line
 --------------------------------------------------------------*/
