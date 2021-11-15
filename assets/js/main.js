@@ -3,6 +3,7 @@
 function toggleSideMenu(){
   document.getElementById('side-menu').classList.toggle('active');
 }
+
 /*===== Tab ====*/
 
 $(document).ready(function () {
