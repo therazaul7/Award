@@ -1,11 +1,12 @@
 
 /*==== Mobile menu =====*/
-function toggleSideMenu(){
-  document.getElementById('side-menu').classList.toggle('active');
-}
+$(document).ready(function(){
+  $(".toggle-btn").click(function(){
+     $("#side-menu").toggleClass("menu");
+   });
+});
 
 /*===== Tab ====*/
-
 $(document).ready(function () {
     
     $('#nav').children('li').first().children('a').addClass('active')

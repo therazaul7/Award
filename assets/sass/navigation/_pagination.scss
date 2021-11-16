@@ -32,6 +32,7 @@
 }
  .pagination li a:hover {
      background-color: $color_orange;
+     color: white;
 }
  .pagination li a.active {
      background-color: $color_orange;
@@ -51,10 +52,10 @@
   z-index: 1;
 }
 .exdda-pagination-line-one:after {
-  background: linear-gradient(to right, $border_color_yellow 20%,$bg_white_solid 20%);
+  background: linear-gradient(to right, $border_color_yellow 25%,$bg_white_solid 25%);
 }
 .exdda-pagination-line-two:after {
-  background: linear-gradient(to right, $border_color_yellow 30%,$bg_white_solid 30%);
+  background: linear-gradient(to right, $border_color_yellow 40%,$bg_white_solid 40%);
 }
 .exdda-pagination-line-three:after {
   background: linear-gradient(to right, $border_color_yellow 50%,$bg_white_solid 50%);
