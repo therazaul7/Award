@@ -95,19 +95,19 @@
 		</div><!-- ./exdda-bg-black -->
 
 		<div class="bg-white col-span-3 py-12 px-4 pt-16 md:pb-10 lg:px-20 lg:py-24">
-			  	<div class="grid grid-cols-2 mb-6">
-			  	  <div class="text-xl lg:text-2xl">
-			  	  	<i class="mr-2 icon-calendar exdda-text-orange"></i>
-			  	  		May 19, 2022
-			  	  	</div>
-			  	  <div class="flex justify-end">
-			  	  	<a href="">
-			  	  		<img class="w-20 rounded-full -top-5 relative" src="assets/images/avatar.png" alt="">
-			  	  	</a>
-			  	  </div>
-			  	</div><!-- ./col-span-2 -->
+		  	<div class="grid grid-cols-2 mb-6">
+		  	  <div class="text-xl lg:text-2xl">
+		  	  	<i class="mr-2 icon-calendar exdda-text-orange"></i>
+		  	  		May 19, 2022
+		  	  	</div>
+		  	  <div class="flex justify-end">
+		  	  	<a href="">
+		  	  		<img class="w-20 rounded-full -top-5 relative" src="assets/images/avatar.png" alt="">
+		  	  	</a>
+		  	  </div>
+		  	</div><!-- ./col-span-2 -->
 		  	<h2 class="text-4xl lg:text-5xl font-bold mb-8">Create new case</h2>
-	  		  	<form action="" class="mt-16">
+	  		  	<form action="#" method="post" class="mt-16">
 	  	  		  	<div class="border-l-8 relative rounded-xl py-10 px-4 exdda-border-left-yellow pl-20 mt-12 exdda-bg-white-solid">
 	  	  		  		<i class="icon-blank rotate exdda-text-orange text-xl"></i>
 	  		  		    <select class="block w-full font-medium rounded-xl text-xl focus:outline-none">
@@ -145,36 +145,41 @@
 		        </ul>
 		    </div>
     	  	<div class="checkbox content mt-20">
-        	<form action="#" method="post">
-        	  	<div class="grid gap-6 grid-cols-1 mt-14 mb-16">
-        	        <div class="grid grid-cols-2 gap-4">
-        	          	<div>
-		        	      	<h2 class="capitalize block text-4xl mb-2 font-semibold" for="grid-first-name">
-		        	        	Descriptions
-		        	        </h2>
-        	          	</div>
-        	          	<div class="text-right mt-3">
-        	          	  	<span class="exdda-bg-white-solid px-6 py-2 rounded-full">Required - max. 400 words</span>
-        	          	</div>
-        	        </div>
-	        	    <div class="#">
-	        	    	<textarea class="w-full border border-color-one capitalize rounded-xl px-10 py-6 focus:outline-none" rows="6" cols="50" placeholder="Background">
-	        	    	</textarea>
-	        	    	<p class="font-light mt-2 capitalize">Describe the background to the case - Especially the challenges and the goals you would fulfill.</p>
-	            	</div>
-        		    <div class="">
-        		    	<textarea class="w-full border border-color-one capitalize rounded-xl px-10 py-6 focus:outline-none" rows="6" cols="50" placeholder="Solution:">
-        		    	</textarea>
-        		    	<p class="font-light mt-2 capitalize">Describe the solution, especially the insights and strategy choices that pointed to the solution.</p>
-        	    	</div>
-	    		    <div class="">
-	    		    	<textarea class="w-full border border-color-one capitalize rounded-xl px-10 py-6 focus:outline-none" rows="6" cols="50" placeholder="Result">
-	    		    	</textarea>
-	    		    	<p class="font-light mt-2 capitalize">An opinion from the advertiser and concrete data. Numbers are a requirement.</p>
-	    	    	</div>
-        	 	</div><!-- ./grid-cols-1 -->
-        	</form>
-    	  </div><!--./checkbox content  -->
+	        	<form action="#" method="post">
+	        	  	<div class="grid gap-6 grid-cols-1 mt-14 mb-16">
+	        	        <div class="grid grid-cols-2 gap-4">
+	        	          	<div>
+			        	      	<h2 class="capitalize block text-4xl mb-2 font-semibold">
+			        	        	Descriptions
+			        	        </h2>
+	        	          	</div>
+	        	          	<div class="text-right mt-3">
+	        	          	  	<span class="exdda-bg-white-solid px-6 py-2 rounded-full">Required - max. 400 words</span>
+	        	          	</div>
+	        	        </div>
+		        	    <div class="#">
+		        	    	<textarea class="w-full border border-color-one capitalize rounded-xl px-10 py-6 focus:outline-none" rows="6" cols="50">
+		        	    	Background
+		        	    	</textarea>
+		        	    	<p class="font-light mt-2 capitalize">Describe the background to the case - Especially the challenges and the goals you would fulfill.</p>
+		            	</div>
+	        		    <div class="">
+	        		    	<textarea class="w-full border border-color-one capitalize rounded-xl px-10 py-6 focus:outline-none" rows="6" cols="50" placeholder="Solution:">
+	        		    	</textarea>
+	        		    	<p class="font-light mt-2 capitalize">Describe the solution, especially the insights and strategy choices that pointed to the solution.</p>
+	        	    	</div>
+		    		    <div class="">
+		    		    	<textarea class="w-full border border-color-one capitalize rounded-xl px-10 py-6 focus:outline-none" rows="6" cols="50" placeholder="Result">
+		    		    	</textarea>
+		    		    	<p class="font-light mt-2 capitalize">An opinion from the advertiser and concrete data. Numbers are a requirement.</p>
+		    	    	</div>
+
+		        	    <textarea rows="4" cols="50" name="comment" form="usrform">
+		        	    Enter text here...</textarea>
+
+	        	 	</div><!-- ./grid-cols-1 -->
+	        	</form>
+    	  	</div><!--./checkbox content  -->
     	</div><!--./bg-white col-span-3  -->
 	</div><!-- ./grid grid-cols-4 -->
 </div><!-- ./container ene -->

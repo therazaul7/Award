@@ -106,7 +106,7 @@
 			  	  </div>
 			  	</div><!-- ./col-span-2 -->
 		  	<h2 class="text-4xl lg:text-5xl font-bold mb-8">Create new case</h2>
-	  		  	<form action="" class="mt-16">
+	  		  	<form action="#" method="post" class="mt-16">
 	  	  		  	<div class="border-l-8 relative rounded-xl py-10 px-4 exdda-border-left-yellow pl-20 mt-12 exdda-bg-white-solid">
 	  	  		  		<i class="icon-blank rotate exdda-text-orange text-xl"></i>
 	  		  		    <select class="block w-full font-medium rounded-xl text-xl focus:outline-none">
@@ -149,26 +149,26 @@
     	  		<div class="">
 		    	  	 <ul>
 		    	  	 	<li class="py-3">
-			    	  	 	<input type="checkbox" id="form" class="exdda-checkbox-border-color rounded-xl" name="">
-			    	  	  	<label class="text-lg" for="form">Analytics and AI</label><br>
+			    	  	 	<input type="checkbox" id="analytics" class="exdda-checkbox-border-color rounded-xl">
+			    	  	  	<label class="text-lg" for="analytics">Analytics and AI</label><br>
 		    	  	  	</li>
 		    	  	 	<li class="py-3">
-			    	  	 	<input class="exdda-checkbox-border-color rounded-xl" type="checkbox" id="form" name="">
-			    	  	  	<label class="text-lg" for="form">Branded Content - Campaign driven</label><br>
+			    	  	 	<input class="exdda-checkbox-border-color rounded-xl" type="checkbox" id="branded">
+			    	  	  	<label class="text-lg" for="branded">Branded Content - Campaign driven</label><br>
 		    	  	  	</li>
 		    	  	</ul>
     	  	  	</div>
     	  	</div><!-- ./gride-cols-1 -->
         	<form action="#" method="post">
         	  	<div class="grid gap-6 grid-cols-1 mt-14 mb-16">
-        	      	<h2 class="capitalize block text-4xl mb-2 font-semibold" for="grid-first-name">
+        	      	<h2 class="capitalize block text-4xl mb-2 font-semibold">
         	        	Information
         	        </h2>
 	        	    <div class="">
 	        	      	<input class="text-lg w-full px-10 py-6 md:mb-0 border border-color-one rounded-xl capitalize focus:outline-none block w-full" id="grid-first-name" type="text" placeholder="respondent’s fast and last name">
 	            	</div>
         	 	</div><!-- ./grid-cols-1 -->
-	    	      	<h2 class="capitalize block text-4xl mb-10 font-semibold" for="grid-first-name">
+	    	      	<h2 class="capitalize block text-4xl mb-10 font-semibold">
 	    	        	Involved by the advertiser
 	    	        </h2>
 
@@ -176,10 +176,10 @@
 	    	          	<div class="col-span-8">
       		        	 	<div class="grid gap-6 grid-cols-2">
       			        	    <div class="">
-      			        	      	<input class="text-lg w-full px-10 py-6 md:mb-0 border border-color-one rounded-xl capitalize focus:outline-none block w-full" id="grid-first-name" type="text" placeholder="full name">
+      			        	      	<input class="text-lg w-full px-10 py-6 md:mb-0 border border-color-one rounded-xl capitalize focus:outline-none block w-full" id="full-name" type="text" placeholder="full name">
       			            	</div>
       		        		    <div class="">
-      		        		      	<input class="text-lg w-full px-10 py-6 md:mb-0 border border-color-one rounded-xl capitalize focus:outline-none block w-full" id="grid-first-name" type="text" placeholder="last name">
+      		        		      	<input class="text-lg w-full px-10 py-6 md:mb-0 border border-color-one rounded-xl capitalize focus:outline-none block w-full" id="last-name" type="text" placeholder="last name">
       		        	    	</div>
       		        	 	</div><!-- ./grid-cols-2 -->
 	    	          	</div><!-- ./grid-cols-8 -->
@@ -190,20 +190,20 @@
         	 
 	        	  	<div class="grid gap-6 grid-cols-1 mt-12 mb-14">
 		        	    <div class="">
-		        	      	<input class="text-lg w-full px-10 py-6 md:mb-0 border border-color-one rounded-xl capitalize focus:outline-none block w-full" id="grid-first-name" type="text" placeholder="Agency: Enter your company name if you do not have an agency affiliated">
+		        	      	<input class="text-lg w-full px-10 py-6 md:mb-0 border border-color-one rounded-xl capitalize focus:outline-none block w-full" id="agency" type="text" placeholder="Agency: Enter your company name if you do not have an agency affiliated">
 		            	</div>
 	        	 	</div><!-- ./grid-cols-1 -->
-        	 		<h2 class="capitalize block text-4xl mb-8 font-semibold" for="grid-first-name">
-        	 	  	Involved employees
+        	 		<h2 class="capitalize block text-4xl mb-8 font-semibold">
+        	 	  		Involved employees
         	 	  	</h2>
 	    	        <div class="grid grid-cols-9 gap-4">
 	    	          	<div class="col-span-8">
       		        	 	<div class="grid gap-6 grid-cols-2">
       			        	    <div class="">
-      			        	      	<input class="text-lg w-full px-10 py-6 md:mb-0 border border-color-one rounded-xl capitalize focus:outline-none block w-full" id="grid-first-name" type="text" placeholder="Employee">
+      			        	      	<input class="text-lg w-full px-10 py-6 md:mb-0 border border-color-one rounded-xl capitalize focus:outline-none block w-full" id="employee" type="text" placeholder="Employee">
       			            	</div>
       		        		    <div class="">
-      		        		      	<input class="text-lg w-full px-10 py-6 md:mb-0 border border-color-one rounded-xl capitalize focus:outline-none block w-full" id="grid-first-name" type="text" placeholder="Title">
+      		        		      	<input class="text-lg w-full px-10 py-6 md:mb-0 border border-color-one rounded-xl capitalize focus:outline-none block w-full" id="title" type="text" placeholder="Title">
       		        	    	</div>
       		        	 	</div><!-- ./grid-cols-2 -->
 	    	          	</div><!-- ./grid-cols-8 -->
@@ -211,18 +211,18 @@
 	    	          		<i class="icon-plus border py-3 px-3 rounded-xl exdda-border-yellow"></i>
 	    	          	</div>
 	    	        </div><!-- ./grid-cols-9 -->
-    	 		<h2 class="capitalize block text-4xl mb-7 font-semibold mt-14" for="grid-first-name">
-    	 	  	Collaborators
+    	 		<h2 class="capitalize block text-4xl mb-7 font-semibold mt-14">
+    	 	  		Collaborators
     	 	  	</h2>
     	 	  	<h5 class="text-base font-light color-gray exda-color-memorized mb-6">If you have worked with other agencies on the task, you can credit them here.</h5>
 		    	<div class="grid grid-cols-9 gap-4">
 		    	  	<div class="col-span-8">
 		    	 	<div class="grid gap-6 grid-cols-2">
 		        	    <div class="">
-		        	      	<input class="text-lg w-full px-10 py-6 md:mb-0 border border-color-one rounded-xl capitalize focus:outline-none block w-full" id="grid-first-name" type="text" placeholder="Bureau">
+		        	      	<input class="text-lg w-full px-10 py-6 md:mb-0 border border-color-one rounded-xl capitalize focus:outline-none block w-full" id="bureau" type="text" placeholder="Bureau">
 		            	</div>
 		    		    <div class="">
-		    		      	<input class="text-lg w-full px-10 py-6 md:mb-0 border border-color-one rounded-xl capitalize focus:outline-none block w-full" id="grid-first-name" type="text" placeholder="Role">
+		    		      	<input class="text-lg w-full px-10 py-6 md:mb-0 border border-color-one rounded-xl capitalize focus:outline-none block w-full" id="role" type="text" placeholder="Role">
 		    	    	</div>
 		    	 	</div><!-- ./grid-cols-2 -->
 		    	 	  	</div><!-- ./grid-cols-8 -->

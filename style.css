@@ -2,23 +2,26 @@
 /*--------Accordion-------*/
 .acc-kontainer .acc-body {
     height: 0;
-    background-color: #F5F6FA;
+    background-color: #F5F6FA; 
     line-height: 28px;
     padding: 0 20px;
     box-sizing: border-box;
     transition: 0.5s;
     z-index: 99;
     position: relative;
+    overflow: hidden;
+    border-radius: 0 0 24px 24px;
 }
 
 .acc-kontainer label {
   cursor: pointer;
-   background-color: #F5F6FA !important;
+   background-color: #F5F6FA !important; 
    display: block;
    font-weight: 400;
    box-sizing: border-box;
    z-index: 100;
    position: relative;
+   border-radius: 24px;
 }
 .acc-kontainer input {
  display: none;
@@ -69,21 +72,35 @@
      color: white;
 } 
 
-.text-xs {
-	font-size: 11px !important;
+.tab-list .image-content .text-xs {
+	font-size: 10px !important;
 }
 
 
+.tab-list {
+	margin-bottom: 50px;
+}
 
 
+.group-footer-content a:last-child {
+	float: right;
+	margin-top: -10px;
+}
 
-.hover:hover {
+.group-footer-content a:hover {
 	background-color: #272A33;
 	color: white;
 	transition: all .4s ease 0s;
 }
-.hover-two:hover {
-     background-color: #FEB41C;
-     color: white;
-     transition: all .4s ease 0s;
-}
+
+
+
+
+
+
+
+
+
+
+
+

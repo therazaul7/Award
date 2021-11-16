@@ -115,6 +115,16 @@ select {
 form label i {
   color: #9196A4; }
 
+.hover:hover {
+  background-color: #272A33;
+  color: white;
+  transition: all .4s ease 0s; }
+
+.hover-two:hover {
+  background-color: #FEB41C;
+  color: white;
+  transition: all .4s ease 0s; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -464,7 +474,7 @@ a {
   display: none;
   /* I NEED TO FIX THIS */
   float: left;
-  background: #F5F6FA;
+  /* background: $bg_white_solid; */
   overflow: hidden; }
 
 .no-js #nav section {

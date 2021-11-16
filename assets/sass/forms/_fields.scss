@@ -34,4 +34,15 @@ select {
 form label i {
    color: $color_memorized;
 }
- 
+
+
+.hover:hover {
+   background-color: #272A33;
+   color: white;
+   transition: all .4s ease 0s;
+}
+.hover-two:hover {
+     background-color: #FEB41C;
+     color: white;
+     transition: all .4s ease 0s;
+}

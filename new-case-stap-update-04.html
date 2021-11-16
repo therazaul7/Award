@@ -106,7 +106,7 @@
 			  	  </div>
 			  	</div><!-- ./col-span-2 -->
 		  	<h2 class="text-4xl lg:text-5xl font-bold mb-8">Create new case</h2>
-	  		  	<form action="" class="mt-16">
+	  		  	<form action="#" method="post" class="mt-16">
 	  	  		  	<div class="border-l-8 relative rounded-xl py-10 px-4 exdda-border-left-yellow pl-20 mt-12 exdda-bg-white-solid">
 	  	  		  		<i class="icon-blank rotate exdda-text-orange text-xl"></i>
 	  		  		    <select class="block w-full font-medium rounded-xl text-xl focus:outline-none">
@@ -146,33 +146,33 @@
     	  	
         	<form action="#" method="post">
         	  	<div class="grid gap-6 grid-cols-1 mt-14 mb-16">
-        	      	<h2 class="capitalize block text-4xl mb-2 font-semibold" for="grid-first-name">
+        	      	<h2 class="capitalize block text-4xl mb-2 font-semibold">
         	        	Media
         	        </h2>
 	        	    <div class="#">
-	        	    	<label class="text-lg font-light" for="form">Thumbnail: <span class="font-medium">(Required)</span></label>
-	        	    	 <input type="file" id="myFile" name="filename">
+	        	    	<label class="text-lg font-light" for="required">Thumbnail: <span class="font-medium">(Required)</span></label>
+	        	    	 <input type="file" id="required" name="filename">
 	        	    	
 	        	    	<p class="font-light mt-2">We recommend that the image has the format 4: 3 and is min. 400px in width.</p>
 	            	</div>
         		    <div class="">
-        		    	<label class="text-lg font-light" for="form">Header: <span class="font-medium">(Required)</span></label>
-        		    	<textarea class="mt-4 w-full border capitalize rounded-xl px-10 py-6 focus:outline-none" rows="6" cols="50" placeholder="Background">
+        		    	<label class="text-lg font-light" for="header">Header: <span class="font-medium">(Required)</span></label>
+        		    	<textarea id="header" class="mt-4 w-full border capitalize rounded-xl px-10 py-6 focus:outline-none" rows="6" cols="50" placeholder="Background">
         		    	</textarea>
         		    	<p class="font-light mt-2">We recommend that the image has is min. 1400px in width.</p>
         	    	</div>
 	    		    <div class="">
-        		    	<label class="text-lg" for="form">Video:</label>
-	    		    	<textarea class="mt-4 w-full border capitalize rounded-xl px-10 py-6 focus:outline-none" rows="6" cols="50" placeholder="Background">
+        		    	<label class="text-lg" for="video">Video:</label>
+	    		    	<textarea id="video" class="mt-4 w-full border capitalize rounded-xl px-10 py-6 focus:outline-none" rows="6" cols="50" placeholder="Background">
 	    		    	</textarea>
 	    		    	<p class="font-light mt-2"><span class="font-medium">NOTE:</span>The jury uses the video to judge the case. A video increases the chance of being nominated. If you do not have one, you must at least upload photos.</p>
 	    	    	</div>
         	 	</div><!-- ./grid-cols-1 -->
         	</form>
-    	  </div><!--./checkbox content  -->
-    	</div><!--./bg-white col-span-3  -->
-	</div><!-- ./grid grid-cols-4 -->
-</div><!-- ./container ene -->
+    	</div><!--./bg-white  -->
+    </div><!--./grid grid-cols-4   -->
+</div>
+
 
 <!-- All The JS Files
 ================================================== --> 
