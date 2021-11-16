@@ -55,6 +55,7 @@
 .exdda-v-center span {
    display: table-cell;
    vertical-align: middle;
+   font-size: 20px;
 } 
 
 .image-content img {
@@ -76,24 +77,38 @@
 	font-size: 10px !important;
 }
 
-
 .tab-list {
 	margin-bottom: 50px;
 }
-
 
 .group-footer-content a:last-child {
 	float: right;
 	margin-top: -10px;
 }
-
 .group-footer-content a:hover {
 	background-color: #272A33;
 	color: white;
 	transition: all .4s ease 0s;
 }
 
+/* ==== icon rotate ==== */
+.rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+.rotate.down {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform: rotate(180deg);
+}
 
+
+.icon-angle-double-down.down:before {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform: rotate(180deg);
+}
 
 
 

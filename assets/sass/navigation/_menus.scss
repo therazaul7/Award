@@ -36,18 +36,6 @@
         margin:5px 0px;
         cursor:pointer;
       }
-      #sidebar div.list div.item {
-        padding:15px 10px;
-        border-bottom:1px solid #444;
-        color:#fcfcfc;
-        text-transform:uppercase;
-        font-size:12px;
-      }
-
-      #sidebar div.list div.item a{
-        color:#fcfcfc;
-        text-decoration: none;
-      }
 
       #side-menu{
         position: fixed;
@@ -57,12 +45,7 @@
         left: -300px;
         transition: ease-in-out 500ms;
         top: 0;
-
       }
-      /* #side-menu.active{
-        left:0px;
-        z-index: 1;
-      } */
 
       #side-menu ul li:hover i{
         transform:scale(1.1);
@@ -71,7 +54,6 @@
       .toggle-btn{
         cursor: pointer;
           font-size: 30px;
-          color: gray;
           position: absolute;
           left: 315px;
           top: 20px;

@@ -30,6 +30,11 @@ $(document).ready(function () {
 
 
 
+/*===== Acrodion icon ====*/
+$(".rotate").click(function () {
+    $(this).toggleClass("down");
+})
+
 
 
 

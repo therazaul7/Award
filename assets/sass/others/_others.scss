@@ -62,9 +62,7 @@
  #nav section {
    display: none; /* I NEED TO FIX THIS */
    float: left;
-     /* background: $bg_white_solid; */
-     overflow: hidden; 
-
+    overflow: hidden; 
  }
 
  .no-js #nav section {
@@ -84,4 +82,23 @@
 table td i,
 table td a {
   cursor: pointer;
+}
+
+/* ==== icon rotate ==== */
+.rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+.rotate.down {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+.icon-angle-double-down.down:before {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform: rotate(180deg);
 }
