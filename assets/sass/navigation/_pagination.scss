@@ -1,12 +1,12 @@
 /*-------------------------------------------------------------- 
 # Pagination 
 --------------------------------------------------------------*/
- .pagination li {
+ .exdda-pagination li {
      display: inline;
      position: relative;
      z-index: 2;
 }
- .pagination li a {
+ .exdda-pagination li a {
      display: inline-block;
      transition: all .4s ease 0s;
      margin: 0px 45px 0 0;
@@ -16,25 +16,25 @@
      font-size: 18px;
 }
  @media screen and (max-width: 990px) {
-     .pagination li a {
+     .exdda-pagination li a {
          padding: 10px 20px;
     }
 }
- .pagination li:last-child a{
+ .exdda-pagination li:last-child a{
      margin: 0;
      background:  $color_white;
      padding: 15px 40px;
 }
  @media screen and (max-width: 500px) {
-    .pagination li:last-child a{
+    .exdda-pagination li:last-child a{
         margin-top: 30px;
     }
 }
- .pagination li a:hover {
+ .exdda-pagination li a:hover {
      background-color: $color_orange;
      color: white;
 }
- .pagination li a.active {
+ .exdda-pagination li a.active {
      background-color: $color_orange;
 }
 .exdda-pagination-line-five:after,

@@ -30,19 +30,17 @@
 	<!-- CSS
     ================================================== -->
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-	
 	<link rel="stylesheet" href="assets/css/fontello.css">
 	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 <div class="container-2xl">
 	<div class="grid lg:grid-cols-4">
 	    <!-- Sidebar start -->
-	    <div class="exdda-bg-black left-sidebar clear-both relative" id="sidebar"> 
-	      	<div id="side-menu">
-	           <div class="toggle-btn">
+	    <div class="exdda-bg-black left-sidebar relative" id="sidebar"> 
+	      	<div id="exdda-side-menu">
+	           <div class="exdda-toggle-btn">
 	             <i class="icon-menu"></i>
 	           </div>
 	           	  <div class="site-logo flex justify-center py-12 border-b exdda-border-b">
@@ -107,42 +105,42 @@
 	  	<h2 class="text-4xl lg:text-5xl font-bold mb-12">Edit Profile</h2>
 	  	<form action="#" method="post">
 	  	  <div class="grid gap-6 lg:grid-cols-2">
-	  	    <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
+	  	    <div class="w-full pt-8 px-10 py-6 md:mb-0 border .exdda-border-color-one rounded-xl">
 	  	      <label class="capitalize block text-xl" for="first-name">
 	  	       <i class="icon-user-circle-o exdda-color-memorize text-xl"></i>
 	  	        First Name
 	  	      </label>
 	  	      <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="first-name" type="text" placeholder="Respondent’s fast and last name">
 	  	    </div>
-	  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
+	  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border .exdda-border-color-one rounded-xl">
 	  	     <label class="capitalize block text-xl" for="email-address">
 	  	      <i class="icon-mail exdda-color-memorize text-xl"></i>
 	  	       Email Address
 	  	     </label>
 	  	     <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="email-address" type="text" placeholder="Input for email address">
 	  	   </div>
-	  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
+	  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border .exdda-border-color-one rounded-xl">
 	  	     <label class="capitalize block text-xl" for="company-bureau">
 	  	      <i class="icon-briefcase exdda-color-memorize text-xl"></i>
 	  	       Company or Bureau
 	  	     </label>
 	  	     <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="company-bureau" type="text" placeholder="Irespondent’s fast and last name">
 	  	   </div>
-	  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
+	  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border .exdda-border-color-one rounded-xl">
 	  	     <label class="capitalize block text-xl" for="linkedin">
 	  	      <i class="icon-linkedin exdda-color-memorize text-xl"></i>
 	  	       Linkedin URL
 	  	     </label>
 	  	     <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="linkedin" type="text" placeholder="input for linkedin URL">
 	  	   </div>
-	  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
+	  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border .exdda-border-color-one rounded-xl">
 	  	     <label class="capitalize block text-xl" for="enter-password">
 	  	      <i class="icon-lock-alt exdda-color-memorize text-xl"></i>
 	  	       Enter password
 	  	     </label>
 	  	     <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="enter-password" type="text" placeholder="Set a strong password">
 	  	   </div>
-	  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
+	  	   <div class="w-full pt-8 px-10 py-6 md:mb-0 border .exdda-border-color-one rounded-xl">
 	  	     <label class="capitalize block text-xl" for="enter-repeat-password">
 	  	      <i class="icon-lock-alt exdda-color-memorize text-xl"></i>
 	  	       Enter Repeat Password
@@ -150,7 +148,7 @@
 	  	     <input class="capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="enter-repeat-password" type="text" placeholder="set a strong password">
 	  	   </div>
 	  	  </div>
-	  	   <button class="capitalize mt-10 py-4 px-10 rounded-lg bg-yellow font-medium text-xl">
+	  	   <button class="capitalize mt-10 py-4 px-10 rounded-lg exdda-bg-yellow font-medium text-xl">
 	  	     update account
 	  	   </button>
 
@@ -161,7 +159,7 @@
 
 <!-- All The JS Files
 ================================================== --> 
-<script src="assets/js/jquery-1.11.2.min.js"></script>
+<script src="assets/js/jquery-3.6.0.js"></script>
 <script src="assets/js/main.js"></script>
 
 </body>

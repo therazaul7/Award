@@ -151,6 +151,11 @@ a {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+#exdda-side-menu {
+  height: 700px;
+  overflow-y: auto;
+  scroll-behavior: smooth; }
+
 /*-------------------------------------------------------------- 
 # left sidebar 
 --------------------------------------------------------------*/
@@ -162,10 +167,10 @@ a {
   display: block; }
 
 @media screen and (min-width: 990px) {
-  .toggle-btn {
+  .exdda-toggle-btn {
     display: none; } }
 @media screen and (max-width: 990px) {
-  #sidebar ul li {
+  #exdda-sidebar ul li {
     font-size: 16px;
     width: 220px; }
 
@@ -175,10 +180,10 @@ a {
   .left-sidebar {
     z-index: 110; }
 
-  .left-sidebar.active .toggle-btn {
+  .left-sidebar.active .exdda-toggle-btn {
     left: 285px !important; }
 
-  #sidebar .toggle-btn span {
+  #exdda-sidebar .exdda-toggle-btn span {
     display: block;
     width: 30px;
     height: 5px;
@@ -186,7 +191,7 @@ a {
     margin: 5px 0px;
     cursor: pointer; }
 
-  #side-menu {
+  #exdda-side-menu {
     position: fixed;
     width: 300px;
     height: 100%;
@@ -195,18 +200,19 @@ a {
     transition: ease-in-out 500ms;
     top: 0; }
 
-  #side-menu ul li:hover i {
+  #exdda-side-menu ul li:hover i {
     transform: scale(1.1); }
 
-  .toggle-btn {
+  .exdda-toggle-btn {
     cursor: pointer;
     font-size: 30px;
+    color: #17191F;
     position: absolute;
     left: 315px;
     top: 20px;
     transition: ease-in-out 250ms; }
 
-  .toggle-btn:hover {
+  .exdda-toggle-btn:hover {
     transform: scale(1.2);
     text-shadow: 5px 5px 5px gray; } }
 /*--------------------------------------------------------------
@@ -215,12 +221,12 @@ a {
 /*-------------------------------------------------------------- 
 # Pagination 
 --------------------------------------------------------------*/
-.pagination li {
+.exdda-pagination li {
   display: inline;
   position: relative;
   z-index: 2; }
 
-.pagination li a {
+.exdda-pagination li a {
   display: inline-block;
   transition: all .4s ease 0s;
   margin: 0px 45px 0 0;
@@ -230,21 +236,21 @@ a {
   font-size: 18px; }
 
 @media screen and (max-width: 990px) {
-  .pagination li a {
+  .exdda-pagination li a {
     padding: 10px 20px; } }
-.pagination li:last-child a {
+.exdda-pagination li:last-child a {
   margin: 0;
   background: #fff;
   padding: 15px 40px; }
 
 @media screen and (max-width: 500px) {
-  .pagination li:last-child a {
+  .exdda-pagination li:last-child a {
     margin-top: 30px; } }
-.pagination li a:hover {
+.exdda-pagination li a:hover {
   background-color: #FEB41C;
   color: white; }
 
-.pagination li a.active {
+.exdda-pagination li a.active {
   background-color: #FEB41C; }
 
 .exdda-pagination-line-five:after,
@@ -301,19 +307,19 @@ a {
 .exdda-text-orange {
   color: #FEB41C; }
 
-.exda-color-memorized {
+.exdda-color-memorized {
   color: #9196A4; }
 
 /*-------------------------------------------------------------- 
 # Background Color 
 --------------------------------------------------------------*/
-.bg-yellow {
+.exdda-bg-yellow {
   background-color: #FEB41C; }
 
-.bg-red {
+.exdda-bg-red {
   background-color: red; }
 
-.bg-green {
+.exdda-bg-green {
   background-color: #6BC762; }
 
 .exdda-bg-gray {
@@ -335,7 +341,7 @@ a {
 /*-------------------------------------------------------------- 
 # border-Color 
 --------------------------------------------------------------*/
-.border-color-one {
+.exdda-border-color-one {
   border-color: #D1D5E0; }
 
 .exdda-border-yellow {
@@ -388,6 +394,84 @@ a {
 # Color
 --------------------------------------------------------------*/
 /*-------------------------------------------------------------- 
+Accordion 
+--------------------------------------------------------------*/
+.acc-kontainer .acc-body {
+  height: 0;
+  background-color: #F5F6FA;
+  line-height: 28px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  z-index: 99;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 24px 24px; }
+
+.acc-kontainer label {
+  cursor: pointer;
+  background-color: #F5F6FA !important;
+  display: block;
+  font-weight: 400;
+  box-sizing: border-box;
+  z-index: 100;
+  position: relative;
+  border-radius: 24px; }
+
+.acc-kontainer input {
+  display: none; }
+
+.acc-kontainer input:checked + label {
+  background-color: rgba(255, 255, 255, 0.15); }
+
+.acc-kontainer input:checked ~ .acc-body {
+  height: auto;
+  color: #000;
+  font-size: 16px;
+  padding: 70px 20px;
+  transition: 0.5s; }
+
+.grid.grid-cols-9 > div p {
+  color: #17191F;
+  font-size: 14px; }
+
+.grid.grid-cols-9 > div {
+  height: 150px;
+  padding-top: 30px; }
+
+.exdda-v-center {
+  display: table;
+  text-align: center;
+  padding-top: 0 !important; }
+
+.exdda-v-center span {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 20px; }
+
+.exdda-image-content img {
+  position: relative; }
+
+.exdda-image-content i {
+  position: relative;
+  top: -30px;
+  right: -45px;
+  padding: 3px;
+  border-radius: 50%;
+  border: 3px solid white;
+  font-size: 13px;
+  color: white; }
+
+.acc-body .exdda-image-content p {
+  font-size: 15px; }
+
+.tab-list .exdda-image-content .text-xs {
+  font-size: 10px !important; }
+
+.tab-list {
+  margin-bottom: 50px; }
+
+/*-------------------------------------------------------------- 
 # image 
 --------------------------------------------------------------*/
 @media screen and (max-width: 992px) {
@@ -405,9 +489,6 @@ a {
   .exdda-image-width {
     width: 60px;
     height: 40px; } }
-.acc-body .image-content p {
-  font-size: 15px; }
-
 /*--------------------------------------------------------------
  Checkout Line
 --------------------------------------------------------------*/
@@ -503,3 +584,13 @@ table td a {
   -moz-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg); }
+
+/* ==== Group content ==== */
+.group-footer-content a:last-child {
+  float: right;
+  margin-top: -10px; }
+
+.group-footer-content a:hover {
+  background-color: #272A33;
+  color: white;
+  transition: all .4s ease 0s; }

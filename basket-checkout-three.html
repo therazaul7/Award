@@ -30,19 +30,17 @@
 	<!-- CSS
     ================================================== -->
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-	
 	<link rel="stylesheet" href="assets/css/fontello.css">
 	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 <div class="container-2xl">
 	<div class="grid lg:grid-cols-4">
 	    <!-- Sidebar start -->
-	    <div class="exdda-bg-black left-sidebar clear-both relative" id="sidebar"> 
-	      	<div id="side-menu">
-	           <div class="toggle-btn">
+	    <div class="exdda-bg-black left-sidebar relative" id="sidebar"> 
+	      	<div id="exdda-side-menu">
+	           <div class="exdda-toggle-btn">
 	             <i class="icon-menu"></i>
 	           </div>
 	           	  <div class="site-logo flex justify-center py-12 border-b exdda-border-b">
@@ -104,7 +102,7 @@
 	  	<h2 class="text-4xl lg:text-5xl font-bold mb-8">Basket</h2>
 	  	<table class="min-w-full">
 	  		<thead>
-            	<tr class="border-b border-color-one text-xl lg:text-2xl capitalize">
+            	<tr class="border-b .exdda-border-color-one text-xl lg:text-2xl capitalize">
 					<th class="text-left py-6">Product</th>
 					<th class="text-left py-6">price</th>
 					<th class="text-left py-6">quantity</th>
@@ -112,7 +110,7 @@
             	</tr>
 	  		</thead>
             <tbody>
-	            <tr class="border-b border-color-one"><!-- /.tr start -->
+	            <tr class="border-b .exdda-border-color-one"><!-- /.tr start -->
 	                <td class="py-8 pl-10">
 		                <div class="flex">
 			                <div class="w-20 h-20 relative demo-icon-cansel">
@@ -139,7 +137,7 @@
 					</td>
 	            </tr><!-- ./tr end-->
                 
-                <tr class="border-b border-color-one"><!-- /.tr start -->
+                <tr class="border-b .exdda-border-color-one"><!-- /.tr start -->
                     <td class="py-8 pl-10">
     	                <div class="flex">
     		                <div class="w-20 h-20 relative demo-icon-cansel">
@@ -165,7 +163,7 @@
     				  <a class="uppercase text-xl lg:text-2xl">1.950.00 DKK</a>
     				</td>
                 </tr><!-- ./tr end-->
-                <tr class="border-b border-color-one"><!-- /.tr start -->
+                <tr class="border-b .exdda-border-color-one"><!-- /.tr start -->
                     <td class="py-8 pl-10">
     	                <div class="flex">
     		                <div class="w-20 h-20 relative demo-icon-cansel">
@@ -203,7 +201,7 @@
     	  	    </button>
     	    </div>
     	    <div class="text-right">
-    	  	   <button class="capitalize mt-10 py-4 px-4 lg:px-8 rounded-lg bg-yellow font-medium lg:text-xl hover">
+    	  	   <button class="capitalize mt-10 py-4 px-4 lg:px-8 rounded-lg exdda-bg-yellow font-medium lg:text-xl hover">
     	  	  		<i class="icon-ok"></i>
     	  	  		Proceed to chekout
     	  	   </button>
@@ -212,25 +210,25 @@
     	<h2 class="text-4xl lg:text-5xl font-bold mb-20">Checkout</h2>
     	<div class="grid grid-cols-1 lg:grid-cols-3 gap-4 text-xl xl:text-xl relative exdda-checkout-line-three">
     	    <div class="">
-    	    	<span class="bg-yellow px-6 py-4 rounded-lg">01</span><span class="p-4 bg-white">Details</span>
+    	    	<span class="exdda-bg-yellow px-6 py-4 rounded-lg">01</span><span class="p-4 bg-white">Details</span>
     	    </div>
     	    <div class="">
-    	    	<span class="bg-yellow px-6 py-4 rounded-lg">02</span><span class="p-4 bg-white">Address</span>
+    	    	<span class="exdda-bg-yellow px-6 py-4 rounded-lg">02</span><span class="p-4 bg-white">Address</span>
     	    </div>
     	    <div class="bg-white">
-    	    	<span class="bg-yellow mr-4 px-6 py-4 rounded-lg">03</span><span class="">Payment</span>
+    	    	<span class="exdda-bg-yellow mr-4 px-6 py-4 rounded-lg">03</span><span class="">Payment</span>
     	    </div>
     	</div><!-- ./gride-cols-3 -->
     	<form action="#" method="post">
     	  	<div class="grid gap-6 lg:grid-cols-2 mt-20">
-        	    <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
+        	    <div class="w-full pt-8 px-10 py-6 md:mb-0 border .exdda-border-color-one rounded-xl">
         	      	<label class="capitalize block text-xl" for="cardholder">
         	        	<i class="icon-user-circle-o exdda-color-memorize text-xl"></i>
         	        	Cardholder name
         	        </label>
         	      	<input class="font-light capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="cardholder" type="text" placeholder="respondent’s fast and last name">
             	</div>
-        	   	<div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
+        	   	<div class="w-full pt-8 px-10 py-6 md:mb-0 border .exdda-border-color-one rounded-xl">
         	     	<label class="capitalize block text-xl" for="card-number">
         	      		<i class="icon-mail exdda-color-memorize text-xl"></i>
         	       		Card number
@@ -238,14 +236,14 @@
         	     <input class="font-light capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="card-number" type="text" placeholder="Respondent’s fast and last name">
         	   	</div>
     	 	
-	        	    <div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
+	        	    <div class="w-full pt-8 px-10 py-6 md:mb-0 border .exdda-border-color-one rounded-xl">
 	        	      	<label class="capitalize block text-xl" for="expire-date">
 	        	        	<i class="icon-calendar exdda-color-memorize text-xl"></i>
 	        	        	Expire date
 	        	        </label>
 	        	      	<input class="font-light capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="expire-date" type="text" placeholder="Respondent’s fast and frist name">
 	            	</div>
-	        	   	<div class="w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
+	        	   	<div class="w-full pt-8 px-10 py-6 md:mb-0 border .exdda-border-color-one rounded-xl">
 	        	     	<label class="capitalize block text-xl" for="cvc">
 	        	      		<i class="icon-mail exdda-color-memorize text-xl"></i>
 	        	       		CVC/CVV
@@ -253,7 +251,7 @@
 	        	     <input class="font-light capitalize ml-4 focus:outline-none block w-full py-3 px-4" id="cvc" type="text" placeholder="Respondent’s fast and last name">
 	        	   	</div>
     	 	</div><!-- ./grid-cols-2 -->
-    	   <button class="capitalize mt-10 py-4 px-16 rounded-lg bg-yellow font-medium text-xl hover">
+    	   <button class="capitalize mt-10 py-4 px-16 rounded-lg exdda-bg-yellow font-medium text-xl hover">
     	     Check out
     	   </button>
     	</form>
@@ -263,7 +261,7 @@
 
 <!-- All The JS Files
 ================================================== --> 
-<script src="assets/js/jquery-1.11.2.min.js"></script>
+<script src="assets/js/jquery-3.6.0.js"></script>
 <script src="assets/js/main.js"></script>
 
 </body>

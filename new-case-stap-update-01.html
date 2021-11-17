@@ -31,19 +31,17 @@
 	<!-- CSS
     ================================================== -->
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-	
 	<link rel="stylesheet" href="assets/css/fontello.css">
 	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 <div class="container-2xl">
 		<div class="grid lg:grid-cols-4">
 		  	<!-- Sidebar start -->
-		  	<div class="exdda-bg-black left-sidebar clear-both relative" id="sidebar"> 
-		  	  	<div id="side-menu">
-		  	       <div class="toggle-btn">
+		  	<div class="exdda-bg-black left-sidebar relative" id="sidebar"> 
+		  	  	<div id="exdda-side-menu">
+		  	       <div class="exdda-toggle-btn">
 		  	         <i class="icon-menu"></i>
 		  	       </div>
 		  	       	  <div class="site-logo flex justify-center py-12 border-b exdda-border-b">
@@ -116,7 +114,7 @@
 		  	  		  	</div>
 		  		  	</form><!-- /.form -->
 
-			  <div class="pagination mt-8">
+			  <div class="exdda-pagination mt-8">
 		        <ul class="text-right relative exdda-pagination-line-one">
 		          <li>
 		            <a class="rounded-lg bg-white exdda-border-yellow" href="#" >&laquo;</a>
@@ -145,7 +143,7 @@
 		    </div>
     	  	<form action="#" method="post" class="mt-16">
     	  		<div class="grid lg:grid-cols-1 gap-6">
-    	  		  	<div class="col-span-1 w-full pt-8 px-10 py-6 md:mb-0 border border-color-one rounded-xl">
+    	  		  	<div class="col-span-1 w-full pt-8 px-10 py-6 md:mb-0 border .exdda-border-color-one rounded-xl">
     	  		  	  <label class="capitalize block text-xl" for="grid-first-name">
     	  		  	   <i class="icon-search exdda-color-memorize text-xl"></i>
     	  		  	    enter title of case
@@ -160,6 +158,7 @@
     	  		<div>
 		    	  	 <ul>
 		    	  	 	<li class="py-3">
+		    	  	 		<input type="checkbox" name="chack" value="chack">
 			    	  	 	<input type="checkbox" class="exdda-checkbox-border-color rounded-xl" id="Analytics">
 			    	  	  	<label class="text-lg" for="Analytics">Analytics and AI</label><br>
 		    	  	  	</li>
@@ -237,7 +236,7 @@
 
 <!-- All The JS Files
 ================================================== --> 
-<script src="assets/js/jquery-1.11.2.min.js"></script>
+<script src="assets/js/jquery-3.6.0.js"></script>
 <script src="assets/js/main.js"></script>
  
 </body>
