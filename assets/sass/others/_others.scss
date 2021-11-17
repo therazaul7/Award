@@ -60,13 +60,13 @@
  }  
 
 
- #nav section {
+ #nav .tab-section {
    display: none;
    float: left;
     overflow: hidden; 
  }
 
- .no-js #nav section {
+ .no-js #nav .tab-section {
    display: block; 
  }
  #nav li ul li a {
