@@ -115,12 +115,12 @@ select {
 form label i {
   color: #9196A4; }
 
-.hover:hover {
+.exdda-hover:hover {
   background-color: #272A33;
   color: white;
   transition: all .4s ease 0s; }
 
-.hover-two:hover {
+.exdda-hover-two:hover {
   background-color: #FEB41C;
   color: white;
   transition: all .4s ease 0s; }
@@ -151,13 +151,8 @@ a {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-#exdda-side-menu {
-  height: 700px;
-  overflow-y: auto;
-  scroll-behavior: smooth; }
-
 /*-------------------------------------------------------------- 
-# left sidebar 
+left sidebar 
 --------------------------------------------------------------*/
 .left-sidebar ul li.menu-item {
   cursor: pointer;
@@ -168,9 +163,19 @@ a {
 
 @media screen and (min-width: 990px) {
   .exdda-toggle-btn {
-    display: none; } }
+    display: none; }
+
+  #exdda-side-menu {
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    width: 337px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth; } }
 @media screen and (max-width: 990px) {
-  #exdda-sidebar ul li {
+  #exdda-sidebar ul .exdda-menu-item {
     font-size: 16px;
     width: 220px; }
 
@@ -183,7 +188,7 @@ a {
   .left-sidebar.active .exdda-toggle-btn {
     left: 285px !important; }
 
-  #exdda-sidebar .exdda-toggle-btn span {
+  .exdda-toggle-btn span {
     display: block;
     width: 30px;
     height: 5px;
@@ -194,11 +199,14 @@ a {
   #exdda-side-menu {
     position: fixed;
     width: 300px;
-    height: 100%;
     background-color: #17191F;
     left: -300px;
     transition: ease-in-out 500ms;
-    top: 0; }
+    top: 0px;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    scroll-behavior: smooth; }
 
   #exdda-side-menu ul li:hover i {
     transform: scale(1.1); }
@@ -207,10 +215,13 @@ a {
     cursor: pointer;
     font-size: 30px;
     color: #17191F;
-    position: absolute;
-    left: 315px;
+    position: fixed;
+    left: 15px;
     top: 20px;
-    transition: ease-in-out 250ms; }
+    transition: ease-in-out 500ms; }
+
+  .menu-btn {
+    left: 315px; }
 
   .exdda-toggle-btn:hover {
     transform: scale(1.2);
@@ -543,13 +554,11 @@ Accordion
 
 #nav section {
   display: none;
-  /* I NEED TO FIX THIS */
   float: left;
   overflow: hidden; }
 
 .no-js #nav section {
-  display: block;
-  /* I NEED TO FIX THIS */ }
+  display: block; }
 
 #nav li ul li a {
   padding: 10px 25px;

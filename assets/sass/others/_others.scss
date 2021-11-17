@@ -61,13 +61,13 @@
 
 
  #nav section {
-   display: none; /* I NEED TO FIX THIS */
+   display: none;
    float: left;
     overflow: hidden; 
  }
 
  .no-js #nav section {
-   display: block; /* I NEED TO FIX THIS */
+   display: block; 
  }
  #nav li ul li a {
      padding: 10px 25px;
