@@ -161,23 +161,51 @@ left sidebar
 .left-sidebar ul li a {
   display: block; }
 
-@media screen and (min-width: 990px) {
-  .exdda-toggle-btn {
-    display: none; }
-
+@media screen and (min-width: 1023px) {
   #exdda-side-menu {
     position: fixed;
     top: 0px;
     bottom: 0;
     left: 0;
-    width: 337px;
+    width: 320px;
     overflow-x: hidden;
     overflow-y: auto;
     scroll-behavior: smooth; } }
-@media screen and (max-width: 990px) {
-  #exdda-sidebar ul .exdda-menu-item {
-    font-size: 16px;
-    width: 220px; }
+@media screen and (max-width: 1024px) {
+  #exdda-side-menu {
+    width: 256px;
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    height: 700px;
+    background-color: #17191F; }
+
+  #exdda-side-menu {
+    left: -300px;
+    transition: ease-in-out 500ms; }
+
+  .exdda-toggle-btn {
+    cursor: pointer;
+    font-size: 30px;
+    color: #17191F;
+    position: fixed;
+    left: 75px;
+    top: 30px;
+    transition: ease-in-out 500ms; }
+
+  .menu-btn {
+    left: 270px; }
+
+  .exdda-toggle-btn:hover {
+    transform: scale(1.2);
+    text-shadow: 5px 5px 5px gray; }
+
+  #exdda-side-menu ul .exdda-menu-item {
+    font-size: 16px; }
 
   .menu {
     left: 0px !important; }
@@ -196,36 +224,15 @@ left sidebar
     margin: 5px 0px;
     cursor: pointer; }
 
-  #exdda-side-menu {
-    position: fixed;
-    width: 300px;
-    background-color: #17191F;
-    left: -300px;
-    transition: ease-in-out 500ms;
-    top: 0px;
-    bottom: 0;
-    overflow-x: hidden;
-    overflow-y: visible;
-    scroll-behavior: smooth; }
-
   #exdda-side-menu ul li:hover i {
-    transform: scale(1.1); }
-
+    transform: scale(1.1); } }
+@media screen and (max-width: 768px) {
   .exdda-toggle-btn {
-    cursor: pointer;
-    font-size: 30px;
-    color: #17191F;
-    position: fixed;
     left: 15px;
-    top: 20px;
-    transition: ease-in-out 500ms; }
+    top: 20px; }
 
   .menu-btn {
-    left: 315px; }
-
-  .exdda-toggle-btn:hover {
-    transform: scale(1.2);
-    text-shadow: 5px 5px 5px gray; } }
+    left: 270px; } }
 /*--------------------------------------------------------------
 ## pagination
 --------------------------------------------------------------*/
@@ -527,7 +534,7 @@ Accordion
   position: relative;
   z-index: 11; }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 768px) {
   .exdda-checkout-line-three:before,
   .exdda-checkout-line-two:before,
   .exdda-checkout-line-one:before {
