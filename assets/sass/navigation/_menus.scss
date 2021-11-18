@@ -1,5 +1,4 @@
-
-  /*-------------------------------------------------------------- 
+ /*-------------------------------------------------------------- 
   left sidebar 
   --------------------------------------------------------------*/
   .left-sidebar ul li.menu-item {
@@ -11,12 +10,6 @@
   }
 
   @media screen and (min-width: 1023px) {
-     .left-sidebar {
-
-     }
-     .exdda-toggle-btn {
-      //display: none;
-     }
       #exdda-side-menu {  
        position:fixed;
        top:0px;
@@ -38,7 +31,7 @@
       overflow-x:hidden;
       overflow-y:auto;
       scroll-behavior: smooth; 
-      height: 700px;
+      //height: 700px;
       background-color: $bg_black;
 
     }
@@ -52,7 +45,7 @@
         font-size: 30px;
         color: $color_text_main;
         position: fixed;
-        left: 75px;
+        left: 45px;
         top: 30px;
         transition: ease-in-out 500ms;
     }
@@ -63,8 +56,6 @@
       transform: scale(1.2);
       text-shadow: 5px 5px 5px gray;
     }
-  
-
       #exdda-side-menu ul .exdda-menu-item {
         font-size: 16px; 
       }  
@@ -86,13 +77,9 @@
         margin:5px 0px;
         cursor:pointer;
       }
-
-     
-
       #exdda-side-menu ul li:hover i{
         transform:scale(1.1);
       }
-
  }     
   @media screen and (max-width: 768px) {
     .exdda-toggle-btn{

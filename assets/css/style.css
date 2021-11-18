@@ -152,8 +152,8 @@ a {
 ## Menus
 --------------------------------------------------------------*/
 /*-------------------------------------------------------------- 
-left sidebar 
---------------------------------------------------------------*/
+ left sidebar 
+ --------------------------------------------------------------*/
 .left-sidebar ul li.menu-item {
   cursor: pointer;
   transition-delay: 0.1s; }
@@ -181,7 +181,6 @@ left sidebar
     overflow-x: hidden;
     overflow-y: auto;
     scroll-behavior: smooth;
-    height: 700px;
     background-color: #17191F; }
 
   #exdda-side-menu {
@@ -193,7 +192,7 @@ left sidebar
     font-size: 30px;
     color: #17191F;
     position: fixed;
-    left: 75px;
+    left: 45px;
     top: 30px;
     transition: ease-in-out 500ms; }
 
