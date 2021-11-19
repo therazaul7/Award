@@ -1,53 +1,6 @@
 /*-------------------------------------------------------------- 
 Accordion 
 --------------------------------------------------------------*/
-.acc-kontainer .acc-body {
-    height: 0;
-    background-color: #F5F6FA; 
-    line-height: 28px;
-    padding: 0 20px;
-    box-sizing: border-box;
-    transition: 0.5s;
-    z-index: 99;
-    position: relative;
-    overflow: hidden;
-    border-radius: 0 0 24px 24px;
-}
-
-.acc-kontainer label {
-  cursor: pointer;
-   background-color: #F5F6FA !important; 
-   display: block;
-   font-weight: 400;
-   box-sizing: border-box;
-   z-index: 100;
-   position: relative;
-   border-radius: 24px;
-}
-.acc-kontainer input {
- display: none;
-}
-.acc-kontainer input:checked+label {
-  background-color: rgba(255, 255, 255, 0.15);
-}
-
-
-.acc-kontainer input:checked~.acc-body {
-  height: auto;
-  color: #000;
-  font-size: 16px;
-  padding: 70px 20px;
-  transition: 0.5s;
-}
-
-.grid.grid-cols-9 > div p {
-    color: #17191F;
-    font-size: 14px;
-}
-.grid.grid-cols-9 > div {
-    height: 150px;
-    padding-top: 30px; 
-}
 .exdda-v-center {
    display: table;
    text-align: center;
@@ -57,7 +10,7 @@ Accordion
    display: table-cell;
    vertical-align: middle;
    font-size: 20px;
-} 
+}  
 
 .exdda-image-content img {
     position: relative;
@@ -65,21 +18,86 @@ Accordion
 
 .exdda-image-content i {
      position: relative;
-     top: -30px;
-     right: -45px;
+     top: -40%;
+     right: -70%;
      padding: 3px;
      border-radius: 50%;
      border: 3px solid white;
      font-size: 13px;
      color: white;
 } 
-.acc-body .exdda-image-content p {
+.exdda-image-content p {
     font-size: 15px;
 }
-.tab-list .exdda-image-content .text-xs {
+.exdda-image-content .text-xs {
     font-size: 10px !important;
 }
 
 .tab-list {
     margin-bottom: 50px;
+}   
+.grid.grid-cols-9 > div {
+    height: 150px;
+    padding-top: 30px; 
 }
+
+.grid.grid-cols-9 > div p {
+    color: #17191F;
+    font-size: 14px;
+    display: block;
+}
+
+.accordion {
+    li {
+        border-bottom: #000;
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .tab-list-content {
+        display: none;
+    }
+    a {
+        width: 100%;
+        display: block;
+        cursor: pointer;
+    }
+}
+/* ==== tab ==== */
+ul.tabs li a {
+     display: block;
+     padding: 25px 60px;
+     text-align: center;
+     font-size: 20px;
+     text-transform: capitalize;
+}
+ @media screen and (max-width: 768px) {
+   ul.tabs li a {
+        padding: 15px 35px;
+        font-size: 16px;
+   }
+}
+ul.tabs li{
+    background: none;
+    color: $color_text_main;
+    display: inline-block;
+    cursor: pointer;
+    background: $bg_white_solid;
+}
+ul.tabs li a:hover,
+ul.tabs li.current{
+    background: $color_orange;
+    color: $color_text_main;
+}
+
+.tab-content{
+    display: none;
+}
+.tab-content.current{
+    display: inherit;
+}
+ul.tabs li:last-child {
+    margin-left: -5px;
+ }  
+
+
+

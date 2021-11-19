@@ -118,12 +118,14 @@ form label i {
 .exdda-hover:hover {
   background-color: #272A33;
   color: white;
-  transition: all .4s ease 0s; }
+  transition: all .4s ease 0s;
+  border: 1px solid #272A33; }
 
 .exdda-hover-two:hover {
   background-color: #FEB41C;
   color: white;
-  transition: all .4s ease 0s; }
+  transition: all .4s ease 0s;
+  border: none; }
 
 textarea {
   display: block;
@@ -413,49 +415,6 @@ a {
 /*-------------------------------------------------------------- 
 Accordion 
 --------------------------------------------------------------*/
-.acc-kontainer .acc-body {
-  height: 0;
-  background-color: #F5F6FA;
-  line-height: 28px;
-  padding: 0 20px;
-  box-sizing: border-box;
-  transition: 0.5s;
-  z-index: 99;
-  position: relative;
-  overflow: hidden;
-  border-radius: 0 0 24px 24px; }
-
-.acc-kontainer label {
-  cursor: pointer;
-  background-color: #F5F6FA !important;
-  display: block;
-  font-weight: 400;
-  box-sizing: border-box;
-  z-index: 100;
-  position: relative;
-  border-radius: 24px; }
-
-.acc-kontainer input {
-  display: none; }
-
-.acc-kontainer input:checked + label {
-  background-color: rgba(255, 255, 255, 0.15); }
-
-.acc-kontainer input:checked ~ .acc-body {
-  height: auto;
-  color: #000;
-  font-size: 16px;
-  padding: 70px 20px;
-  transition: 0.5s; }
-
-.grid.grid-cols-9 > div p {
-  color: #17191F;
-  font-size: 14px; }
-
-.grid.grid-cols-9 > div {
-  height: 150px;
-  padding-top: 30px; }
-
 .exdda-v-center {
   display: table;
   text-align: center;
@@ -471,22 +430,75 @@ Accordion
 
 .exdda-image-content i {
   position: relative;
-  top: -30px;
-  right: -45px;
+  top: -40%;
+  right: -70%;
   padding: 3px;
   border-radius: 50%;
   border: 3px solid white;
   font-size: 13px;
   color: white; }
 
-.acc-body .exdda-image-content p {
+.exdda-image-content p {
   font-size: 15px; }
 
-.tab-list .exdda-image-content .text-xs {
+.exdda-image-content .text-xs {
   font-size: 10px !important; }
 
 .tab-list {
   margin-bottom: 50px; }
+
+.grid.grid-cols-9 > div {
+  height: 150px;
+  padding-top: 30px; }
+
+.grid.grid-cols-9 > div p {
+  color: #17191F;
+  font-size: 14px;
+  display: block; }
+
+.accordion li {
+  border-bottom: #000;
+  position: relative;
+  margin-bottom: 50px; }
+.accordion .tab-list-content {
+  display: none; }
+.accordion a {
+  width: 100%;
+  display: block;
+  cursor: pointer; }
+
+/* ==== tab ==== */
+ul.tabs li a {
+  display: block;
+  padding: 25px 60px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: capitalize; }
+
+@media screen and (max-width: 768px) {
+  ul.tabs li a {
+    padding: 15px 35px;
+    font-size: 16px; } }
+ul.tabs li {
+  background: none;
+  color: #17191F;
+  display: inline-block;
+  cursor: pointer;
+  background: #F5F6FA; }
+
+ul.tabs li a:hover,
+ul.tabs li.current {
+  background: #FEB41C;
+  color: #17191F; }
+
+.tab-content {
+  display: none; }
+
+.tab-content.current {
+  display: inherit; }
+
+ul.tabs li:last-child {
+  margin-left: -5px; }
 
 /*-------------------------------------------------------------- 
 # image 
@@ -502,10 +514,12 @@ Accordion
     position: relative;
     top: 15px;
     left: -10px; } }
-@media screen and (max-width: 568px) {
-  .exdda-image-width {
-    width: 60px;
-    height: 40px; } }
+/*  @media screen and (max-width: 568px) {
+     .exdda-image-width {
+         width: 60px;
+         height: 40px;
+    }
+} */
 /*--------------------------------------------------------------
  Checkout Line
 --------------------------------------------------------------*/
@@ -543,47 +557,6 @@ Accordion
   .exdda-checkout-line-two > div,
   .exdda-checkout-line-three > div {
     margin-bottom: 30px; } }
-/* ==== tab ==== */
-#nav li a {
-  background: #F5F6FA;
-  display: block;
-  padding: 25px 60px;
-  text-align: center;
-  font-size: 20px;
-  text-transform: capitalize; }
-
-@media only screen and (max-width: 768px) {
-  #nav li a {
-    padding: 20px 30px;
-    font-size: 16px; } }
-#nav li a:hover, #nav li a.active {
-  background: #FEB41C; }
-
-#nav li:last-child {
-  margin-left: -5px; }
-
-#nav .tab-section {
-  display: none;
-  float: left;
-  overflow: hidden; }
-
-.no-js #nav .tab-section {
-  display: block; }
-
-#nav li ul li a {
-  padding: 10px 25px;
-  border-bottom: 1px dotted #ccc; }
-
-@media only screen and (min-width: 30em) {
-  #nav {
-    position: relative;
-    border: none; }
-
-  #nav li {
-    display: inline; }
-
-  #nav li a {
-    display: inline-block; } }
 table td i,
 table td a {
   cursor: pointer; }
@@ -613,3 +586,24 @@ table td a {
   background-color: #272A33;
   color: white;
   transition: all .4s ease 0s; }
+
+.overview-content .grid-cols-3 a {
+  cursor: pointer; }
+  .overview-content .grid-cols-3 a i {
+    border: 1px solid #FEB41C; }
+
+@media screen and (max-width: 768px) {
+  .overview-content .grid-cols-3 a {
+    line-height: 60px; } }
+.overview-content .grid-cols-3 i:hover,
+.exdda-hover:hover {
+  background-color: #272A33;
+  color: white;
+  transition: all .4s ease 0s;
+  border: 1px solid #272A33; }
+
+.exdda-hover-two:hover {
+  background-color: #FEB41C;
+  color: white;
+  transition: all .4s ease 0s;
+  border: none; }

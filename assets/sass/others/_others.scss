@@ -42,50 +42,7 @@
     }
 }
 
-/* ==== tab ==== */
-
- #nav li a {
-     background: $bg_white_solid;
-     display: block;
-     padding: 25px 60px;
-     text-align: center;
-     font-size: 20px;
-     text-transform: capitalize;
- }
-  @media only screen and (max-width: 768px) { 
-     #nav li a {
-         padding: 20px 30px;
-        font-size: 16px;
-     }
-  }
- #nav li a:hover, #nav li a.active {
-     background: $color_orange;
- }
- #nav li:last-child {
-      margin-left: -5px;
- }  
-
-
- #nav .tab-section {
-   display: none;
-   float: left;
-    overflow: hidden; 
- }
-
- .no-js #nav .tab-section {
-   display: block; 
- }
- #nav li ul li a {
-     padding: 10px 25px;
-     border-bottom: 1px dotted #ccc;
- }
-
- @media only screen and (min-width: 30em) { 
-     #nav { position: relative; border: none; }
-     #nav li { display: inline; }
-     #nav li a {display: inline-block; }  
-     
- }
+ 
 table td i,
 table td a {
   cursor: pointer;
@@ -120,3 +77,32 @@ table td a {
   color: white;
   transition: all .4s ease 0s;
 }
+.overview-content .grid-cols-3 {
+    a {
+      cursor: pointer;
+      i {
+        border: 1px solid $color_orange;
+      }
+    }
+}
+ @media screen and (max-width: 768px) {
+  .overview-content .grid-cols-3 {
+    a {
+      line-height: 60px;
+    }
+  }
+}
+.overview-content .grid-cols-3 i:hover,
+.exdda-hover:hover {
+   background-color: #272A33;
+   color: white;
+   transition: all .4s ease 0s;
+   border: 1px solid #272A33;;
+}
+.exdda-hover-two:hover {
+     background-color: #FEB41C;
+     color: white;
+     transition: all .4s ease 0s;
+     border: none;
+}
+
