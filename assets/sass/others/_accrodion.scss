@@ -42,15 +42,13 @@ Accordion
 }
 
 .grid.grid-cols-9 > div p {
-    color: #17191F;
+    color: $color_text_main;
     font-size: 14px;
     display: block;
 }
 
 .accordion {
     li {
-        border-bottom: #000;
-        position: relative;
         margin-bottom: 50px;
     }
     .tab-list-content {

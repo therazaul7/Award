@@ -3,7 +3,7 @@
 # Color 
 --------------------------------------------------------------*/
  .exdda-border-left-yellow {
-     border-left-color: $bg_color_yellow;
+     border-left-color: $color_orange;
 }
  .exdda-text-color {
      color: #646978;
@@ -18,8 +18,8 @@
 /*-------------------------------------------------------------- 
 # Background Color 
 --------------------------------------------------------------*/
-.exdda-bg-yellow {
-    background-color: $bg_color_yellow;
+.exdda-bg-orange {
+    background-color: $color_orange;
 }
 .exdda-bg-red {
     background-color: red;
@@ -33,10 +33,10 @@
  .exdda-bg-color {
      background-color: $bg_light_gray;
 }
- .exdda-bg-color:hover {
-     background-color: #FEB41C;
-     color: #17191F;
-}
+/*  .exdda-bg-color:hover {
+     background-color: $color_orange;
+     color: $color_text_main;
+} */
 .exdda-bg-white-solid {
      background-color: $bg_white_solid;
 }

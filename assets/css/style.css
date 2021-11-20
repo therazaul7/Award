@@ -1,9 +1,9 @@
 /*
-Template Name: Miresa
-Template URI: http://Miresa.htmlguru.net
+Template Name: Award
+Template URI: http://Award.htmlguru.net
 Author: HTMLguru
 Author URI: http://hopper.net
-Description: It\' s a HTML5 Miresa Template. Which is a unique feature and user competitive feature.
+Description: It\' s a HTML5 Award Template. Which is a unique feature and user competitive feature.
 Version: 1.0
 */
 /*--------------------------------------------------------------
@@ -13,32 +13,19 @@ Version: 1.0
     ## copy 
     ## headings 
     ## typography 
-# Elements
-	## elements
-	## lists
-	## tables
 # Forms
-	## Buttons
-	## Form
     ## filds
 # Navigation
-	## Links
-	## Menus
+	## links
+	## menus
+    ## navigation
+    ## pagination
+# Color
+    ## color
 # others
-    ## comments
-    ## gallery
-    ## sidebar
-    ## text-area
-# Layout
-    ## Header Part
-    ## banner Part
-    ## about Part
-    ## rhoncus Part
-    ## brand Part
-    ## team Part
-    ## blog Part
-    ## newsletter Part
-    ## Footer Part
+    ## accrodion
+    ## image
+    ## others
 
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -322,7 +309,7 @@ a {
 /*-------------------------------------------------------------- 
 # Background Color 
 --------------------------------------------------------------*/
-.exdda-bg-yellow {
+.exdda-bg-orange {
   background-color: #FEB41C; }
 
 .exdda-bg-red {
@@ -337,10 +324,10 @@ a {
 .exdda-bg-color {
   background-color: #272A33; }
 
-.exdda-bg-color:hover {
-  background-color: #FEB41C;
-  color: #17191F; }
-
+/*  .exdda-bg-color:hover {
+     background-color: $color_orange;
+     color: $color_text_main;
+} */
 .exdda-bg-white-solid {
   background-color: #F5F6FA; }
 
@@ -447,8 +434,6 @@ Accordion
   display: block; }
 
 .accordion li {
-  border-bottom: #000;
-  position: relative;
   margin-bottom: 50px; }
 .accordion .tab-list-content {
   display: none; }
