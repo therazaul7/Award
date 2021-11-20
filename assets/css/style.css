@@ -115,18 +115,6 @@ select {
 form label i {
   color: #9196A4; }
 
-.exdda-hover:hover {
-  background-color: #272A33;
-  color: white;
-  transition: all .4s ease 0s;
-  border: 1px solid #272A33; }
-
-.exdda-hover-two:hover {
-  background-color: #FEB41C;
-  color: white;
-  transition: all .4s ease 0s;
-  border: none; }
-
 textarea {
   display: block;
   width: 100%;
@@ -283,9 +271,10 @@ a {
   content: '';
   height: 2px;
   right: 0;
-  left: 0;
+  left: 10%;
   top: 67%;
-  z-index: 1; }
+  z-index: 1;
+  width: 90%; }
 
 .exdda-pagination-line-one:after {
   background: linear-gradient(to right, #FEB41C 25%, #F5F6FA 25%); }
@@ -515,15 +504,23 @@ ul.tabs li:last-child {
     height: 50px;
     position: relative;
     top: 15px;
-    left: -10px; } }
+    left: -10px; }
+
+  .exdda-busket-image-content i {
+    left: -85% !important; } }
+.exdda-busket-image-content i {
+  position: absolute;
+  top: 38%;
+  left: -50%; }
+
 @media screen and (max-width: 568px) {
   .exdda-busket-image-content .exdda-image-width-two {
     height: 30px; }
 
   .exdda-busket-image-content i {
-    top: 23%;
-    position: absolute;
-    left: -127%; } }
+    left: -116% !important;
+    font-size: 12px;
+    top: 22%; } }
 /*--------------------------------------------------------------
  Checkout Line
 --------------------------------------------------------------*/
@@ -603,11 +600,15 @@ table td a {
 .exdda-hover:hover {
   background-color: #272A33;
   color: white;
-  transition: all .4s ease 0s;
-  border: 1px solid #272A33; }
+  transition: all .4s ease 0s; }
 
 .exdda-hover-two:hover {
   background-color: #FEB41C;
   color: white;
+  transition: all .4s ease 0s; }
+
+.exdda-hover-three:hover {
+  background-color: #272A33;
+  color: white;
   transition: all .4s ease 0s;
-  border: none; }
+  border: 1px solid #272A33; }

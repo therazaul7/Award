@@ -47,9 +47,10 @@
   content: '';
   height: 2px;
   right: 0;
-  left: 0;
+  left: 10%;
   top: 67%;
   z-index: 1;
+  width: 90%;
 }
 .exdda-pagination-line-one:after {
   background: linear-gradient(to right, $border_color_yellow 25%,$bg_white_solid 25%);

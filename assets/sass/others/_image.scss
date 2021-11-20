@@ -13,15 +13,23 @@
          top: 15px;
          left: -10px;
     }
+    .exdda-busket-image-content i {
+        left: -85% !important;
+    }
+}
+.exdda-busket-image-content i {
+    position: absolute;
+    top: 38%;
+    left: -50%;
 }
 @media screen and (max-width: 568px) {
      .exdda-busket-image-content .exdda-image-width-two {
          height: 30px;
     }
     .exdda-busket-image-content i {
-        top: 23%;
-        position: absolute;
-        left: -127%
+        left: -116% !important;
+        font-size: 12px;
+        top: 22%;
     }
 } 
 

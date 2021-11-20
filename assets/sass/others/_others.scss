@@ -94,15 +94,19 @@ table td a {
 }
 .overview-content .grid-cols-3 i:hover,
 .exdda-hover:hover {
-   background-color: #272A33;
+   background-color: $bg_light_gray;
    color: white;
    transition: all .4s ease 0s;
-   border: 1px solid #272A33;;
 }
 .exdda-hover-two:hover {
-     background-color: #FEB41C;
+     background-color: $color_orange;
      color: white;
      transition: all .4s ease 0s;
-     border: none;
+}
+.exdda-hover-three:hover {
+     background-color: $bg_light_gray;
+     color: white;
+     transition: all .4s ease 0s;
+     border: 1px solid $bg_light_gray;
 }
 
