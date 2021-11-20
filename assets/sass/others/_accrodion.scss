@@ -87,6 +87,7 @@ ul.tabs li a:hover,
 ul.tabs li.current{
     background: $color_orange;
     color: $color_text_main;
+    transition: all .4s ease 0s;
 }
 
 .tab-content{

@@ -4,9 +4,11 @@
   .left-sidebar ul li.menu-item {
       cursor: pointer;
       transition-delay: 0.1s;
+
   }
   .left-sidebar ul li a {
       display: block;
+      transition: all .4s ease 0s;
   }
 
   @media screen and (min-width: 1023px) {
@@ -19,6 +21,9 @@
        overflow-x:hidden;
        overflow-y:auto;
        scroll-behavior: smooth; 
+
+      
+        overflow: scroll;
      }
   }
    @media screen and (max-width: 1024px) {

@@ -14,11 +14,15 @@
          left: -10px;
     }
 }
-/*  @media screen and (max-width: 568px) {
-     .exdda-image-width {
-         width: 60px;
-         height: 40px;
+@media screen and (max-width: 568px) {
+     .busket-image-content .exdda-image-width-two {
+         height: 30px;
     }
-} */
+    .busket-image-content i {
+        top: 23%;
+        position: absolute;
+        left: -127%
+    }
+} 
 
 

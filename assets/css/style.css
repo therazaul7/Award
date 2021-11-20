@@ -161,7 +161,8 @@ a {
   transition-delay: 0.1s; }
 
 .left-sidebar ul li a {
-  display: block; }
+  display: block;
+  transition: all .4s ease 0s; }
 
 @media screen and (min-width: 1023px) {
   #exdda-side-menu {
@@ -172,7 +173,8 @@ a {
     width: 320px;
     overflow-x: hidden;
     overflow-y: auto;
-    scroll-behavior: smooth; } }
+    scroll-behavior: smooth;
+    overflow: scroll; } }
 @media screen and (max-width: 1024px) {
   #exdda-side-menu {
     width: 256px;
@@ -489,7 +491,8 @@ ul.tabs li {
 ul.tabs li a:hover,
 ul.tabs li.current {
   background: #FEB41C;
-  color: #17191F; }
+  color: #17191F;
+  transition: all .4s ease 0s; }
 
 .tab-content {
   display: none; }
@@ -514,12 +517,14 @@ ul.tabs li:last-child {
     position: relative;
     top: 15px;
     left: -10px; } }
-/*  @media screen and (max-width: 568px) {
-     .exdda-image-width {
-         width: 60px;
-         height: 40px;
-    }
-} */
+@media screen and (max-width: 568px) {
+  .busket-image-content .exdda-image-width-two {
+    height: 30px; }
+
+  .busket-image-content i {
+    top: 23%;
+    position: absolute;
+    left: -127%; } }
 /*--------------------------------------------------------------
  Checkout Line
 --------------------------------------------------------------*/
