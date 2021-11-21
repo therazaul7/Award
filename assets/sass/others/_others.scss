@@ -119,3 +119,58 @@ table td a {
      border: 1px solid $bg_light_gray !important; 
 }
 
+
+
+/* ==== Dropdown ==== */
+.exdda-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.exdda-dd-button {
+  cursor: pointer;
+}
+
+.exdda-dd-input {
+  display: none;
+}
+
+.exdda-dd-menu {
+  position: absolute;
+  top: 100%;
+  border-radius: 4px;
+  padding: 0;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  left: -100%;
+  z-index: 9;
+}
+
+.exdda-dd-input + .exdda-dd-menu {
+  display: none;
+} 
+
+.exdda-dd-input:checked + .exdda-dd-menu {
+  display: block;
+} 
+
+.exdda-dd-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.exdda-dd-menu li:hover {
+  background-color: #f6f6f6;
+}
+
+.exdda-dd-menu li a {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+}
+
+.exdda-dd-menu li.divider{
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
+}
