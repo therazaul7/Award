@@ -5,11 +5,11 @@ $(".exdda-toggle-btn").click(function(){
  });
 
 /*===== Tab ====*/
-$('ul.tabs li').click(function(){
+$('.exdda-tabs li').click(function(){
     var tab_id = $(this).attr('data-tab');
 
-    $('ul.tabs li').removeClass('current');
-    $('.tab-content').removeClass('current');
+    $('.exdda-tabs li').removeClass('current');
+    $('.exdda-tab-content').removeClass('current');
 
     $(this).addClass('current');
     $("#"+tab_id).addClass('current');
