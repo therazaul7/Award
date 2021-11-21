@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
  @media screen and (max-width: 992px) {
      .exdda-image-width {
-         width: 60px;
+         max-width: 60px;
          height: 60px;
     }
      .exdda-image-width-two {
@@ -17,11 +17,12 @@
         left: -85% !important;
     }
 }
-.exdda-busket-image-content i {
-    position: absolute;
-    top: 38%;
-    left: -50%;
-}
+@media screen and (max-width: 350px) {
+    .exdda-image-width {
+         max-width: 50px;
+         height: 45px;
+    }
+} 
 @media screen and (max-width: 568px) {
      .exdda-busket-image-content .exdda-image-width-two {
          height: 30px;
