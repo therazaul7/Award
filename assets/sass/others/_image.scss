@@ -23,6 +23,13 @@
          height: 45px;
     }
 } 
+
+
+.exdda-busket-image-content i {
+    position: absolute;
+    left: -50%;
+    top: 36%;
+}
 @media screen and (max-width: 568px) {
      .exdda-busket-image-content .exdda-image-width-two {
          height: 30px;

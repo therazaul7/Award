@@ -204,7 +204,7 @@ a {
     transform: scale(1.1); } }
 @media screen and (max-width: 768px) {
   .exdda-toggle-btn {
-    left: 15px;
+    left: 10px;
     top: 20px; }
 
   .menu-btn {
@@ -323,10 +323,6 @@ a {
 .exdda-bg-color {
   background-color: #272A33; }
 
-/*  .exdda-bg-color:hover {
-     background-color: $color_orange;
-     color: $color_text_main;
-} */
 .exdda-bg-white-solid {
   background-color: #F5F6FA; }
 
@@ -496,6 +492,11 @@ Accordion
   .exdda-image-width {
     max-width: 50px;
     height: 45px; } }
+.exdda-busket-image-content i {
+  position: absolute;
+  left: -50%;
+  top: 36%; }
+
 @media screen and (max-width: 568px) {
   .exdda-busket-image-content .exdda-image-width-two {
     height: 30px; }
