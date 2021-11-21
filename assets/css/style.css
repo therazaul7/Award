@@ -44,7 +44,8 @@ body {
   line-height: 1.45em;
   color: #17191F;
   background: #E5E5E5;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  overflow-x: hidden; }
 
 /*--------------------------------------------------------------
 # Headings
@@ -138,6 +139,10 @@ a {
 .exdda-left-sidebar ul li a {
   display: block;
   transition: all .4s ease 0s; }
+
+.exdda-left-sidebar ul li a:hover {
+  background-color: #FEB41C;
+  border-radius: 5px; }
 
 @media screen and (min-width: 1023px) {
   .exdda-left-sidebar {
@@ -505,6 +510,46 @@ Accordion
     left: -116% !important;
     font-size: 12px;
     top: 22%; } }
+/*-------------------------------------------------------------- 
+Gallery 
+--------------------------------------------------------------*/
+.exdda-gallery-content .exdda-image-content {
+  position: relative; }
+  .exdda-gallery-content .exdda-image-content .exdda-score {
+    position: absolute;
+    top: 46%;
+    left: 10%;
+    border: 1px solid #fff;
+    color: #fff; }
+.exdda-gallery-content .exdda-gallery-image {
+  border-radius: 15px 15px 0 0; }
+.exdda-gallery-content .exdda-image-text {
+  background-color: #fff;
+  padding: 40px 15px;
+  margin-top: -10px;
+  position: relative; }
+@media screen and (max-width: 768px) {
+  .exdda-gallery-content .exdda-image-content .exdda-score {
+    top: 50%; } }
+@media screen and (max-width: 360px) and (min-width: 320px) {
+  .exdda-gallery-content .exdda-image-content .exdda-score {
+    top: 42%; } }
+@media screen and (max-width: 410px) and (min-width: 360px) {
+  .exdda-gallery-content .exdda-image-content .exdda-score {
+    top: 48%; } }
+.exdda-gallery-content .category {
+  margin-left: -5px; }
+.exdda-gallery-content .category a {
+  color: #FEB41C;
+  font-size: 14px;
+  padding: 5px; }
+.exdda-gallery-content .category a:after {
+  content: ",";
+  position: relative;
+  left: 2px; }
+.exdda-gallery-content .category a:last-child:after {
+  content: ""; }
+
 /*--------------------------------------------------------------
  Checkout Line
 --------------------------------------------------------------*/

@@ -1,0 +1,56 @@
+/*-------------------------------------------------------------- 
+Gallery 
+--------------------------------------------------------------*/
+.exdda-gallery-content {
+    .exdda-image-content {
+          position: relative;
+          .exdda-score {
+              position: absolute;
+              top: 46%;
+              left: 10%;
+              border: 1px solid $color_white;
+              color: $color_white;
+          }
+    }
+    .exdda-gallery-image {
+        border-radius: 15px 15px 0 0;
+    }
+    .exdda-image-text {
+        background-color: $color_white;
+        padding: 40px 15px;
+        margin-top: -10px;
+        position: relative;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .exdda-image-content .exdda-score {
+            top: 50%;
+        }
+    }
+    @media screen and (max-width: 360px) and (min-width: 320px) { 
+        .exdda-image-content .exdda-score {
+            top: 42%;
+        }
+    } 
+    @media screen and (max-width: 410px) and (min-width: 360px){
+        .exdda-image-content .exdda-score {
+            top: 48%;
+        }
+    }  
+    .category {
+        margin-left: -5px;
+    }
+    .category a {
+        color: $color_orange;
+        font-size: 14px;
+        padding: 5px;
+    }
+    .category a:after {
+        content: ",";
+        position: relative;
+        left: 2px;
+    }
+    .category a:last-child:after {
+        content: "";
+    } 
+}
