@@ -1,3 +1,4 @@
+(function($) {
 /*==== Mobile menu =====*/
 $(".exdda-toggle-btn").click(function(){
    $(".exdda-left-sidebar").toggleClass("menu");
@@ -21,7 +22,6 @@ $(".exdda-rotate").click(function () {
 });
 
 /*==== accrodion ====*/
-(function($) {
     $('.exdda-accordion > li:eq(0) a').addClass('active').next().slideDown();
 
     $('.exdda-accordion a').click(function(j) {
