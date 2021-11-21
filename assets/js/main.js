@@ -1,6 +1,6 @@
 /*==== Mobile menu =====*/
 $(".exdda-toggle-btn").click(function(){
-   $("#exdda-side-menu").toggleClass("menu");
+   $(".exdda-left-sidebar").toggleClass("menu");
    $(".exdda-toggle-btn").toggleClass("menu-btn");
  });
 
@@ -16,23 +16,23 @@ $('ul.tabs li').click(function(){
   })
 
 /*===== Acrodion icon ====*/
-$(".rotate").click(function () {
-    $(this).toggleClass("down");
+$(".exdda-rotate").click(function () {
+    $(this).toggleClass("exdda-down");
 });
 
 /*==== accrodion ====*/
 (function($) {
-    $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
+    $('.exdda-accordion > li:eq(0) a').addClass('active').next().slideDown();
 
-    $('.accordion a').click(function(j) {
-        var dropDown = $(this).closest('li').find('.tab-list-content');
+    $('.exdda-accordion a').click(function(j) {
+        var dropDown = $(this).closest('li').find('.exdda-tab-list-content');
 
-        $(this).closest('.accordion').find('.tab-list-content').not(dropDown).slideUp();
+        $(this).closest('.exdda-accordion').find('.exdda-tab-list-content').not(dropDown).slideUp();
 
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
         } else {
-            $(this).closest('.accordion').find('a.active').removeClass('active');
+            $(this).closest('.exdda-accordion').find('a.active').removeClass('active');
             $(this).addClass('active');
         }
 

@@ -131,26 +131,25 @@ a {
 /*-------------------------------------------------------------- 
  left sidebar 
  --------------------------------------------------------------*/
-.left-sidebar ul li.menu-item {
+.exdda-left-sidebar ul li.menu-item {
   cursor: pointer;
   transition-delay: 0.1s; }
 
-.left-sidebar ul li a {
+.exdda-left-sidebar ul li a {
   display: block;
   transition: all .4s ease 0s; }
 
 @media screen and (min-width: 1023px) {
-  #exdda-side-menu {
-    position: fixed;
+  .exdda-left-sidebar {
     top: 0px;
     bottom: 0;
     left: 0;
-    width: 320px;
     overflow-x: hidden;
     overflow-y: auto;
-    scroll-behavior: smooth; } }
+    scroll-behavior: smooth;
+    height: 100vh; } }
 @media screen and (max-width: 1024px) {
-  #exdda-side-menu {
+  .exdda-left-sidebar {
     width: 256px;
     position: fixed;
     top: 0px;
@@ -161,7 +160,7 @@ a {
     scroll-behavior: smooth;
     background-color: #17191F; }
 
-  #exdda-side-menu {
+  .exdda-left-sidebar {
     left: -300px;
     transition: ease-in-out 500ms; }
 
@@ -181,16 +180,16 @@ a {
     transform: scale(1.2);
     text-shadow: 5px 5px 5px gray; }
 
-  #exdda-side-menu ul .exdda-menu-item {
+  .exdda-left-sidebar ul .exdda-menu-item {
     font-size: 16px; }
 
   .menu {
     left: 0px !important; }
 
-  .left-sidebar {
+  .exdda-left-sidebar {
     z-index: 110; }
 
-  .left-sidebar.active .exdda-toggle-btn {
+  .exdda-left-sidebar.active .exdda-toggle-btn {
     left: 285px !important; }
 
   .exdda-toggle-btn span {
@@ -201,7 +200,7 @@ a {
     margin: 5px 0px;
     cursor: pointer; }
 
-  #exdda-side-menu ul li:hover i {
+  .exdda-left-sidebar ul li:hover i {
     transform: scale(1.1); } }
 @media screen and (max-width: 768px) {
   .exdda-toggle-btn {
@@ -421,7 +420,7 @@ Accordion
 .exdda-image-content .text-xs {
   font-size: 10px !important; }
 
-.tab-list {
+.exdda-tab-list {
   margin-bottom: 50px; }
 
 .grid.grid-cols-9 > div {
@@ -433,17 +432,17 @@ Accordion
   font-size: 14px;
   display: block; }
 
-.accordion li {
+.exdda-accordion li {
   margin-bottom: 50px; }
-.accordion .tab-list-content {
+.exdda-accordion .exdda-tab-list-content {
   display: none; }
-.accordion a {
+.exdda-accordion a {
   width: 100%;
   display: block;
   cursor: pointer; }
 
 /* ==== tab ==== */
-ul.tabs li a {
+.exdda-tabs li a {
   display: block;
   padding: 25px 60px;
   text-align: center;
@@ -451,30 +450,30 @@ ul.tabs li a {
   text-transform: capitalize; }
 
 @media screen and (max-width: 768px) {
-  ul.tabs li a {
+  .exdda-tabs li a {
     padding: 15px 35px;
     font-size: 16px; } }
-ul.tabs li {
+.exdda-tabs li {
   background: none;
   color: #17191F;
   display: inline-block;
   cursor: pointer;
   background: #F5F6FA; }
 
-ul.tabs li a:hover,
-ul.tabs li.current {
+.exdda-tabs li a:hover,
+.exdda-tabs li.current {
   background: #FEB41C;
   color: #17191F;
   transition: all .4s ease 0s; }
 
-.tab-content {
+.exdda-tabs li:last-child {
+  margin-left: -5px; }
+
+.exdda-tab-content {
   display: none; }
 
-.tab-content.current {
+.exdda-tab-content.current {
   display: inherit; }
-
-ul.tabs li:last-child {
-  margin-left: -5px; }
 
 /*-------------------------------------------------------------- 
 # image 
@@ -548,38 +547,38 @@ table td a {
   cursor: pointer; }
 
 /* ==== icon rotate ==== */
-.rotate {
+.exdda-rotate {
   -moz-transition: all .5s linear;
   -webkit-transition: all .5s linear;
   transition: all .5s linear; }
 
-.rotate.down {
+.exdda-rotate.exdda-down {
   -moz-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg); }
 
-.icon-angle-double-down.down:before {
+.icon-angle-double-down.exdda-down:before {
   -moz-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 /* ==== Group content ==== */
-.group-footer-content a:last-child {
+.exdda-group-footer-content a:last-child {
   float: right;
   margin-top: -10px; }
 
-.group-footer-content a:hover {
+.exdda-group-footer-content a:hover {
   background-color: #272A33;
   color: white;
   transition: all .4s ease 0s; }
 
-.overview-content .grid-cols-3 a {
+.exdda-overview-content .grid-cols-3 a {
   cursor: pointer; }
-  .overview-content .grid-cols-3 a i {
+  .exdda-overview-content .grid-cols-3 a i {
     border: 1px solid #FEB41C; }
 
 @media screen and (max-width: 768px) {
-  .overview-content .grid-cols-3 a {
+  .exdda-overview-content .grid-cols-3 a {
     line-height: 60px; } }
 .overview-content .grid-cols-3 i:hover,
 .exdda-hover:hover {

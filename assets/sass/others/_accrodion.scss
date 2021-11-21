@@ -33,7 +33,7 @@ Accordion
     font-size: 10px !important;
 }
 
-.tab-list {
+.exdda-tab-list {
     margin-bottom: 50px;
 }   
 .grid.grid-cols-9 > div {
@@ -47,11 +47,11 @@ Accordion
     display: block;
 }
 
-.accordion {
+.exdda-accordion {
     li {
         margin-bottom: 50px;
     }
-    .tab-list-content {
+    .exdda-tab-list-content {
         display: none;
     }
     a {
@@ -61,7 +61,7 @@ Accordion
     }
 }
 /* ==== tab ==== */
-ul.tabs li a {
+.exdda-tabs li a {
      display: block;
      padding: 25px 60px;
      text-align: center;
@@ -69,34 +69,34 @@ ul.tabs li a {
      text-transform: capitalize;
 }
  @media screen and (max-width: 768px) {
-   ul.tabs li a {
+   .exdda-tabs li a {
         padding: 15px 35px;
         font-size: 16px;
    }
 }
-ul.tabs li{
+.exdda-tabs li{
     background: none;
     color: $color_text_main;
     display: inline-block;
     cursor: pointer;
     background: $bg_white_solid;
 }
-ul.tabs li a:hover,
-ul.tabs li.current{
+.exdda-tabs li a:hover,
+.exdda-tabs li.current{
     background: $color_orange;
     color: $color_text_main;
     transition: all .4s ease 0s;
 }
-
-.tab-content{
-    display: none;
-}
-.tab-content.current{
-    display: inherit;
-}
-ul.tabs li:last-child {
+.exdda-tabs li:last-child {
     margin-left: -5px;
  }  
+.exdda-tab-content{
+    display: none;
+}
+.exdda-tab-content.current{
+    display: inherit;
+}
+
 
 
 

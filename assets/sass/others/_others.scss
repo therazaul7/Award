@@ -42,42 +42,41 @@
     }
 }
 
- 
 table td i,
 table td a {
   cursor: pointer;
 }
 
 /* ==== icon rotate ==== */
-.rotate {
+.exdda-rotate {
     -moz-transition: all .5s linear;
     -webkit-transition: all .5s linear;
     transition: all .5s linear;
 }
-.rotate.down {
+.exdda-rotate.exdda-down {
     -moz-transform:rotate(180deg);
     -webkit-transform:rotate(180deg);
     transform: rotate(180deg);
 }
 
 
-.icon-angle-double-down.down:before {
+.icon-angle-double-down.exdda-down:before {
     -moz-transform:rotate(180deg);
     -webkit-transform:rotate(180deg);
     transform: rotate(180deg);
 }
 
 /* ==== Group content ==== */
-.group-footer-content a:last-child {
+.exdda-group-footer-content a:last-child {
   float: right;
   margin-top: -10px;
 }
-.group-footer-content a:hover {
+.exdda-group-footer-content a:hover {
   background-color: $bg_light_gray;
   color: white;
   transition: all .4s ease 0s;
 }
-.overview-content .grid-cols-3 {
+.exdda-overview-content .grid-cols-3 {
     a {
       cursor: pointer;
       i {
@@ -86,7 +85,7 @@ table td a {
     }
 }
  @media screen and (max-width: 768px) {
-  .overview-content .grid-cols-3 {
+  .exdda-overview-content .grid-cols-3 {
     a {
       line-height: 60px;
     }
